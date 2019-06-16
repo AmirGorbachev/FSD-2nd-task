@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // Require  html-webpack-plugin plugin
+
 module.exports = {
   entry: __dirname + "/src/app/index.js", // webpack entry point. Module to start building dependency graph
   output: {
@@ -17,12 +18,19 @@ module.exports = {
             }, {
                 loader: "sass-loader" // compiles Sass to CSS
             }]
+          },
+          {
+            test: /\.pug$/,
+            use: [{
+                loader: "pug-loader"
+            }]
           }
       ]
   },
   plugins: [  // Array of plugins to apply to build chunk
       new HtmlWebpackPlugin({
-          template: __dirname + "/src/public/index.html",
+          template: __dirname + "/src/public/index.pug",
+          filename: 'index.html',
           inject: 'body'
       })
   ],
