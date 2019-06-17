@@ -5,5 +5,30 @@ body {
 }
 
 #logo {
-	
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	left: 30px;
+	top: 30px;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding-top: 145px;
+  padding-left: 150px;
+  .square {
+	width: 70px;
+	height: 70px;
+	background: #1F2041;
+	border-radius: 6px;
+	float: left;
+	margin-right: 40px;
+	}
+  .p {
+  	
+  }
+}
+
+
