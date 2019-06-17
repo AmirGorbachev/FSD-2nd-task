@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // Require  html-webpack-plugin plugin
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: __dirname + "/src/app/index.js", // webpack entry point. Module to start building dependency graph
@@ -15,6 +16,16 @@ module.exports = {
                 loader: "style-loader" // creates style nodes from JS strings
             }, {
                 loader: "css-loader" // translates CSS into CommonJS
+            }, {
+                loader: 'postcss-loader',
+                options: {
+                    plugins: [
+                          autoprefixer({
+                              browsers:['ie >= 8', 'last 4 version']
+                          })
+                    ],
+                    sourceMap: true
+                }
             }, {
                 loader: "sass-loader" // compiles Sass to CSS
             }]
