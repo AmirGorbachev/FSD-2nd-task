@@ -1,5 +1,10 @@
 $background-color: #E5E5E5;
 
+*{
+	margin: 0;
+	padding: 0;
+}
+
 body {
     background-color: $background-color;
 }
@@ -18,17 +23,6 @@ body {
   grid-template-rows: 1fr;
   padding-top: 145px;
   padding-left: 150px;
-  .square {
-	width: 70px;
-	height: 70px;
-	background: #1F2041;
-	border-radius: 6px;
-	float: left;
-	margin-right: 40px;
-	}
-  .p {
-  	
-  }
 }
 
 

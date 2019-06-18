@@ -1,0 +1,27 @@
+/*.color-panel {
+  .color-panel__square {
+    width: 70px;
+    height: 70px;
+    background: #1F2041;
+    border-radius: 6px;
+    float: left;
+    margin-right: 40px;
+  } 
+  .color-panel__text {
+    background-color: green;
+  }
+}
+*/
+.color-panel__square {
+    width: 70px;
+    height: 70px;
+    background: #1F2041;
+    border-radius: 6px;
+    float: left;
+    margin-right: 40px;
+  } 
+  .color-panel__text {
+    p {
+    	margin: 0;
+    }
+  }
