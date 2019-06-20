@@ -27,9 +27,14 @@ let config = {
     './script.js',
   ],
   'addAssets': {
-    'src/fonts/demo-empty-open-sans.woff2': 'fonts/',
+    'src/fonts/Quicksand-Regular.woff': 'fonts/',
+    'src/fonts/Quicksand-Regular.ttf': 'fonts/',
+    'src/fonts/Quicksand-Regular.svg': 'fonts/',
+    'src/fonts/Montserrat-Regular.woff': 'fonts/',
+    'src/fonts/Montserrat-Regular.ttf': 'fonts/',
+    'src/fonts/Montserrat-Regular.svg': 'fonts/',
     'src/img/demo-*.{png,svg,jpg,jpeg}': 'img/',
-    // 'src/favicon/*.{png,ico,svg,xml,webmanifest}': 'img/favicon',
+    'src/favicon/*.{png,ico,svg,xml,webmanifest}': 'img/favicon',
     // 'node_modules/somePackage/images/*.{png,svg,jpg,jpeg}': 'img/',
   },
   'dir': {

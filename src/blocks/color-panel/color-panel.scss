@@ -20,8 +20,11 @@
     float: left;
     margin-right: 40px;
   } 
-  .color-panel__text {
-    p {
-    	margin: 0;
-    }
-  }
+.color-panel__text {
+    padding-top: 7px;
+    font-family: Conv_Quicksand-Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 28px;
+}

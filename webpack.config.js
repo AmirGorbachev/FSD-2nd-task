@@ -43,6 +43,12 @@ module.exports = {
             use: [{
                 loader: "pug-loader"
             }]
+          },
+          {
+            test: /\.(eot|svg|ttf|woff|woff2)$/,
+            use: [{
+                loader: 'file-loader'
+            }]
           }
       ]
   },
