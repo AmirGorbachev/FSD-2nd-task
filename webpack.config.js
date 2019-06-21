@@ -54,13 +54,13 @@ module.exports = {
   },
   plugins: [  // Array of plugins to apply to build chunk
       new HtmlWebpackPlugin({
-          template: __dirname + "/src/public/index.pug",
+          template: __dirname + "/src/pages/index.pug",
           filename: 'index.html',
           inject: 'body'
       })
   ],
   devServer: {  // configuration for webpack-dev-server
-      contentBase: './src/public',  //source of static assets
+      contentBase: './src/pages',  //source of static assets
       port: 7700, // port to run dev-server
   } 
 };
