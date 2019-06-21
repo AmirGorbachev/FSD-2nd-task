@@ -1,9 +1,9 @@
-mixin color-panel(p1, p2)
+mixin color-panel(name, code)
   style
     include ../../fonts.css
     include color-panel.scss
   .color-panel(class=allMods)&attributes(attributes)
     .color-panel__square
     .color-panel__text
-      p #{p1}
-      p #{p2}
+      .color-panel__color-name #{name}
+      .color-panel__color-code #{code}
