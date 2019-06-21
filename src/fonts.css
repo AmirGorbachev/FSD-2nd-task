@@ -14,3 +14,16 @@
 	font-weight: normal;
 	font-style: normal;
 }
+/**/
+@font-face {
+	font-family: 'Quicksand-Bold';
+	src: url('Quicksand-Bold.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Quicksand-Light';
+	src: url('Quicksand-Light.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
