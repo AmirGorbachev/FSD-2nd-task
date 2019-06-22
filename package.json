@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --history-api-fallback --inline --progress"
+    "start": "webpack-dev-server --history-api-fallback --inline --progress",
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "css-loader": "^3.0.0",
