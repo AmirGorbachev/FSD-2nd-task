@@ -1,4 +1,6 @@
-@import './variables.scss';
+@import './_fonts.css';
+@import './_variables.scss';
+@import '../blocks/color-panel/color-panel.scss';
 
 *{
 	margin: 0;
@@ -6,7 +8,7 @@
 }
 
 body {
-    background-color: $background-color;
+  background-color: $background-color;
 }
 
 #logo {
