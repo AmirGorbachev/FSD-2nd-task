@@ -1,11 +1,11 @@
 .color-panel__square {
+  /* Цвет квадрата указан в миксине */
   width: 70px;
   height: 70px;
-  background: #1F2041;
   border-radius: 6px;
   float: left;
   margin-right: 40px;
-  } 
+} 
 .color-panel__text {
   padding-top: 7px;
   font-style: normal;
@@ -14,8 +14,11 @@
   line-height: 29px;
 }
 .color-panel__color-name {
-  font-family: Quicksand-Bold;
+  font-family: $font-family-primary-bold;
 }
 .color-panel__color-code {
-  font-family: Quicksand-Light;
+  font-family: $font-family-primary-light;
+}
+.color-panel {
+  margin-bottom: 25px;
 }

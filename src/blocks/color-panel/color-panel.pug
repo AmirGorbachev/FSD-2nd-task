@@ -1,9 +1,42 @@
-mixin color-panel(name, code)
-  style
-    include ../../style/fonts.css
-    include color-panel.scss
-  .color-panel(class=allMods)&attributes(attributes)
-    .color-panel__square
+mixin color-panel--dark100
+  .color-panel
+    .color-panel__square(style='background: rgba(31, 32, 65, 1)')
     .color-panel__text
-      .color-panel__color-name #{name}
-      .color-panel__color-code #{code}
+      .color-panel__color-name Dark Shade 100%
+      .color-panel__color-code #1F2041
+mixin color-panel--dark75
+  .color-panel
+    .color-panel__square(style='background: rgba(31, 32, 65, 0.75)')
+    .color-panel__text
+      .color-panel__color-name Dark Shade 75%
+      .color-panel__color-code #1F2041
+mixin color-panel--dark50
+  .color-panel
+    .color-panel__square(style='background: rgba(31, 32, 65, 0.5)')
+    .color-panel__text
+      .color-panel__color-name Dark Shade 50%
+      .color-panel__color-code #1F2041
+mixin color-panel--dark25
+  .color-panel
+    .color-panel__square(style='background: rgba(31, 32, 65, 0.25)')
+    .color-panel__text
+      .color-panel__color-name Dark Shade 25%
+      .color-panel__color-code #1F2041
+mixin color-panel--dark5
+  .color-panel
+    .color-panel__square(style='background: rgba(31, 32, 65, 0.05)')
+    .color-panel__text
+      .color-panel__color-name Dark Shade 5%
+      .color-panel__color-code #1F2041
+mixin color-panel--purple
+  .color-panel
+    .color-panel__square(style='background: #BC9CFF')
+    .color-panel__text
+      .color-panel__color-name Purple
+      .color-panel__color-code #BC9CFF
+mixin color-panel--green
+  .color-panel
+    .color-panel__square(style='background: #6FCF97')
+    .color-panel__text
+      .color-panel__color-name Green
+      .color-panel__color-code #6FCF97
