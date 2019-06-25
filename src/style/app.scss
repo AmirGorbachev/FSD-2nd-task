@@ -1,14 +1,17 @@
 @import './_fonts.css';
 @import './_variables.scss';
 @import '../blocks/color-panel/color-panel.scss';
+@import '../blocks/text-panel/text-panel.scss';
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
 body {
   background-color: $background-color;
+  width: 1440px;
+  height: 900px;
 }
 
 #logo {
@@ -24,7 +27,15 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   padding-top: 145px;
+}
+
+.grid-container__first-column {
   padding-left: 150px;
+}
+
+.grid-container__second-column {
+  font-family: $font-family-secondary;
+  padding-left: 130px;
 }
 
 

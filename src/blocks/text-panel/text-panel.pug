@@ -1,0 +1,23 @@
+//- Все примеси в этом файле должны начинаться c имени блока (text-panel)
+
+mixin text-panel(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +text-panel('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' text-panel--' + modsList[i].trim();
+      }
+    }
+
+  .text-panel(class=allMods)&attributes(attributes)
+    .text-panel__inner
+      block
