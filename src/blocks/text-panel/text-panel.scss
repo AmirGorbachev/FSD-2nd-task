@@ -1,22 +1,41 @@
 .text-panel {
 	margin-bottom: 50px;
+	display: flex;
 }
 
 .text-panel__identifier {
-  float: left;
-  text-align: right;
   margin-right: 25px;
-
   color: $palette-primary-25;
-  font-size: 24px;
-  line-height: 29px;
+
+  h1, h2, h3, p {
+  }
 }
 
 .text-panel__transcript {
-  
 }
 
 h1 {
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+p{
+  font-size: 14px;
+  line-height: 24px;
 }
