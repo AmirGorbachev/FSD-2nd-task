@@ -1,7 +1,6 @@
 @import './_fonts.css';
 @import './_variables.scss';
 @import '../blocks/color-panel/color-panel.scss';
-@import '../blocks/text-panel/text-panel.scss';
 
 * {
   margin: 0;
@@ -12,6 +11,7 @@ body {
   background-color: $background-color;
   width: 1440px;
   height: 900px;
+  color: $palette-primary-100;
 }
 
 #logo {
@@ -33,9 +33,85 @@ body {
   padding-left: 150px;
 }
 
+/* Текстовые шаблоны */
+
 .grid-container__second-column {
-  font-family: $font-family-secondary;
-  padding-left: 130px;
+  padding-left: 113px;
 }
 
+.text-panel {
+  margin-bottom: 50px;
+  display: flex;
 
+  h1 {
+    margin: 0;
+  }
+}
+
+.text-panel__identifier {
+  margin-right: 30px;
+  color: $palette-primary-25;
+
+  h1, h2, h3, p {
+  	width: 50px;
+  	text-align: right;
+  }
+
+  h1, h2, h3 {
+  	font-family: $font-family-secondary-light;
+  }
+
+  h1 {
+  	font-size: 24px;
+    line-height: 29px;
+  }
+
+  h2 {
+  	font-size: 19px;
+    line-height: 23px;
+  }
+
+  h3 {
+  	font-size: 12px;
+    line-height: 15px;
+  }
+
+  p {
+  	font-size: 14px;
+    line-height: 24px;
+    font-family: $font-family-secondary;
+  }
+}
+
+.text-panel__transcript {
+  h1, h2, h3 {
+  	font-family: $font-family-secondary-bold;
+  }
+
+  h1, h2 {
+  	font-family: $font-family-primary-bold;
+  }
+
+  h1 {
+  	font-size: 24px;
+    line-height: 30px;
+  }
+
+  h2 {
+  	font-size: 19px;
+    line-height: 24px;
+  }
+
+  h3 {
+  	font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+
+  p {
+  	font-size: 14px;
+    line-height: 24px;
+    font-family: $font-family-secondary;
+    color: $palette-primary-75;
+  }
+}

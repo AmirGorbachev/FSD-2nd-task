@@ -33,3 +33,15 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Montserrat-Light';
+	src: url('../Montserrat-Light.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat-Bold';
+	src: url('../Montserrat-Bold.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
