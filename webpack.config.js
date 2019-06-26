@@ -2,10 +2,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin'); // Require  html-webpa
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
-  entry: __dirname + "/src/app/index.js", // webpack entry point. Module to start building dependency graph
+  entry: {
+    'app': __dirname + "/src/app/index.js",
+    'colors&type': __dirname + "/src/pages/colors&type/colors&type.js"
+  }, // webpack entry point. Module to start building dependency graph
   output: {
     path: __dirname + '/dist', // Folder to store generated bundle
-    filename: 'bundle.js',  // Name of generated bundle after build
+    filename: '[name].js',  // Name of generated bundle after build
     publicPath: '/' // public URL of the output directory when referenced in a browser
   },
   module: {  // where we defined file patterns and their loaders
@@ -66,6 +69,11 @@ module.exports = {
       new HtmlWebpackPlugin({
           template: __dirname + "/src/pages/index.pug",
           filename: 'index.html',
+          inject: 'body'
+      }),
+      new HtmlWebpackPlugin({
+          template: __dirname + "/src/pages/colors&type/colors&type.pug",
+          filename: 'colors&type.html',
           inject: 'body'
       })
   ],

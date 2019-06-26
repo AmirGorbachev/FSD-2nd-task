@@ -5,35 +5,3 @@ html(lang="en")
   body
     #logo
       include ../favicon/logo.svg
-    .grid-container
-      .grid-container__first-column
-        include ../blocks/color-panel/color-panel.pug
-        +color-panel--dark100
-        +color-panel--dark75
-        +color-panel--dark50
-        +color-panel--dark25
-        +color-panel--dark5
-        +color-panel--purple
-        +color-panel--green
-      .grid-container__second-column
-        .text-panel
-          .text-panel__identifier 
-            h1 H1
-          .text-panel__transcript
-            h1 This one is the sub-section or <br> widget title
-        .text-panel
-          .text-panel__identifier
-            h2 H2
-          .text-panel__transcript
-            h2 Next one is the item title inside <br> widgets
-        .text-panel
-          .text-panel__identifier
-            h3 H3
-          .text-panel__transcript
-            h3 This is a label or cta text
-        .text-panel
-          .text-panel__identifier
-            p Body
-          .text-panel__transcript
-            p This is the body text which is used for most <br> of the design, like paragraphs, lists, etc.
-        
