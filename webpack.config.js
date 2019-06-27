@@ -3,8 +3,9 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: {
-    'app': __dirname + "/src/app/index.js",
-    'colors&type': __dirname + "/src/pages/colors&type/colors&type.js"
+    'app': __dirname + '/src/app/index.js',
+    'colors&type': __dirname + '/src/pages/colors&type/colors&type.js',
+    'headers&footers': __dirname + '/src/pages/headers&footers/headers&footers.js'
   }, // webpack entry point. Module to start building dependency graph
   output: {
     path: __dirname + '/dist', // Folder to store generated bundle
@@ -16,9 +17,9 @@ module.exports = {
           {
             test: /\.(sass|scss)$/,
             use: [{
-                loader: "style-loader" // creates style nodes from JS strings
+                loader: 'style-loader' // creates style nodes from JS strings
             }, {
-                loader: "css-loader" // translates CSS into CommonJS
+                loader: 'css-loader' // translates CSS into CommonJS
             }, {
                 loader: 'postcss-loader',
                 options: {
@@ -30,7 +31,7 @@ module.exports = {
                     sourceMap: true
                 }
             }, {
-                loader: "sass-loader" // compiles Sass to CSS
+                loader: 'sass-loader' // compiles Sass to CSS
             }]
           },
           {
@@ -54,7 +55,7 @@ module.exports = {
           {
             test: /\.pug$/,
             use: [{
-                loader: "pug-loader"
+                loader: 'pug-loader'
             }]
           },
           {
@@ -67,17 +68,22 @@ module.exports = {
   },
   plugins: [  // Array of plugins to apply to build chunk
       new HtmlWebpackPlugin({
-          template: __dirname + "/src/pages/index.pug",
+          template: __dirname + '/src/pages/index.pug',
           filename: 'index.html',
           inject: 'body'
       }),
       new HtmlWebpackPlugin({
-          template: __dirname + "/src/pages/colors&type/colors&type.pug",
+          template: __dirname + '/src/pages/colors&type/colors&type.pug',
           filename: 'colors&type.html',
+          inject: 'body'
+      }),
+      new HtmlWebpackPlugin({
+          template: __dirname + '/src/pages/headers&footers/headers&footers.pug',
+          filename: 'headers&footers.html',
           inject: 'body'
       })
   ],
-  devServer: {  // configuration for webpack-dev-server
+  devServer: {  // configuration for webpack-dev-server 
       contentBase: './src/pages',  //source of static assets
       port: 7700, // port to run dev-server
   } 
