@@ -1,8 +1,33 @@
-// В этом файле должны быть стили для БЭМ-блока header-nav, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .header-nav {
+  width: 100%;
+  background-color: $background-color;
+  box-shadow: 0px 10px 20px $palette-primary-5;
 
-  $block-name:                &; // #{$block-name}__element
+  .header-nav__inner {
+    padding: 15px 140px;
+    display: flex;
+  }
+
+  .header-nav__logo {
+  	height: 40px;
+    flex-grow: 1;
+  }
+
+  .header-nav__menu-nav {
+  	margin: auto 0;
+  	a {
+  	  margin-right: 30px;
+  	}
+  	p {
+  	  display: inline-block;
+  	  color: $palette-primary-50;
+  	  line-height: 17px;
+  	  font-family: $font-family-secondary-medium;
+  	}
+  }
+  
+  .header-nav__authorization {
+    width: 200px;
+  }
+
 }

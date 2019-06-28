@@ -60,7 +60,8 @@
   p {
   	font-size: 14px;
     line-height: 24px;
-    font-family: $font-family-secondary;
+    font-family: $font-family-secondary-medium;
+    color: $palette-primary-25;
   }
 }
 
@@ -89,7 +90,7 @@
   p {
   	font-size: 14px;
     line-height: 24px;
-    font-family: $font-family-secondary;
+    font-family: $font-family-secondary-medium;
     color: $palette-primary-75;
   }
 }

@@ -1,23 +1,20 @@
-//- Все примеси в этом файле должны начинаться c имени блока (header-nav)
-
-mixin header-nav(text, mods)
-
-  //- Принимает:
-  //-   text    {string} - текст
-  //-   mods    {string} - список модификаторов
-  //- Вызов:
-        +header-nav('Текст', 'some-mod')
-
-  -
-    // список модификаторов
-    var allMods = '';
-    if(typeof(mods) !== 'undefined' && mods) {
-      var modsList = mods.split(',');
-      for (var i = 0; i < modsList.length; i++) {
-        allMods = allMods + ' header-nav--' + modsList[i].trim();
-      }
-    }
-
-  .header-nav(class=allMods)&attributes(attributes)
+mixin header-nav
+  .header-nav
     .header-nav__inner
-      block
+      .header-nav__logo
+        include img/logo-toxin.svg
+      .header-nav__menu-nav
+        a(href='#')
+          p Home
+        a(href='#')
+          p About Us
+        a(href='#')
+          p Services
+        a(href='#')
+          p Careers
+        a(href='#')
+          p News
+        a(href='#')
+          p Documentation
+      .header-nav__authorization
+        p fvfvfvfvf

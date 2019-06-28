@@ -45,3 +45,9 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Montserrat-Medium';
+	src: url('../Montserrat-Medium.ttf');
+	font-weight: normal;
+	font-style: normal;
+}

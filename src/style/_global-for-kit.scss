@@ -44,3 +44,7 @@ p {
   font-family: $font-family-secondary;
   color: $palette-primary-75;
 }
+
+a:hover, a {
+  text-decoration: none;
+}
