@@ -9,6 +9,14 @@ body {
   color: $palette-primary-100;
 }
 
+.logo-for-kit {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 30px;
+  top: 30px;
+}
+
 h1, h2 {
 	font-family: $font-family-primary-bold;
 }

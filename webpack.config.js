@@ -3,7 +3,6 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: {
-    'app': __dirname + '/src/app/index.js',
     'colors&type': __dirname + '/src/pages/colors&type/colors&type.js',
     'headers&footers': __dirname + '/src/pages/headers&footers/headers&footers.js'
   }, // webpack entry point. Module to start building dependency graph
@@ -67,11 +66,6 @@ module.exports = {
       ]
   },
   plugins: [  // Array of plugins to apply to build chunk
-      new HtmlWebpackPlugin({
-          template: __dirname + '/src/pages/index.pug',
-          filename: 'index.html',
-          inject: 'body'
-      }),
       new HtmlWebpackPlugin({
           template: __dirname + '/src/pages/colors&type/colors&type.pug',
           filename: 'colors&type.html',
