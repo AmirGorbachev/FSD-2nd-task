@@ -5,7 +5,8 @@
 @import '../../blocks/footer-nav/footer-nav.scss';
 @import '../../blocks/footer/footer.scss';
 
-body {
+.headers-and-footers {
+  height: 100%;
   background: #F4F4F6;
   padding-top: 150px;
 }
@@ -19,5 +20,5 @@ body {
 }
 
 .footer {
-	margin-bottom: 140px;
+  margin-bottom: 140px;
 }
