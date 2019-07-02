@@ -4,6 +4,9 @@
 @import '../../blocks/header-nav/header-nav.scss';
 @import '../../blocks/footer-nav/footer-nav.scss';
 @import '../../blocks/footer/footer.scss';
+/* Material Icons */
+$material-icons-font-path: '~material-icons/iconfont/';
+@import '~material-icons/iconfont/material-icons.scss';
 
 .headers-and-footers {
   height: 100%;
