@@ -1,0 +1,23 @@
+//- Все примеси в этом файле должны начинаться c имени блока (demo)
+
+mixin demo(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +demo('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' demo--' + modsList[i].trim();
+      }
+    }
+
+  .demo(class=allMods)&attributes(attributes)
+    .demo__inner
+      block
