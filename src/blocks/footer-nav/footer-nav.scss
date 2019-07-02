@@ -55,8 +55,14 @@
   }
 }
 .copyright-bar__social {
-  p {
-    font-family: Icons;
-    content:'★';
+  i {
+    font-style: normal;
   }
+}
+
+.facebook {
+  font-family: 'Font Awesome 5 Brands';
+}
+.facebook:before {
+  content: '\f082';
 }
