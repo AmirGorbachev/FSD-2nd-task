@@ -8,21 +8,32 @@ mixin footer-nav
       .footer-nav__menu-nav
         .footer-nav__navigation
           h3 Navigation
-          p About Us
-          p News
-          p Support
-          p Products
+          a(href='#')
+            p About Us
+          a(href='#')
+            p News
+          a(href='#')
+            p Support
+          a(href='#')
+            p Products
         .footer-nav__about
           h3 About Us
-          p Who we are
-          p Our team
-          p Careers
-          p Investors
+          a(href='#')
+            p Who we are
+          a(href='#')
+            p Our team
+          a(href='#')
+            p Careers
+          a(href='#')
+            p Investors
         .footer-nav__support
           h3 Support
-          p Documentation
-          p Community
-          p Get in Touch
+          a(href='#')
+            p Documentation
+          a(href='#')
+            p Community
+          a(href='#')
+            p Get in Touch
       .footer-nav__subscribe
         h3 Subscribe to our newsletter
   .copyright-bar
@@ -30,5 +41,6 @@ mixin footer-nav
       .copyright-bar__copyright
         p Copyright &copy; 2018 Toxin UI Kit. All right reserved.
       .copyright-bar__social
-        p \f0aa
-        i(class="fas fa-arrows-alt-h")
+        .social.twitter
+        .social.facebook
+        .social.instagram
