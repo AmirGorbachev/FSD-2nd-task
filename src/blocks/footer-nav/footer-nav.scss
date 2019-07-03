@@ -7,9 +7,10 @@
 .footer-nav__inner {
   padding: 100px 140px;
   display: flex;
+  flex-wrap: wrap;
 }
 .footer-nav__info {
-  width: 260px;
+  flex-basis: 260px;
   margin-right: 40px;
   p {
     font-family: $font-family-secondary-medium;
@@ -22,7 +23,7 @@
 .footer-nav__menu-nav {
   flex-grow: 1;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   p {
     color: $palette-primary-50;
     margin-bottom: 20px;
@@ -35,10 +36,16 @@
 .footer-nav__navigation,
 .footer-nav__about,
 .footer-nav__support {
-  flex-grow: 1;
+  flex-basis: 33.33%;
 }
 .footer-nav__subscribe{
-  width: 260px;
+  flex-basis: 260px;
+  h3 {
+    margin-bottom: 21px;
+  }
+  p {
+    font-family: $font-family-secondary-medium;
+  }
 }
 /* Copyright&Social*/
 .copyright-bar {
@@ -51,6 +58,7 @@
   height: 100%;
   padding: 0px 140px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
