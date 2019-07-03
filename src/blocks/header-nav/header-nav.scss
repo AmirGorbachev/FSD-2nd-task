@@ -13,15 +13,22 @@
 }
 .header-nav__menu-nav {
   margin: auto 0;
-  a {
-    margin-right: 30px;
-  }
   p {
     display: inline-block;
     color: $palette-primary-50;
     line-height: 17px;
     font-family: $font-family-secondary-medium;
   }
+}
+.drop-down:after {
+  font-family: 'Material Icons';
+  content: 'expand_more';
+  font-size: 24px;
+  float: right;  
+  position: relative; 
+}
+.header-nav__link {
+  margin-right: 30px;
 }
 .header-nav__authorization {
   width: 200px;
