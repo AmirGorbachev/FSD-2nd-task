@@ -18,17 +18,22 @@
   margin: auto 0;
 }
 .header-nav__chapter {
-  margin-right: 30px;
+  margin-right: 20px;
   display: inline-block;
   line-height: 17px;
   font-family: $font-family-secondary-medium;
+  &:not(.header-nav__chapter--drop-down) {
+    margin-right: 30px;
+  }
 }
-.drop-down:after {
-  font-family: 'Material Icons';
-  content: 'expand_more';
-  font-size: 24px;
-  float: right;  
-  position: relative; 
+.header-nav__link {
+  &--drop-down:after {
+    font-family: 'Material Icons';
+    content: 'expand_more';
+    font-size: 24px;
+    float: right;  
+    position: relative; 
+  }
 }
 .header-nav__link {
   color: $palette-primary-50;
