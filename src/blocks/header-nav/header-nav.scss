@@ -6,19 +6,22 @@
 .header-nav__inner {
   padding: 15px 140px;
   display: flex;
+  flex-wrap: wrap;
 }
+/* Лого */
 .header-nav__logo {
   height: 40px;
   flex-grow: 1;
 }
+/* Меню */
 .header-nav__menu-nav {
   margin: auto 0;
-  p {
-    display: inline-block;
-    color: $palette-primary-50;
-    line-height: 17px;
-    font-family: $font-family-secondary-medium;
-  }
+}
+.header-nav__chapter {
+  display: inline-block;
+  color: $palette-primary-50;
+  line-height: 17px;
+  font-family: $font-family-secondary-medium;
 }
 .drop-down:after {
   font-family: 'Material Icons';
@@ -30,6 +33,7 @@
 .header-nav__link {
   margin-right: 30px;
 }
+/* Авторизация */
 .header-nav__authorization {
   width: 200px;
 }
