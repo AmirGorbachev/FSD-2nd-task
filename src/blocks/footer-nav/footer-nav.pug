@@ -8,32 +8,32 @@ mixin footer-nav
       .footer-nav__menu-nav
         .footer-nav__navigation
           h3 Navigation
-          a(href='#')
-            p About Us
-          a(href='#')
-            p News
-          a(href='#')
-            p Support
-          a(href='#')
-            p Products
+          p.footer-nav__chapter 
+            a.footer-nav__link(href='#') About Us
+          p.footer-nav__chapter 
+            a.footer-nav__link(href='#') News
+          p.footer-nav__chapter 
+            a.footer-nav__link(href='#') Support
+          p.footer-nav__chapter 
+            a.footer-nav__link(href='#') Products
         .footer-nav__about
           h3 About Us
-          a(href='#')
-            p Who we are
-          a(href='#')
-            p Our team
-          a(href='#')
-            p Careers
-          a(href='#')
-            p Investors
+          p.footer-nav__chapter 
+            a.footer-nav__link(href='#') Who we are
+          p.footer-nav__chapter 
+            a.footer-nav__link(href='#') Our team
+          p.footer-nav__chapter 
+            a.footer-nav__link(href='#') Careers
+          p.footer-nav__chapter 
+            a.footer-nav__link(href='#') Investors
         .footer-nav__support
           h3 Support
-          a(href='#')
-            p Documentation
-          a(href='#')
-            p Community
-          a(href='#')
-            p Get in Touch
+          p.footer-nav__chapter 
+            a.footer-nav__link(href='#') Documentation
+          p.footer-nav__chapter 
+            a.footer-nav__link(href='#') Community
+          p.footer-nav__chapter 
+            a.footer-nav__link(href='#') Get in Touch
       .footer-nav__subscribe
         h3 Subscribe to our newsletter
         p Receive our latest news and promotions in your inbox!
@@ -42,9 +42,6 @@ mixin footer-nav
       .copyright-bar__copyright
         p Copyright &copy; 2018 Toxin UI Kit. All right reserved.
       .copyright-bar__social
-        a.copyright-bar__link(href='#')
-          .social.twitter
-        a.copyright-bar__link(href='#')
-          .social.facebook
-        a.copyright-bar__link(href='#')
-          .social.instagram
+          a.copyright-bar__link.copyright-bar__link--twitter(href='#')
+          a.copyright-bar__link.copyright-bar__link--facebook(href='#')
+          a.copyright-bar__link.copyright-bar__link--instagram(href='#')

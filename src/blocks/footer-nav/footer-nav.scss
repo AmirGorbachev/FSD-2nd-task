@@ -24,11 +24,6 @@
   flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
-  p {
-    color: $palette-primary-50;
-    margin-bottom: 20px;
-    line-height: 17px;
-  }
   h3 {
     margin-bottom: 21px;
   }
@@ -37,6 +32,16 @@
 .footer-nav__about,
 .footer-nav__support {
   flex-basis: 33.33%;
+}
+.footer-nav__chapter {
+  margin-bottom: 20px;
+  line-height: 17px;
+}
+.footer-nav__link {
+  color: $palette-primary-50;
+  &:visited {
+    color: $palette-primary-50;
+  }
 }
 .footer-nav__subscribe{
   flex-basis: 260px;
@@ -68,24 +73,23 @@
   }
 }
 .copyright-bar__social {
-  .social {
-    font-family: $font-family-brands;
-    display: inline-block;
-    font-size: 24px;
-    line-height: 23px;
-    margin-left: 20px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .twitter:before {
+
+}
+.copyright-bar__link {
+  font-family: $font-family-brands;
+  font-size: 24px;
+  line-height: 23px;
+  margin-left: 20px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &--twitter:before {
     content: '\f099'; 
   }
-  .facebook:before {
+  &--facebook:before {
     content: '\f082';
   }
-  .instagram:before {
+  &--instagram:before {
     content: '\f16d';
   }
 }
-
