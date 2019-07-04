@@ -8,3 +8,28 @@
   padding: 100px 440px;
   text-align: center;
 }
+.footer__logo {
+  height: 40px;
+  margin-bottom: 14px;
+}
+.footer__info {
+  margin-bottom: 25px;
+}
+.footer__social__link {
+  font-family: $font-family-brands;
+  font-size: 24px;
+  line-height: 23px;
+  margin: 0 10px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &--twitter:before {
+    content: '\f099'; 
+  }
+  &--facebook:before {
+    content: '\f082';
+  }
+  &--instagram:before {
+    content: '\f16d';
+  }
+}
