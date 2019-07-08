@@ -4,7 +4,9 @@ const autoprefixer = require('autoprefixer');
 module.exports = {
   entry: {
     'colors&type': __dirname + '/src/pages/colors&type/colors&type.js',
-    'headers&footers': __dirname + '/src/pages/headers&footers/headers&footers.js'
+    'headers&footers': __dirname + '/src/pages/headers&footers/headers&footers.js',
+    'form-elements': __dirname + '/src/pages/form-elements/form-elements.js',
+    'cards': __dirname + '/src/pages/cards/cards.js'
   }, // webpack entry point. Module to start building dependency graph
   output: {
     path: __dirname + '/dist', // Folder to store generated bundle
@@ -69,12 +71,22 @@ module.exports = {
       new HtmlWebpackPlugin({
           template: __dirname + '/src/pages/colors&type/colors&type.pug',
           filename: 'colors&type.html',
-          inject: 'body'
+          inject: 'head'
       }),
       new HtmlWebpackPlugin({
           template: __dirname + '/src/pages/headers&footers/headers&footers.pug',
           filename: 'headers&footers.html',
-          inject: 'body'
+          inject: 'head'
+      }),
+      new HtmlWebpackPlugin({
+          template: __dirname + '/src/pages/form-elements/form-elements.pug',
+          filename: 'form-elements.html',
+          inject: 'head'
+      }),
+      new HtmlWebpackPlugin({
+          template: __dirname + '/src/pages/cards/cards.pug',
+          filename: 'cards.html',
+          inject: 'head'
       })
   ],
   devServer: {  // configuration for webpack-dev-server 
