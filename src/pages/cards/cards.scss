@@ -1,0 +1,27 @@
+@import '../../style/_fonts.css';
+@import '../../style/_variables.scss';
+@import '../../style/_global-for-kit.scss';
+@import '../../blocks/header-nav/header-nav.scss';
+@import '../../blocks/footer-nav/footer-nav.scss';
+@import '../../blocks/footer/footer.scss';
+/* Material Icons */
+$material-icons-font-path: '~material-icons/iconfont/';
+@import '~material-icons/iconfont/material-icons.scss';
+
+.headers-and-footers {
+  height: 100%;
+  background: #F4F4F6;
+  padding-top: 150px;
+}
+
+.header-nav {
+  margin-bottom: 40px;
+}
+
+.copyright-bar {
+  margin-bottom: 40px;
+}
+
+.footer {
+  margin-bottom: 140px;
+}
