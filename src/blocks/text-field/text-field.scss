@@ -1,8 +1,14 @@
-// В этом файле должны быть стили для БЭМ-блока text-field, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .text-field {
-
-  $block-name:                &; // #{$block-name}__element
+  input {
+    width: 320px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 13px 15px;
+    font-size: 14px;
+    font-family: $font-family-secondary;
+  }
+  input::-webkit-input-placeholder {
+    color: $palette-primary-25;
+  }
 }
