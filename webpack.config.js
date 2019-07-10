@@ -71,22 +71,26 @@ module.exports = {
       new HtmlWebpackPlugin({
           template: __dirname + '/src/pages/colors&type/colors&type.pug',
           filename: 'colors&type.html',
-          inject: 'head'
+          inject: 'head',
+          chunks: ['<index>']
       }),
       new HtmlWebpackPlugin({
           template: __dirname + '/src/pages/headers&footers/headers&footers.pug',
           filename: 'headers&footers.html',
-          inject: 'head'
+          inject: 'head',
+          chunks: ['<index>']
       }),
       new HtmlWebpackPlugin({
           template: __dirname + '/src/pages/form-elements/form-elements.pug',
           filename: 'form-elements.html',
-          inject: 'head'
+          inject: 'head',
+          chunks: ['<index>']
       }),
       new HtmlWebpackPlugin({
           template: __dirname + '/src/pages/cards/cards.pug',
           filename: 'cards.html',
-          inject: 'head'
+          inject: 'head',
+          chunks: ['<index>']
       })
   ],
   devServer: {  // configuration for webpack-dev-server 
