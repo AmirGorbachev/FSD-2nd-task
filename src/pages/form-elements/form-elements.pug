@@ -9,3 +9,17 @@ html(lang="ru")
   body
     .logo-for-kit
       include ../../favicon/logo.svg
+    .top-block-group
+      .top-block-group__first-column
+        .block
+          h3.block-name Text field
+          .block-content
+            include ../../blocks/text-field/text-field.pug
+            +text-field("Email")
+        .block
+          h3.block-name Text field
+          .block-content
+            include ../../blocks/text-field/text-field.pug
+            +text-field("This is pretty awesome")
+      .top-block-group__second-column
+      .top-block-group__tertiary-column

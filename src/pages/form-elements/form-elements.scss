@@ -1,3 +1,43 @@
 @import '../../style/_fonts.css';
 @import '../../style/_variables.scss';
 @import '../../style/_global-for-kit.scss';
+@import '../../blocks/text-field/text-field.scss';
+
+body {
+  width: 1440px;
+}
+.top-block-group {
+  padding: 140px;
+  display: flex;
+  justify-content: space-between;
+  p {
+    width: 320px;
+    background-color: green;
+    text-align: center;
+  }
+}
+.top-block-group__first-column {
+  flex-basis: 320px;
+}
+.top-block-group__second-column {
+  flex-basis: 320px;
+}
+.top-block-group__tertiary-column {
+  flex-basis: 320px;
+}
+.block {
+  margin-bottom: 20.44px;
+}
+.block-description {
+  
+}
+.block-name {
+  padding-top: 3px;
+}
+.block-style {
+  font-family: Montserrat-Light;
+  color: $palette-primary-50;
+}
+.block-content {
+	margin-top: 5px;
+}
