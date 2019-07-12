@@ -1,25 +1,43 @@
-doctype html
-html(lang="ru")
-  head
-    meta(charset="utf-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(rel="shortcut icon" href="../../favicon/logo.svg")
-    title Form-Elements
-    script(src="form-elements.js")
-  body
-    .logo-for-kit
-      include ../../favicon/logo.svg
-    .top-block-group
-      .top-block-group__first-column
-        .block
-          h3.block-name Text field
-          .block-content
-            include ../../blocks/text-field/text-field.pug
-            +text-field("Email")
-        .block
-          h3.block-name Text field
-          .block-content
-            include ../../blocks/text-field/text-field.pug
-            +text-field("This is pretty awesome")
-      .top-block-group__second-column
-      .top-block-group__tertiary-column
+extends ../../pug/template.pug
+block head
+  title Form-Elements
+  script(src="form-elements.js")
+block body
+  .logo-for-kit
+    include ../../favicon/logo.svg
+  .top-block-group
+    .top-block-group__first-column
+      .block
+        h3.block-name Text field
+        .block-content
+          input.text-field(type="email", placeholder="Email")
+      .block
+        h3.block-name Text field
+        .block-content
+          input.text-field(type="email", placeholder="This is pretty awesome")
+      .block
+        h3.block-name Dropdown
+        .block-content
+          input.text-field(type="email", placeholder="This is pretty awesome")
+      .block
+        h3.block-name Masked text field
+        .block-content
+          input.text-field(type="email", placeholder="This is pretty awesome")
+      .block
+        h3.block-name Date dropdown
+        .block-content
+          input.text-field(type="email", placeholder="This is pretty awesome")
+      .block
+        h3.block-name Date dropdown
+        .block-content
+          input.text-field(type="email", placeholder="This is pretty awesome")
+      .block
+        h3.block-name Filter date dropdown
+        .block-content
+          input.text-field(type="email", placeholder="This is pretty awesome")
+      .block
+        h3.block-name Subscription text field
+        .block-content
+          input.text-field(type="email", placeholder="This is pretty awesome")
+    .top-block-group__second-column
+    .top-block-group__tertiary-column
