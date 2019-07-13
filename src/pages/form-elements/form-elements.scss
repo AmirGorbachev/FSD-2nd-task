@@ -1,8 +1,14 @@
 @import '../../style/_fonts.css';
 @import '../../style/_variables.scss';
 @import '../../style/_global-for-kit.scss';
+/* Подключение стилей БЭМ-блоков */
 @import '../../blocks/text-field/text-field.scss';
-
+/*
+@import '../../blocks/dropdown/dropdown.pug';
+@import '../../blocks/date-dropdown/date-dropdown.pug';
+@import '../../blocks/filter-date-dropdown/filter-date-dropdown.pug';
+@import '../../blocks/subscription-text-field/subscription-text-field.pug';
+*/
 body {
   width: 1440px;
 }
@@ -26,18 +32,22 @@ body {
   flex-basis: 320px;
 }
 .block {
-  margin-bottom: 20.44px;
+  margin-bottom: 18px;
+  &:nth-child(4),
+  &:nth-child(5),
+  &:nth-child(6) {
+    margin-bottom: 38px;
+  }
 }
 .block-description {
   
 }
-.block-name {
-  padding-top: 3px;
+.block__name {
+  line-height: 15px;
+  &:first-child {
+    padding-top: 3px;
+  }
 }
-.block-style {
-  font-family: Montserrat-Light;
-  color: $palette-primary-50;
-}
-.block-content {
+.block__content {
 	margin-top: 5px;
 }

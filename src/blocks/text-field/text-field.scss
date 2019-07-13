@@ -9,6 +9,9 @@
   &::-webkit-input-placeholder {
     color: $palette-primary-25;
   }
+  &:hover::-webkit-input-placeholder {
+    color: $palette-primary-75;
+  }
   &:hover {
     border: 1px solid $palette-primary-50;
   }

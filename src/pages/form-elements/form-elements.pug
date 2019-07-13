@@ -1,4 +1,9 @@
 extends ../../pug/template.pug
+//- include ../../blocks/dropdown/dropdown.pug
+//- include ../../blocks/date-dropdown/date-dropdown.pug
+//- include ../../blocks/filter-date-dropdown/filter-date-dropdown.pug
+//- include ../../blocks/subscription-text-field/subscription-text-field.pug
+
 block head
   title Form-Elements
   script(src="form-elements.js")
@@ -8,36 +13,36 @@ block body
   .top-block-group
     .top-block-group__first-column
       .block
-        h3.block-name Text field
-        .block-content
+        h3.block__name Text field
+        .block__content
+          input.text-field(type="text", placeholder="Email")
+      .block
+        h3.block__name Text field
+        .block__content
+          input.text-field(type="text", placeholder="This is pretty awesome")
+      .block
+        h3.block__name Dropdown
+        .block__content
+          input.text-field(type="text", placeholder="This is pretty awesome")
+      .block
+        h3.block__name Masked text field
+        .block__content
+          input.text-field(type="text", placeholder="ДД.ММ.ГГГГ")
+      //.block
+        h3.block__name Date dropdown
+        .block__content
+          input.text-field(type="text", placeholder="This is pretty awesome")
+      .block
+        h3.block__name Date dropdown
+        .block__content
+          input.text-field(type="text", placeholder="This is pretty awesome")
+      .block
+        h3.block__name Filter date dropdown
+        .block__content
+          input.text-field(type="text", placeholder="This is pretty awesome")
+      .block
+        h3.block__name Subscription text field
+        .block__content
           input.text-field(type="email", placeholder="Email")
-      .block
-        h3.block-name Text field
-        .block-content
-          input.text-field(type="email", placeholder="This is pretty awesome")
-      .block
-        h3.block-name Dropdown
-        .block-content
-          input.text-field(type="email", placeholder="This is pretty awesome")
-      .block
-        h3.block-name Masked text field
-        .block-content
-          input.text-field(type="email", placeholder="This is pretty awesome")
-      .block
-        h3.block-name Date dropdown
-        .block-content
-          input.text-field(type="email", placeholder="This is pretty awesome")
-      .block
-        h3.block-name Date dropdown
-        .block-content
-          input.text-field(type="email", placeholder="This is pretty awesome")
-      .block
-        h3.block-name Filter date dropdown
-        .block-content
-          input.text-field(type="email", placeholder="This is pretty awesome")
-      .block
-        h3.block-name Subscription text field
-        .block-content
-          input.text-field(type="email", placeholder="This is pretty awesome")
     .top-block-group__second-column
     .top-block-group__tertiary-column
