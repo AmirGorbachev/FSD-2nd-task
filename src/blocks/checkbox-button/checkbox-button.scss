@@ -1,8 +1,34 @@
-// В этом файле должны быть стили для БЭМ-блока checkbox-button, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
-.checkbox-button {
-
-  $block-name:                &; // #{$block-name}__element
+.checkbox-button__label {
+  cursor: pointer;
 }
+.checkbox-button__checkbox {
+  display: none;
+}
+.checkbox-button__button {
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 9px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+}
+.checkbox-button__button::after {
+  font-family: 'Material Icons';
+  content: 'done';
+  font-size: 0px;
+  position: absolute;
+  top: -3px;
+  left: 3px;
+}
+.checkbox-button__checkbox:checked+.checkbox-button__button::after {
+  font-size: 12px;
+}
+.checkbox-button__text {
+  display: inline-block;
+  vertical-align: middle;	
+  max-width: 15em;
+}
+

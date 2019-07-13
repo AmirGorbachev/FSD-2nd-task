@@ -1,44 +1,53 @@
 @import '../../style/_fonts.css';
 @import '../../style/_variables.scss';
 @import '../../style/_global-for-kit.scss';
+/* Material Icons */
+$material-icons-font-path: '~material-icons/iconfont/';
+@import '~material-icons/iconfont/material-icons.scss';
 /* Подключение стилей БЭМ-блоков */
 @import '../../blocks/text-field/text-field.scss';
+@import '../../blocks/checkbox-button/checkbox-button.scss';
+@import '../../blocks/radio-button/radio-button.scss';
 /*
-@import '../../blocks/dropdown/dropdown.pug';
-@import '../../blocks/date-dropdown/date-dropdown.pug';
-@import '../../blocks/filter-date-dropdown/filter-date-dropdown.pug';
-@import '../../blocks/subscription-text-field/subscription-text-field.pug';
+@import '../../blocks/dropdown/dropdown.scss';
+@import '../../blocks/date-dropdown/date-dropdown.scss';
+@import '../../blocks/filter-date-dropdown/filter-date-dropdown.scss';
+@import '../../blocks/subscription-text-field/subscription-text-field.scss';
 */
+
+
 body {
-  width: 1440px;
+  max-width: 1440px;
 }
 .top-block-group {
   padding: 140px;
   display: flex;
   justify-content: space-between;
-  p {
-    width: 320px;
-    background-color: green;
-    text-align: center;
-  }
 }
 .top-block-group__first-column {
   flex-basis: 320px;
+  .block {
+    margin-bottom: 18px;
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      margin-bottom: 38px;
+    }
+  }
 }
 .top-block-group__second-column {
   flex-basis: 320px;
+  margin-left: 55px;
+  .block {
+    .block__name {
+      padding-bottom: 8px;
+    }
+  }
 }
 .top-block-group__tertiary-column {
   flex-basis: 320px;
 }
-.block {
-  margin-bottom: 18px;
-  &:nth-child(4),
-  &:nth-child(5),
-  &:nth-child(6) {
-    margin-bottom: 38px;
-  }
-}
+
 .block-description {
   
 }
@@ -50,4 +59,7 @@ body {
 }
 .block__content {
 	margin-top: 5px;
+  .checkbox-button {
+    margin-bottom: 5px;
+  }
 }

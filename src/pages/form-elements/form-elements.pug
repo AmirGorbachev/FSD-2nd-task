@@ -3,6 +3,8 @@ extends ../../pug/template.pug
 //- include ../../blocks/date-dropdown/date-dropdown.pug
 //- include ../../blocks/filter-date-dropdown/filter-date-dropdown.pug
 //- include ../../blocks/subscription-text-field/subscription-text-field.pug
+include ../../blocks/checkbox-button/checkbox-button.pug
+include ../../blocks/radio-button/radio-button.pug
 
 block head
   title Form-Elements
@@ -45,4 +47,24 @@ block body
         .block__content
           input.text-field(type="email", placeholder="Email")
     .top-block-group__second-column
+      .block
+        h3.block__name Checkbox buttons
+        .block__content
+          +checkbox-button("Можно курить")
+          +checkbox-button("Можно с питомцами", "checked")
+          +checkbox-button("Можно пригласить гостей (до 10 человек)", "checked")
+      .block
+        h3.block__name Radio buttons
+        .block__content
+          +radio-button("Мужчина", "checked")
+          +radio-button("Женщина", "checked")
+      .block
+        h3.block__name Toggle
+        .block__content
+      .block
+        h3.block__name Like button
+        .block__content
+      .block
+        h3.block__name Rate button
+        .block__content
     .top-block-group__tertiary-column

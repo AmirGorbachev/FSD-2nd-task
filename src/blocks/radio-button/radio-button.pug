@@ -1,23 +1,6 @@
-//- Все примеси в этом файле должны начинаться c имени блока (radio-button)
-
-mixin radio-button(text, mods)
-
-  //- Принимает:
-  //-   text    {string} - текст
-  //-   mods    {string} - список модификаторов
-  //- Вызов:
-        +radio-button('Текст', 'some-mod')
-
-  -
-    // список модификаторов
-    var allMods = '';
-    if(typeof(mods) !== 'undefined' && mods) {
-      var modsList = mods.split(',');
-      for (var i = 0; i < modsList.length; i++) {
-        allMods = allMods + ' radio-button--' + modsList[i].trim();
-      }
-    }
-
-  .radio-button(class=allMods)&attributes(attributes)
-    .radio-button__inner
-      block
+mixin radio-button(text, checked)
+  p.radio-button
+    label.radio-button__label
+      input.radio-button__checkbox(type="radio", checked=checked)
+      span.radio-button__button
+      span.radio-button__text #{text}
