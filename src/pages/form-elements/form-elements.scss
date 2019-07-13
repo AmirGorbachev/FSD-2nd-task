@@ -8,6 +8,7 @@ $material-icons-font-path: '~material-icons/iconfont/';
 @import '../../blocks/text-field/text-field.scss';
 @import '../../blocks/checkbox-button/checkbox-button.scss';
 @import '../../blocks/radio-button/radio-button.scss';
+@import '../../blocks/toggle/toggle.scss';
 /*
 @import '../../blocks/dropdown/dropdown.scss';
 @import '../../blocks/date-dropdown/date-dropdown.scss';
@@ -62,4 +63,7 @@ body {
   .checkbox-button {
     margin-bottom: 5px;
   }
+}
+.checkbox-button__text {
+  max-width: 192px;
 }
