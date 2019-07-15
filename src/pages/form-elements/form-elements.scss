@@ -1,6 +1,10 @@
 @import '../../style/_fonts.css';
 @import '../../style/_variables.scss';
 @import '../../style/_global-for-kit.scss';
+/* Плагин - jQuery UI */
+@import '../../plugins/jquery-ui.min.css';
+@import '../../plugins/jquery-ui.structure.min.css';
+@import '../../plugins/jquery-ui.theme.min.css';
 /* Material Icons */
 $material-icons-font-path: '~material-icons/iconfont/';
 @import '~material-icons/iconfont/material-icons.scss';
@@ -11,6 +15,7 @@ $material-icons-font-path: '~material-icons/iconfont/';
 @import '../../blocks/toggle/toggle.scss';
 @import '../../blocks/like-button/like-button.scss';
 @import '../../blocks/rate-button/rate-button.scss';
+@import '../../blocks/range-slider/range-slider.scss';
 /*
 @import '../../blocks/dropdown/dropdown.scss';
 @import '../../blocks/date-dropdown/date-dropdown.scss';

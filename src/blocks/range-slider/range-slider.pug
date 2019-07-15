@@ -1,23 +1,5 @@
-//- Все примеси в этом файле должны начинаться c имени блока (range-slider)
-
-mixin range-slider(text, mods)
-
-  //- Принимает:
-  //-   text    {string} - текст
-  //-   mods    {string} - список модификаторов
-  //- Вызов:
-        +range-slider('Текст', 'some-mod')
-
-  -
-    // список модификаторов
-    var allMods = '';
-    if(typeof(mods) !== 'undefined' && mods) {
-      var modsList = mods.split(',');
-      for (var i = 0; i < modsList.length; i++) {
-        allMods = allMods + ' range-slider--' + modsList[i].trim();
-      }
-    }
-
-  .range-slider(class=allMods)&attributes(attributes)
-    .range-slider__inner
-      block
+mixin range-slider
+  p
+    label(for="amount") Price range:
+    input#amount(type="text" readonly="" style="border:0; color:#f6931f; font-weight:bold;")
+  #slider-range
