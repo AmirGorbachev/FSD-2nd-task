@@ -64,6 +64,12 @@ module.exports = {
             use: [{
                 loader: 'file-loader'
             }]
+          },
+          {
+            test: /\.png$/,
+            use: [{
+                loader: 'file-loader'
+            }]
           }
       ]
   },
