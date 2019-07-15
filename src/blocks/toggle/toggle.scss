@@ -1,4 +1,4 @@
-.toggle {
+.switch-btn {
     display: inline-block;
     width: 72px; /* ширина */
     height: 38px; /* высота */
@@ -12,7 +12,7 @@
     position: relative;
     transition-duration: 300ms; /* анимация */
 }
-.toggle::after {
+.switch-btn::after {
     content: "";
     height: 32px; /* высота кнопки */
     width: 32px; /* ширина кнопки */
@@ -24,9 +24,9 @@
     position: absolute;
     z-index: 1;
 }
-.toggle--on {
+.switch-on {
     background: #118c4e;
 }
-.toggle--on::after {
+.switch-on::after {
     left: 37px;
 }

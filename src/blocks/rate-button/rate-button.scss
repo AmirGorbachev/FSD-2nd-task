@@ -1,8 +1,17 @@
-// В этом файле должны быть стили для БЭМ-блока rate-button, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .rate-button {
-
-  $block-name:                &; // #{$block-name}__element
+  display: flex;
+}
+.rate-button__star {
+  &::after {
+    font-family: 'Material Icons';
+    content: 'star_border';
+    font-size: 24px;
+    line-height: 20px;
+  }
+  &--active::after {
+    font-family: 'Material Icons';
+    content: 'star';
+    font-size: 24px;
+    line-height: 20px;
+  }
 }

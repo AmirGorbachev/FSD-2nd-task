@@ -1,23 +1,7 @@
-//- Все примеси в этом файле должны начинаться c имени блока (rate-button)
-
-mixin rate-button(text, mods)
-
-  //- Принимает:
-  //-   text    {string} - текст
-  //-   mods    {string} - список модификаторов
-  //- Вызов:
-        +rate-button('Текст', 'some-mod')
-
-  -
-    // список модификаторов
-    var allMods = '';
-    if(typeof(mods) !== 'undefined' && mods) {
-      var modsList = mods.split(',');
-      for (var i = 0; i < modsList.length; i++) {
-        allMods = allMods + ' rate-button--' + modsList[i].trim();
-      }
-    }
-
-  .rate-button(class=allMods)&attributes(attributes)
-    .rate-button__inner
-      block
+mixin rate-button(rating)
+  .rate-button
+    - for (var x = 0; x < rating; x++)
+      .rate-button__star--active
+    - for (var x = rating; x < 5; x++)
+      .rate-button__star
+//- Вызываем как +rate-button(rating), где rating = нужное число звёзд от 0 до 5

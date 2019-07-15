@@ -6,6 +6,8 @@ extends ../../pug/template.pug
 include ../../blocks/checkbox-button/checkbox-button.pug
 include ../../blocks/radio-button/radio-button.pug
 include ../../blocks/toggle/toggle.pug
+include ../../blocks/like-button/like-button.pug
+include ../../blocks/rate-button/rate-button.pug
 
 block head
   title Form-Elements
@@ -66,9 +68,12 @@ block body
       .block
         h3.block__name Like button
         .block__content
+          +like-button(2)
       .block
         h3.block__name Rate button
         .block__content
+          +rate-button(4)
+          +rate-button(5)
     .top-block-group__tertiary-column
       .block
         h3.block__name Range slider
