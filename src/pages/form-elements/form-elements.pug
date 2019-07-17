@@ -10,6 +10,7 @@ include ../../blocks/toggle/toggle.pug
 include ../../blocks/like-button/like-button.pug
 include ../../blocks/rate-button/rate-button.pug
 include ../../blocks/range-slider/range-slider.pug
+include ../../blocks/button/button.pug
 
 block head
   title Form-Elements
@@ -81,9 +82,14 @@ block body
         h3.block__name Range slider
         .block__content
           +range-slider
-      .block
+      .block.block--button
         h3.block__name Buttons
         .block__content
+          +btn-full("Click me")
+        .block__content
+          +btn-border("Click me")
+        .block__content
+          +btn-min("Click me")
       .block
         h3.block__name Pagination
         .block__content

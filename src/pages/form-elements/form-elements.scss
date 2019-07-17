@@ -16,6 +16,7 @@ $material-icons-font-path: '~material-icons/iconfont/';
 @import '../../blocks/like-button/like-button.scss';
 @import '../../blocks/rate-button/rate-button.scss';
 @import '../../blocks/range-slider/range-slider.scss';
+@import '../../blocks/button/button.scss';
 /*
 @import '../../blocks/dropdown/dropdown.scss';
 @import '../../blocks/date-dropdown/date-dropdown.scss';
@@ -73,4 +74,17 @@ body {
 }
 .checkbox-button__text {
   max-width: 192px;
+}
+
+/* Доп стили для каждого блока */
+.block--button {
+  display: flex;
+  flex-direction: column;
+  .block__name {
+    margin-bottom: 16px;
+  }
+  .block__content {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
 }

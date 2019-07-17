@@ -1,23 +1,11 @@
-//- Все примеси в этом файле должны начинаться c имени блока (button)
+mixin btn-full(value)
+  .btn.btn-full
+    h3.btn-full__value #{value}
 
-mixin button(text, mods)
+mixin btn-border(value)
+  .btn.btn-border
+    h3.btn-border__value #{value}
 
-  //- Принимает:
-  //-   text    {string} - текст
-  //-   mods    {string} - список модификаторов
-  //- Вызов:
-        +button('Текст', 'some-mod')
-
-  -
-    // список модификаторов
-    var allMods = '';
-    if(typeof(mods) !== 'undefined' && mods) {
-      var modsList = mods.split(',');
-      for (var i = 0; i < modsList.length; i++) {
-        allMods = allMods + ' button--' + modsList[i].trim();
-      }
-    }
-
-  .button(class=allMods)&attributes(attributes)
-    .button__inner
-      block
+mixin btn-min(value)
+  .btn.btn-min
+    h3.btn-min__value #{value}
