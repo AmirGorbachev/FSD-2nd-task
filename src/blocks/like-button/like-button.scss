@@ -31,7 +31,8 @@
     content: 'favorite';
     color: $palette-secondary;
   }
-}
-.like-button__amount--active {
-  color: $palette-secondary;
+  .like-button__amount {
+    color: $palette-secondary;
+    color: red;
+  }
 }
