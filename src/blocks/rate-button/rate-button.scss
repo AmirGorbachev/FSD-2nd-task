@@ -2,6 +2,9 @@
   display: flex;
 }
 .rate-button__star {
+  background: $linear-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   &::after {
     font-family: 'Material Icons';
     content: 'star_border';
