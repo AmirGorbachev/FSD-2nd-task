@@ -1,24 +1,37 @@
 .like-button {
+  cursor: pointer;
+  display: inline-block;
   width: 40px;
   height: 20px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid $palette-primary-25;
   box-sizing: border-box;
   border-radius: 10px;
   &::before {
-  font-family: 'Material Icons';
-  content: 'favorite_border';
-  font-size: 10px;
-  position: absolute;
-  padding: 4px;
-  color: rgba(31, 32, 65, 0.25);
+    font-family: 'Material Icons';
+    content: 'favorite_border';
+    font-size: 10px;
+    position: absolute;
+    padding: 4px;
+    color: $palette-primary-25;
   }
 }
 .like-button__amount {  
   font-size: 9px;
   line-height: 12px;
-  color: rgba(31, 32, 65, 0.25);
+  color: $palette-primary-50;
   text-align: center;
   padding-top: 3px;
   padding-bottom: 4px;
   padding-left: 9px; 
+}
+/* Активное состояние */
+.like-button--active {
+  border: 1px solid $palette-secondary;
+  &::before {
+    content: 'favorite';
+    color: $palette-secondary;
+  }
+}
+.like-button__amount--active {
+  color: $palette-secondary;
 }
