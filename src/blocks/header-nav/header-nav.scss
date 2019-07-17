@@ -22,6 +22,7 @@
   display: inline-block;
   line-height: 17px;
   font-family: $font-family-secondary-medium;
+  letter-spacing: -0.018em;
   &:not(.header-nav__chapter--drop-down) {
     margin-right: 30px;
   }

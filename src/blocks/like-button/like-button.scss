@@ -7,7 +7,7 @@
   box-sizing: border-box;
   border-radius: 10px;
   &::before {
-    font-family: 'Material Icons';
+    font-family: $font-family-icons;
     content: 'favorite_border';
     font-size: 10px;
     position: absolute;

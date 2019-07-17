@@ -9,14 +9,14 @@
   margin-right: 9px;
   width: 20px;
   height: 20px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid $palette-primary-25;
   box-sizing: border-box;
   border-radius: 4px;
   position: relative;
   vertical-align: middle;
 }
 .checkbox-button__button::after {
-  font-family: 'Material Icons';
+  font-family: $font-family-icons;
   content: 'done';
   font-size: 0px;
   position: absolute;
