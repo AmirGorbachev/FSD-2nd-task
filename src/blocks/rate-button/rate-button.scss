@@ -1,4 +1,7 @@
 .rate-button {
+  display: inline-block;
+}
+.rate-button__inner {
   display: flex;
 }
 .rate-button__star {
