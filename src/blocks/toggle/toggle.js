@@ -1,12 +1,7 @@
 var $ = require("jquery");
 
 $(function () {
-    $('.switch-btn').click(function () {
-        $(this).toggleClass('switch-on');
-        if ($(this).hasClass('switch-on')) {
-            $(this).trigger('on.switch');
-        } else {
-            $(this).trigger('off.switch');
-        }
+    $('.toggle__switch').click(function () {
+        $(this).toggleClass('toggle__switch--on');
     });
 });

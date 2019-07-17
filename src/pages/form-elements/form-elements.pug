@@ -36,6 +36,7 @@ block body
         h3.block__name Masked text field
         .block__content
           input.text-field(type="text", placeholder="ДД.ММ.ГГГГ")
+      .block
         h3.block__name Date dropdown
         .block__content
           input.text-field(type="text", placeholder="This is pretty awesome")
@@ -66,7 +67,9 @@ block body
       .block
         h3.block__name Toggle
         .block__content
-          +toggle
+          +toggle--on("Получать спецпредложения")
+        .block__content
+          +toggle("Получать спецпредложения")
       .block.block--like
         h3.block__name Like button
         .block__content

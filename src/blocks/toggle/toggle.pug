@@ -1,3 +1,11 @@
-mixin toggle
-  .switch-btn
-  .switch-btn.switch-on
+mixin toggle(value)
+  .toggle
+    .toggle__inner
+      .toggle__switch
+    p.toggle__value #{value}
+
+mixin toggle--on(value)
+  .toggle
+    .toggle__inner
+      .toggle__switch.toggle__switch--on
+    p.toggle__value #{value}
