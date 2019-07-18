@@ -1,6 +1,54 @@
 .range-slider {
-
+  position: relative;
 }
-#slider-range {
+.slider-range {
+  width: 266px;
+  height: 6px;  
+  background: $background-color;
+  border: 1px solid $palette-primary-25;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.range__inner {
+  width: 266px;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: -38px;
+  left: 11px;
+  z-index: 1;
+}
+.range-slider__label {
+  border:0;
+  color: $palette-primary-50;
+  font-weight:bold;
+  outline: none;
+  cursor: default;
+  font-family: $font-family-secondary;
+  font-size: 12px;
+  line-height: 15px;
+}
 
+/* Стилизация плагина */
+.range-slider {
+  .ui-state-default, 
+  .ui-widget-content .ui-state-default, 
+  .ui-widget-header .ui-state-default, 
+  .ui-button, 
+  html .ui-button.ui-state-disabled:hover, 
+  html .ui-button.ui-state-disabled:active {
+    width: 12px;
+    height: 12px;
+    border: 2px solid $background-color;
+    border-radius: 10px;
+    background: $linear-gradient-secondary;
+    outline: none;
+    top: -6px;
+  }
+  .ui-slider .ui-slider-range {
+    border-radius: 3px;
+    background: $linear-gradient-secondary;
+    top: -1px;
+    height: 6px;
+  }
 }
