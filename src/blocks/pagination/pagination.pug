@@ -1,23 +1,16 @@
-//- Все примеси в этом файле должны начинаться c имени блока (pagination)
-
-mixin pagination(text, mods)
-
-  //- Принимает:
-  //-   text    {string} - текст
-  //-   mods    {string} - список модификаторов
-  //- Вызов:
-        +pagination('Текст', 'some-mod')
-
-  -
-    // список модификаторов
-    var allMods = '';
-    if(typeof(mods) !== 'undefined' && mods) {
-      var modsList = mods.split(',');
-      for (var i = 0; i < modsList.length; i++) {
-        allMods = allMods + ' pagination--' + modsList[i].trim();
-      }
-    }
-
-  .pagination(class=allMods)&attributes(attributes)
+mixin pagination
+  .pagination
     .pagination__inner
-      block
+      .pagination__element
+        p.pagination__page-number.pagination__page-number--active 1
+      .pagination__element
+        p.pagination__page-number 2
+      .pagination__element
+        p.pagination__page-number 3
+      .pagination__element
+        p.pagination__page-number ...
+      .pagination__element
+        p.pagination__page-number 15
+      .pagination__element
+        .pagination__forward arrow_forward
+    p.pagination__info 1 – 12 из 100+ вариантов аренды

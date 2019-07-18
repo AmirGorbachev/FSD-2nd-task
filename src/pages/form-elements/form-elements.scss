@@ -1,13 +1,16 @@
 @import '../../style/_fonts.css';
 @import '../../style/_variables.scss';
 @import '../../style/_global-for-kit.scss';
+
 /* Плагин - jQuery UI */
 @import '../../plugins/jquery-ui.min.css';
 @import '../../plugins/jquery-ui.structure.min.css';
 @import '../../plugins/jquery-ui.theme.min.css';
+
 /* Material Icons */
 $material-icons-font-path: '~material-icons/iconfont/';
 @import '~material-icons/iconfont/material-icons.scss';
+
 /* Подключение стилей БЭМ-блоков */
 @import '../../blocks/text-field/text-field.scss';
 @import '../../blocks/checkbox-button/checkbox-button.scss';
@@ -17,6 +20,7 @@ $material-icons-font-path: '~material-icons/iconfont/';
 @import '../../blocks/rate-button/rate-button.scss';
 @import '../../blocks/range-slider/range-slider.scss';
 @import '../../blocks/button/button.scss';
+@import '../../blocks/pagination/pagination.scss';
 /*
 @import '../../blocks/dropdown/dropdown.scss';
 @import '../../blocks/date-dropdown/date-dropdown.scss';
