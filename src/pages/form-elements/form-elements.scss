@@ -33,68 +33,75 @@ body {
   max-width: 1440px;
 }
 .top-block-group {
-  padding: 140px;
+  padding: 140px 141px;
   display: flex;
   justify-content: space-between;
+  padding-top: 143px;
 }
+/* Первая колонка */
 .top-block-group__first-column {
   flex-basis: 320px;
-  .block {
-    margin-bottom: 18px;
-    &:nth-child(4),
-    &:nth-child(5),
-    &:nth-child(6) {
-      margin-bottom: 38px;
-    }
+}
+.first-column__block {
+  margin-bottom: 20px;
+  &:nth-child(4) {
+    padding-top: 2.5px; 
+  }
+  &:nth-child(4),
+  &:nth-child(5),
+  &:nth-child(6) {
+    margin-bottom: 38px;
   }
 }
+.first-column__name {
+  line-height: 15px;
+}
+.first-column__content {
+  margin-top: 5px;
+}
+/* Вторая колонка */
 .top-block-group__second-column {
   flex-basis: 320px;
   margin-left: 55px;
-  .block {
-    .block__name {
-      padding-bottom: 8px;
-    }
-  }
 }
+.second-column__block {
+  margin-bottom: 40px;  
+}
+/* Третья колонка */
 .top-block-group__tertiary-column {
   flex-basis: 320px;
 }
-
-.block-description {
-  
+.tertiary-column__block {
+  margin-bottom: 40px;
 }
-.block__name {
-  line-height: 15px;
-  &:first-child {
-    padding-top: 3px;
-  }
+.second-column__name,
+.tertiary-column__name {
+  margin-bottom: 16px;
 }
-.block__content {
-	margin-top: 5px;
-  .checkbox-button {
-    margin-bottom: 5px;
-  }
-}
+/* Доп стили для каждого блока */
 .checkbox-button__text {
   max-width: 192px;
 }
-
-/* Доп стили для каждого блока */
 .block--button {
   display: flex;
   flex-direction: column;
-  .block__name {
-    margin-bottom: 16px;
-  }
-  .block__content {
-    margin-top: 0px;
+  .tertiary-column__content {
     margin-bottom: 30px;
   }
 }
 .block--like {
-  .block__content {
+  .second-column__content {
     display: inline-block;
     margin-right: 10px;
+  }
+}
+.block--radio {
+  .second-column__name {
+    margin-bottom: 13px;
+  }
+  .second-column__content {
+    display: flex;
+    width: 221px;
+    justify-content: space-between;
   }
 }

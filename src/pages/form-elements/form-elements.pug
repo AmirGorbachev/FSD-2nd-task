@@ -21,82 +21,84 @@ block body
   .logo-for-kit
     include ../../favicon/logo.svg
   .top-block-group
-    .top-block-group__first-column
-      .block
-        h3.block__name Text field
-        .block__content
+    .top-block-group__first-column.first-column
+      .first-column__block
+        h3.first-column__name Text field
+        .first-column__content
           input.text-field(type="text", placeholder="Email")
-      .block
-        h3.block__name Text field
-        .block__content
+      .first-column__block
+        h3.first-column__name Text field
+        .first-column__content
           input.text-field(type="text", placeholder="This is pretty awesome")
-      .block
-        h3.block__name Dropdown
-        .block__content
+      .first-column__block
+        h3.first-column__name Dropdown
+        .first-column__content
           input.text-field(type="text", placeholder="This is pretty awesome")
-      .block
-        h3.block__name Masked text field
-        .block__content
+      .first-column__block
+        h3.first-column__name Masked text field
+        .first-column__content
           input.text-field(type="text", placeholder="ДД.ММ.ГГГГ")
-      .block
-        h3.block__name Date dropdown
-        .block__content
+      .first-column__block
+        h3.first-column__name Date dropdown
+        .first-column__content
           input.text-field(type="text", placeholder="This is pretty awesome")
-      .block
-        h3.block__name Date dropdown
-        .block__content
+      .first-column__block
+        h3.first-column__name Date dropdown
+        .first-column__content
           input.text-field(type="text", placeholder="This is pretty awesome")
-      .block
-        h3.block__name Filter date dropdown
-        .block__content
+      .first-column__block
+        h3.first-column__name Filter date dropdown
+        .first-column__content
           input.text-field(type="text", placeholder="This is pretty awesome")
-      .block
-        h3.block__name Subscription text field
-        .block__content
+      .first-column__block
+        h3.first-column__name Subscription text field
+        .first-column__content
           input.text-field(type="email", placeholder="Email")
-    .top-block-group__second-column
-      .block
-        h3.block__name Checkbox buttons
-        .block__content
+    .top-block-group__second-column.second-column
+      .second-column__block
+        h3.second-column__name Checkbox buttons
+        .second-column__content
           +checkbox-button("Можно курить")
           +checkbox-button("Можно с питомцами", "checked")
           +checkbox-button("Можно пригласить гостей (до 10 человек)", "checked")
-      .block
-        h3.block__name Radio buttons
-        .block__content
+      .second-column__block.block--radio
+        h3.second-column__name Radio buttons
+        .second-column__content
           +radio-button("gender", "male", "Мужчина", "checked")
           +radio-button("gender", "female","Женщина")
-      .block
-        h3.block__name Toggle
-        .block__content
+      .second-column__block
+        h3.second-column__name Toggle
+        .second-column__content
           +toggle--on("Получать спецпредложения")
-        .block__content
+        .second-column__content
           +toggle("Получать спецпредложения")
-      .block.block--like
-        h3.block__name Like button
-        .block__content
+      .second-column__block.block--like
+        h3.second-column__name Like button
+        .second-column__content
           +like-button(2)
-        .block__content
+        .second-column__content
           +like-button--active(12)
-      .block
-        h3.block__name Rate button
-        .block__content
+      .second-column__block
+        h3.second-column__name Rate button
+        .second-column__content
           +rate-button(4)
           +rate-button(5)
-    .top-block-group__tertiary-column
-      .block
-        h3.block__name Range slider
-        .block__content
+    .top-block-group__tertiary-column.tertiary-column
+      .tertiary-column__block
+        h3.tertiary-column__name Range slider
+        .tertiary-column__content
           +range-slider
-      .block.block--button
-        h3.block__name Buttons
-        .block__content
+      .tertiary-column__block.block--button
+        h3.tertiary-column__name Buttons
+        .tertiary-column__content
           +btn-full("Click me")
-        .block__content
+        .tertiary-column__content
           +btn-border("Click me")
-        .block__content
+        .tertiary-column__content
           +btn-min("Click me")
-      .block
-        h3.block__name Pagination
-        .block__content
+        .tertiary-column__content
+          +btn-full("Click me")
+      .tertiary-column__block
+        h3.tertiary-column__name Pagination
+        .tertiary-column__content
           +pagination
