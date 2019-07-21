@@ -1,3 +1,7 @@
+.checkbox-button {
+  font-size: 14px;
+  line-height: 18px;
+}
 .checkbox-button__label {
   cursor: pointer;
 }
@@ -16,15 +20,16 @@
   vertical-align: middle;
 }
 .checkbox-button__button::after {
+  height: 18px;
   font-family: $font-family-icons;
   content: 'done';
   font-size: 0px;
+  line-height: 18px;
   background: $linear-gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 1000;
   position: absolute;
-  top: -3px;
   left: 3px;
 }
 .checkbox-button__checkbox:checked {

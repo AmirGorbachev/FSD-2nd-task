@@ -30,6 +30,14 @@
   position: absolute;
   z-index: 1;
 }
+.radio-button__text {
+  display: inline-block;
+  color: $palette-primary-50;
+  transition-duration: $transition-duration;
+  &:hover {
+    color: $palette-primary-75;
+  }
+}
 .radio-button__checkbox:checked {
   &+.radio-button__button::after {
     background: $linear-gradient;
@@ -37,7 +45,7 @@
   &+.radio-button__button {
     border: 1px solid $palette-secondary; 
   }
-}
-.radio-button__text {
-  display: inline-block;
+  &+.radio-button__button+.radio-button__text {
+    color: $palette-primary-75;
+  }
 }
