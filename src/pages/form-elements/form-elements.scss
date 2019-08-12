@@ -78,7 +78,15 @@ body {
 .tertiary-column__name {
   margin-bottom: 16px;
 }
+.tertiary-column__name {
+  &:nth-child(1) {
+    margin-bottom: 20px;
+  }
+}
 /* Доп стили для каждого блока */
+.checkbox-button {
+  margin-bottom: 10px;
+}
 .checkbox-button__text {
   max-width: 192px;
 }
@@ -104,4 +112,7 @@ body {
     width: 221px;
     justify-content: space-between;
   }
+}
+.rate-button:nth-child(1) {
+  margin-right: 20px;
 }

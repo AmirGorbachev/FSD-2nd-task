@@ -20,7 +20,10 @@ block head
 block body
   .logo-for-kit
     include ../../favicon/logo.svg
+
+  //- Верхняя группа блоков
   .top-block-group
+    //- Первая колонна
     .top-block-group__first-column.first-column
       .first-column__block
         h3.first-column__name Text field
@@ -54,6 +57,8 @@ block body
         h3.first-column__name Subscription text field
         .first-column__content
           input.text-field(type="email", placeholder="Email")
+
+    //- Вторая колонна
     .top-block-group__second-column.second-column
       .second-column__block
         h3.second-column__name Checkbox buttons
@@ -78,11 +83,13 @@ block body
           +like-button(2)
         .second-column__content
           +like-button--active(12)
-      .second-column__block
+      .second-column__block.block--rate
         h3.second-column__name Rate button
         .second-column__content
           +rate-button(4)
           +rate-button(5)
+
+    //- Третья колонна
     .top-block-group__tertiary-column.tertiary-column
       .tertiary-column__block
         h3.tertiary-column__name Range slider
@@ -91,14 +98,17 @@ block body
       .tertiary-column__block.block--button
         h3.tertiary-column__name Buttons
         .tertiary-column__content
-          +btn-full("Click me")
+          +btn--full("Click me")
         .tertiary-column__content
-          +btn-border("Click me")
+          +btn--border("Click me")
         .tertiary-column__content
-          +btn-min("Click me")
+          +btn--min("Click me")
         .tertiary-column__content
-          +btn-full("Click me")
+          +btn--full("Click me")
       .tertiary-column__block
         h3.tertiary-column__name Pagination
         .tertiary-column__content
           +pagination
+
+  //- Нижняя группа блоков
+  .bottom-block-group
