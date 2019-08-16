@@ -1,8 +1,10 @@
-// В этом файле должны быть стили для БЭМ-блока dropdown, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .dropdown {
-
-  $block-name:                &; // #{$block-name}__element
+  &::-webkit-input-placeholder {
+    color: $palette-primary-75;
+  }
+  &:focus {
+    border: 1px solid $palette-primary-50;
+    outline: none;
+    border-radius: 4px 4px 0px 0px;
+  }
 }

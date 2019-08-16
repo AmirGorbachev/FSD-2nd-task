@@ -21,8 +21,9 @@ $material-icons-font-path: '~material-icons/iconfont/';
 @import '../../blocks/range-slider/range-slider.scss';
 @import '../../blocks/button/button.scss';
 @import '../../blocks/pagination/pagination.scss';
-/*
 @import '../../blocks/dropdown/dropdown.scss';
+@import '../../blocks/drop-out/drop-out.scss';
+/*
 @import '../../blocks/date-dropdown/date-dropdown.scss';
 @import '../../blocks/filter-date-dropdown/filter-date-dropdown.scss';
 @import '../../blocks/subscription-text-field/subscription-text-field.scss';
@@ -33,7 +34,7 @@ body {
   max-width: 1440px;
 }
 .top-block-group {
-  padding: 140px 141px;
+  padding: 140px 141px 100px;
   display: flex;
   justify-content: space-between;
   padding-top: 143px;
@@ -115,4 +116,14 @@ body {
 }
 .rate-button:nth-child(1) {
   margin-right: 20px;
+}
+
+/* bottom-block-group */
+.bottom-block-group {
+  padding: 0 141px 132px;
+}
+
+/* dev */
+.bottom-block-group {
+  min-height: 500px;
 }
