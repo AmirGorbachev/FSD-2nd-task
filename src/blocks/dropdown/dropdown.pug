@@ -1,2 +1,28 @@
-mixin dropdown
-  .dropdown
+mixin dropdown(id)
+  .dropdown(id=id)
+    label
+      input.text-field.dropdown__input(type="text", placeholder="Выберите удобства" readonly)
+      .drop-out
+        .drop-out__inner
+            .drop-out__item.drop-out__item--first
+              h3.drop-out__name Спальни
+              .drop-out__counter
+                p.drop-out__btn-decrease -
+                h3.drop-out__amount 1
+                p.drop-out__btn-increase.drop-out__btn-increase--active +
+            .drop-out__item.drop-out__item--second
+              h3.drop-out__name Кровати
+              .drop-out__counter
+                p.drop-out__btn-decrease -
+                h3.drop-out__amount 1
+                p.drop-out__btn-increase.drop-out__btn-increase--active +
+            .drop-out__item.drop-out__item--third
+              h3.drop-out__name Ванные комнаты
+              .drop-out__counter
+                p.drop-out__btn-decrease -
+                h3.drop-out__amount 1
+                p.drop-out__btn-increase.drop-out__btn-increase--active +
+
+//-        .drop-out__buttons
+//-          +btn--min("Очистить")
+//-          +btn--min("Применить")

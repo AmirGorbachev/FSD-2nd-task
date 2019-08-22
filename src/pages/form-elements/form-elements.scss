@@ -21,8 +21,8 @@ $material-icons-font-path: '~material-icons/iconfont/';
 @import '../../blocks/range-slider/range-slider.scss';
 @import '../../blocks/button/button.scss';
 @import '../../blocks/pagination/pagination.scss';
-@import '../../blocks/dropdown/dropdown.scss';
-@import '../../blocks/drop-out/drop-out.scss';
+@import '../../blocks/dropdown/dropdown.scss';/*
+@import '../../blocks/drop-out/drop-out.scss';*/
 /*
 @import '../../blocks/date-dropdown/date-dropdown.scss';
 @import '../../blocks/filter-date-dropdown/filter-date-dropdown.scss';
@@ -127,3 +127,5 @@ body {
 .bottom-block-group {
   min-height: 500px;
 }
+
+/**/

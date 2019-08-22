@@ -13,11 +13,12 @@ include ../../blocks/rate-button/rate-button.pug
 include ../../blocks/range-slider/range-slider.pug
 include ../../blocks/button/button.pug
 include ../../blocks/pagination/pagination.pug
-include ../../blocks/drop-out/drop-out.pug
+include ../../blocks/dropdown/dropdown.pug
+//-include ../../blocks/drop-out/drop-out.pug
 
 block head
   title Form-Elements
-  script(src="form-elements.js")
+  
 block body
   .logo-for-kit
     include ../../favicon/logo.svg
@@ -114,9 +115,14 @@ block body
   //- Нижняя группа блоков
   .bottom-block-group
     .first-column__block
-        h3.first-column__name Dropdown
-        .first-column__content
-          input.text-field.dropdown(type="text", placeholder="Удобства номера" readonly autofocus)
-          +drop-out--max("Спальни","Кровати","Ванные комнаты")
-          p fvfvfvfvfbgbvgsdvfvevffffffffffffffffffffffavfsvfavfscvasfvsacdWGVFSVAVD
-          p vfvfvfvfvfvfvfvfvfvf
+      h3.first-column__name Dropdown
+      .first-column__content
+        +dropdown
+    .first-column__block
+      h3.first-column__name Dropdown
+      .first-column__content
+        +dropdown
+
+
+
+  script(src="form-elements.js")
