@@ -21,10 +21,9 @@ $material-icons-font-path: '~material-icons/iconfont/';
 @import '../../blocks/range-slider/range-slider.scss';
 @import '../../blocks/button/button.scss';
 @import '../../blocks/pagination/pagination.scss';
-@import '../../blocks/dropdown/dropdown.scss';/*
-@import '../../blocks/drop-out/drop-out.scss';*/
-/*
+@import '../../blocks/dropdown/dropdown.scss';
 @import '../../blocks/date-dropdown/date-dropdown.scss';
+/*
 @import '../../blocks/filter-date-dropdown/filter-date-dropdown.scss';
 @import '../../blocks/subscription-text-field/subscription-text-field.scss';
 */
@@ -42,46 +41,55 @@ body {
 /* Первая колонка */
 .top-block-group__first-column {
   flex-basis: 320px;
-}
-.first-column__block {
-  margin-bottom: 20px;
-  &:nth-child(4) {
-    padding-top: 2.5px; 
+
+  .first-column__block {
+    margin-bottom: 20px;
+    &:nth-child(4) {
+      padding-top: 2.5px; 
+    }
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      margin-bottom: 38px;
+    }
   }
-  &:nth-child(4),
-  &:nth-child(5),
-  &:nth-child(6) {
-    margin-bottom: 38px;
+  .first-column__name {
+    line-height: 15px;
   }
-}
-.first-column__name {
-  line-height: 15px;
-}
-.first-column__content {
-  margin-top: 5px;
+  .first-column__content {
+    margin-top: 5px;
+  }
 }
 /* Вторая колонка */
 .top-block-group__second-column {
   flex-basis: 320px;
   margin-left: 55px;
-}
-.second-column__block {
-  margin-bottom: 40px;  
+
+  .second-column__block {
+    margin-bottom: 40px;  
+  }
+  .second-column__name {
+    line-height: 15px;
+  }
+  .second-column__content {
+    margin-top: 5px;
+  }
 }
 /* Третья колонка */
 .top-block-group__tertiary-column {
   flex-basis: 320px;
-}
-.tertiary-column__block {
-  margin-bottom: 40px;
-}
-.second-column__name,
-.tertiary-column__name {
-  margin-bottom: 16px;
-}
-.tertiary-column__name {
-  &:nth-child(1) {
-    margin-bottom: 20px;
+
+  .tertiary-column__block {
+    margin-bottom: 40px;
+  }
+  .second-column__name,
+  .tertiary-column__name {
+    margin-bottom: 16px;
+  }
+  .tertiary-column__name {
+    &:nth-child(1) {
+      margin-bottom: 20px;
+    }
   }
 }
 /* Доп стили для каждого блока */
@@ -121,11 +129,14 @@ body {
 /* bottom-block-group */
 .bottom-block-group {
   padding: 0 141px 132px;
-}
 
-/* dev */
-.bottom-block-group {
-  min-height: 500px;
+  .first-column__block {
+    margin-bottom: 20px;
+  }
+  .first-column__name {
+    line-height: 15px;
+  }
+  .first-column__content {
+    margin-top: 5px;
+  }
 }
-
-/**/
