@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // Require  html-webpack-plugin plugin
 const autoprefixer = require('autoprefixer');
+const webpack = require('webpack');
 
 module.exports = {
   entry: {
@@ -97,6 +98,11 @@ module.exports = {
           filename: 'cards.html',
           inject: 'head',
           chunks: ['<index>']
+      }),
+      new webpack.ProvidePlugin({
+        $: "jquery/dist/jquery.min.js",
+        jQuery: "jquery/dist/jquery.min.js",
+        "window.jQuery": "jquery/dist/jquery.min.js"
       })
   ],
   devServer: {  // configuration for webpack-dev-server 

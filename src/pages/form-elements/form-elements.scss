@@ -3,9 +3,12 @@
 @import '../../style/_global-for-kit.scss';
 
 /* Плагин - jQuery UI */
-@import '../../plugins/jquery-ui.min.css';
-@import '../../plugins/jquery-ui.structure.min.css';
-@import '../../plugins/jquery-ui.theme.min.css';
+@import '../../plugins/jQuery-ui/jquery-ui.min.css';
+@import '../../plugins/jQuery-ui/jquery-ui.structure.min.css';
+@import '../../plugins/jQuery-ui/jquery-ui.theme.min.css';
+
+/* Плагин - AIR DATEPICKER */
+@import '../../../node_modules/air-datepicker/dist/css/datepicker.min.css';
 
 /* Material Icons */
 $material-icons-font-path: '~material-icons/iconfont/';
