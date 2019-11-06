@@ -24,7 +24,7 @@
   position: relative;
   background: $background-color;
   background-clip: padding-box;
-  border: solid 2px transparent;
+  border: solid 2px $palette-secondary;
   border-radius: 22px;
   &:before {
     content: '';
