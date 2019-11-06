@@ -1,3 +1,39 @@
 @import '../../style/_fonts.css';
 @import '../../style/_variables.scss';
 @import '../../style/_global-for-kit.scss';
+
+/* Плагин - jQuery UI */
+@import '../../plugins/jQuery-ui/jquery-ui.min.css';
+@import '../../plugins/jQuery-ui/jquery-ui.structure.min.css';
+@import '../../plugins/jQuery-ui/jquery-ui.theme.min.css';
+
+/* Плагин - AIR DATEPICKER */
+@import '../../../node_modules/air-datepicker/dist/css/datepicker.min.css';
+
+/* Material Icons */
+$material-icons-font-path: '~material-icons/iconfont/';
+@import '~material-icons/iconfont/material-icons.scss';
+
+/* Подключение стилей БЭМ-блоков */
+@import '../../blocks/text-field/text-field.scss';
+@import '../../blocks/radio-button/radio-button.scss';
+@import '../../blocks/calendar/calendar.scss';
+@import '../../blocks/room-selection/room-selection.scss';
+@import '../../blocks/registration-form/registration-form.scss';
+@import '../../blocks/toggle/toggle.scss';
+@import '../../blocks/button/button.scss';
+@import '../../blocks/reservation/reservation.scss';
+@import '../../blocks/authorization/authorization.scss';
+
+body {
+	background: #E5E5E5;
+}
+.columns {
+	margin: 150px 140px;
+	display: flex;
+	justify-content: space-between;
+}
+.column .room-selection,
+.column .reservation {
+	margin-bottom: 40px;
+}

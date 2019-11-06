@@ -1,8 +1,26 @@
 extends ../../pug/template.pug
+
+//- Подключение БЭМ-блоков 
+include ../../blocks/room-selection/room-selection.pug
+include ../../blocks/registration-form/registration-form.pug
+include ../../blocks/radio-button/radio-button.pug
+include ../../blocks/toggle/toggle.pug
+include ../../blocks/button/button.pug
+include ../../blocks/reservation/reservation.pug
+include ../../blocks/authorization/authorization.pug
+
 block head
   title Cards
   script(src='cards.js')
 block body
-  .headers-and-footers
-    .logo-for-kit
-      include ../../favicon/logo.svg
+  .logo-for-kit
+    include ../../favicon/logo.svg
+  .columns
+    .column
+      +room-selection
+      +registration-form
+    .column
+      +reservation
+      +authorization
+    .column
+      .calendar.datepicker-here
