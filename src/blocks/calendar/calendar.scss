@@ -1,0 +1,35 @@
+.calendar {
+
+}
+/**/
+.datepicker {
+  width: 320px;
+  box-sizing: border-box;
+  font-family: $font-family-secondary;
+}
+.datepicker--nav {
+  border-bottom: none;
+  padding: 20px;
+}
+.datepicker--content{
+  padding: 19px;
+}
+.datepicker--day-name {
+  color: $palette-secondary;
+  font-family: $font-family-secondary-bold;
+  text-transform: none;
+}
+.datepicker--cell-day{
+  color: $palette-primary-50;
+  font-size: 12px;
+  line-height: 15px;
+}
+.datepicker--day-name,
+.datepicker--cell-day {
+  width: 40px;
+  height: 40px;
+}
+.datepicker--cell-day.-other-month-,
+.datepicker--cell-year.-other-decade- {
+  color: $palette-primary-25;
+}
