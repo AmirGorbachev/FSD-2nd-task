@@ -1,5 +1,5 @@
-mixin dropdown
-  .dropdown
+mixin dropdown--facilities
+  .dropdown.dropdown--facilities
     label.dropdown__more
       input.text-field.dropdown__input(type="text", placeholder="Выберите удобства" readonly)
       .drop-out
@@ -22,7 +22,7 @@ mixin dropdown
             h3.drop-out__amount 0
             p.drop-out__btn-increase.drop-out__btn-increase--active +
 mixin dropdown--guests
-  .dropdown
+  .dropdown.dropdown--guests
     label.dropdown__more
       input.text-field.dropdown__input(type="text", placeholder="Сколько гостей" readonly)
       .drop-out

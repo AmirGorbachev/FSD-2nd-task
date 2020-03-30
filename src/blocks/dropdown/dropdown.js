@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const increase = items[i].childNodes[2];
     // Пороговые значения
     const minCount = 0;
-    const maxCount = 10;
+    const maxCount = 5;
     // Обработка событий для 'минуса'
     decrease.addEventListener('click', function(event) {
       if (amount > minCount) {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function(){
 // Вывод в input
 document.addEventListener('DOMSubtreeModified', function(){
   // Собираем все dropdown на странице
-  const dropdowns = document.querySelectorAll('.dropdown');
+  const dropdowns = document.querySelectorAll('.dropdown--facilities');
   let bedrooms, beds, bathrooms; // написание спален, кроватей и ванн в зависимости от количества
   // Работаем с каждым dropdown отдельно
   for(let i=0; i<dropdowns.length; i++) {
