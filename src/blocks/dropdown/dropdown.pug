@@ -1,45 +1,37 @@
-mixin dropdown--facilities
-  .dropdown.dropdown--facilities
+//- "facilities" or "guests"
+mixin dropdown(template)
+  -
+    let argument_1, argument_2, argument_3, placeholder;
+    if(template == "facilities"){
+      argument_1 = "Спальни";
+      argument_2 = "Кровати";
+      argument_3 = "Ванные комнаты";
+      placeholder = "Выберите удобства";
+    }
+    if(template == "guests"){
+      argument_1 = "Взрослые";
+      argument_2 = "Дети";
+      argument_3 = "Младенцы";
+      placeholder = "Сколько гостей";
+    }
+  .dropdown
     label.dropdown__more
-      input.text-field.dropdown__input(type="text", placeholder="Выберите удобства" readonly)
+      input.text-field.dropdown__input(type="text" placeholder=placeholder readonly)
       .drop-out
         .drop-out__item.drop-out__item--first
-          h3.drop-out__name Спальни
+          h3.drop-out__name= argument_1
           .drop-out__counter
             p.drop-out__btn-decrease -
             h3.drop-out__amount 0
             p.drop-out__btn-increase.drop-out__btn-increase--active +
         .drop-out__item.drop-out__item--second
-          h3.drop-out__name Кровати
+          h3.drop-out__name= argument_2
           .drop-out__counter
             p.drop-out__btn-decrease -
             h3.drop-out__amount 0
             p.drop-out__btn-increase.drop-out__btn-increase--active +
         .drop-out__item.drop-out__item--third
-          h3.drop-out__name Ванные комнаты
-          .drop-out__counter
-            p.drop-out__btn-decrease -
-            h3.drop-out__amount 0
-            p.drop-out__btn-increase.drop-out__btn-increase--active +
-mixin dropdown--guests
-  .dropdown.dropdown--guests
-    label.dropdown__more
-      input.text-field.dropdown__input(type="text", placeholder="Сколько гостей" readonly)
-      .drop-out
-        .drop-out__item.drop-out__item--first
-          h3.drop-out__name Взрослые
-          .drop-out__counter
-            p.drop-out__btn-decrease -
-            h3.drop-out__amount 0
-            p.drop-out__btn-increase.drop-out__btn-increase--active +
-        .drop-out__item.drop-out__item--second
-          h3.drop-out__name Дети
-          .drop-out__counter
-            p.drop-out__btn-decrease -
-            h3.drop-out__amount 0
-            p.drop-out__btn-increase.drop-out__btn-increase--active +
-        .drop-out__item.drop-out__item--third
-          h3.drop-out__name Младенцы
+          h3.drop-out__name= argument_3
           .drop-out__counter
             p.drop-out__btn-decrease -
             h3.drop-out__amount 0
