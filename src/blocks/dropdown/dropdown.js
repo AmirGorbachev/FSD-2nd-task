@@ -39,11 +39,11 @@ document.addEventListener('DOMContentLoaded', function(){
         counter.innerHTML = amount;
       }
       if (amount > minCount) {
-        // Делаем кнопку активной при != 10
+        // Делаем кнопку активной при != 5
         decrease.classList.add('drop-out__btn-decrease--active'); 
       }
       if (amount == maxCount) {
-        // Делаем кнопку не активной при 10
+        // Делаем кнопку не активной при 5
         increase.classList.remove('drop-out__btn-increase--active'); 
       }
     });
