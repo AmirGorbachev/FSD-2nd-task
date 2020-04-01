@@ -23,10 +23,12 @@ document.addEventListener('DOMContentLoaded', function(){
         counter.innerHTML = amount;
       }
       if (amount == minCount) {
-        decrease.classList.remove('drop-out__btn-decrease--active'); // Делаем кнопку не активной при 0
+        // Делаем кнопку не активной при 0
+        decrease.classList.remove('drop-out__btn-decrease--active'); 
       }
       if (amount < maxCount) {
-        increase.classList.add('drop-out__btn-increase--active'); // Делаем кнопку активной при != 0
+        // Делаем кнопку активной при != 0
+        increase.classList.add('drop-out__btn-increase--active');
       }
     });
 
@@ -37,13 +39,15 @@ document.addEventListener('DOMContentLoaded', function(){
         counter.innerHTML = amount;
       }
       if (amount > minCount) {
-        decrease.classList.add('drop-out__btn-decrease--active'); // Делаем кнопку активной при != 10
+        // Делаем кнопку активной при != 10
+        decrease.classList.add('drop-out__btn-decrease--active'); 
       }
       if (amount == maxCount) {
-        increase.classList.remove('drop-out__btn-increase--active'); // Делаем кнопку не активной при 10
+        // Делаем кнопку не активной при 10
+        increase.classList.remove('drop-out__btn-increase--active'); 
       }
     });
-  } // Конец цикла
+  }
 });
 
 // Вывод в input для dropdown
@@ -51,12 +55,15 @@ document.addEventListener('DOMSubtreeModified', function(){
  
   // Собираем все dropdown на странице
   const dropdowns = document.querySelectorAll('.dropdown');
-  let argument_1, argument_2, argument_3; // написание параметров дропдауна зависимости от количества
+  // написание параметров дропдауна в зависимости от количества
+  let argument_1, argument_2, argument_3; 
  
   // Работаем с каждым dropdown отдельно
   for(let i=0; i<dropdowns.length; i++) {
-    const input = dropdowns[i].childNodes[0].childNodes[0]; // Находим input
-    const dropOutItems = dropdowns[i].querySelectorAll('.drop-out__amount'); // Массив значений из 3 счётчиков
+    // Находим input
+    const input = dropdowns[i].childNodes[0].childNodes[0]; 
+    // Массив значений из 3 счётчиков
+    const dropOutItems = dropdowns[i].querySelectorAll('.drop-out__amount'); 
     
     // Записываем значения в input
     if((dropOutItems[0].textContent != 0)||(dropOutItems[1].textContent != 0)||(dropOutItems[2].textContent != 0)) {
@@ -151,7 +158,8 @@ document.addEventListener('DOMSubtreeModified', function(){
       // Запись в input
       input.value = dropOutItems[0].textContent+' '+argument_1+', '+dropOutItems[1].textContent+' '+argument_2+', '+dropOutItems[2].textContent+' '+argument_3;
     } else {
-     input.value = null; // Если все счётчики "0", обнуляем значение input
+      // Если все счётчики "0", обнуляем значение input
+      input.value = null; 
     }
   }
 });
