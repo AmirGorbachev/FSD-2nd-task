@@ -132,14 +132,22 @@ body {
 /* bottom-block-group */
 .bottom-block-group {
   padding: 0 141px 132px;
+  display: flex;
+  justify-content: space-between;
 
-  .first-column__block {
+  .first-column__block,
+  .second-column__block,
+  .tertiary-column__block {
     margin-bottom: 20px;
   }
-  .first-column__name {
+  .first-column__name,
+  .second-column__name,
+  .tertiary-column__name {
     line-height: 15px;
   }
-  .first-column__content {
+  .first-column__content,
+  .second-column__content,
+  .tertiary-column__content {
     margin-top: 5px;
   }
 }

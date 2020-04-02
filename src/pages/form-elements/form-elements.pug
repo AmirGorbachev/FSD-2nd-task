@@ -123,6 +123,9 @@ block body
         .second-column__content
           +dropdown("guests")
     .bottom-block-group__tertiary-column.tertiary-column
-      +date-dropdown
+      .tertiary-column__block
+        h3.tertiary-column__name Dropdown
+        .tertiary-column__content
+          +dropdown("guests")      
 
   script(src="form-elements.js")
