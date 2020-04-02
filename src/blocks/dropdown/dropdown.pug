@@ -7,14 +7,16 @@ mixin dropdown(template)
       argument_2 = "Кровати";
       argument_3 = "Ванные комнаты";
       placeholder = "Выберите удобства";
+      showBottomButtons = false;
     }
     if(template == "guests"){
       argument_1 = "Взрослые";
       argument_2 = "Дети";
       argument_3 = "Младенцы";
       placeholder = "Сколько гостей";
+      showBottomButtons = true;
     }
-  .dropdown
+  .dropdown(class="dropdown--"+template)
     label.dropdown__more
       input.text-field.dropdown__input(type="text" placeholder=placeholder readonly)
       .drop-out
@@ -36,6 +38,7 @@ mixin dropdown(template)
             p.drop-out__btn-decrease -
             h3.drop-out__amount 0
             p.drop-out__btn-increase.drop-out__btn-increase--active +
-        .drop-out__buttons
-          +btn--min("Очистить")
-          +btn--min("Применить")
+        - if(showBottomButtons)
+          .drop-out__buttons
+            +btn--min("Очистить")
+            +btn--min("Применить")
