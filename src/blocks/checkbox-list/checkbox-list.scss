@@ -1,0 +1,32 @@
+.checkbox-list {
+  display: block;
+}
+.checkbox-list__title {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+.checkbox-list__name {
+  margin-right: 40px;
+}
+.checkbox-list__arrow {
+  height: 16px;
+  transition-duration: 400ms;
+  &::after {
+    font-family: 'Material Icons';
+    content: 'expand_more';
+    font-size: 24px;
+    color: $palette-primary-50;
+    //float: left; 
+    position: relative; 
+    top: -5px;
+  } 
+  &--rotate{
+    transform: rotate(180deg);
+  }
+}
+.checkbox-list__content {
+  &--none {
+    display: none;
+  }
+}

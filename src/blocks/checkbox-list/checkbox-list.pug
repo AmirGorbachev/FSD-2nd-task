@@ -1,0 +1,16 @@
+mixin checkbox-list(name)
+  .checkbox-list
+    .checkbox-list__title
+      h3.checkbox-list__name= name
+      .checkbox-list__arrow
+    .checkbox-list__content.checkbox-list__content--none
+      each val in ["Завтрак", "Письменный стол"]
+        +checkbox-button(""+val)
+      +checkbox-button("Завтрак")
+      +checkbox-button("Письменный стол")
+      +checkbox-button("Стул для кормления")
+      +checkbox-button("Кроватка")
+      +checkbox-button("Телевизор")
+      +checkbox-button("Шампунь")
+      +checkbox-button("Телевизор")
+      +checkbox-button("Шампунь")

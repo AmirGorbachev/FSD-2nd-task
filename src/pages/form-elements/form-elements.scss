@@ -26,6 +26,8 @@ $material-icons-font-path: '~material-icons/iconfont/';
 @import '../../blocks/pagination/pagination.scss';
 @import '../../blocks/dropdown/dropdown.scss';
 @import '../../blocks/date-dropdown/date-dropdown.scss';
+@import '../../blocks/checkbox-list/checkbox-list.scss';
+
 /*
 @import '../../blocks/filter-date-dropdown/filter-date-dropdown.scss';
 @import '../../blocks/subscription-text-field/subscription-text-field.scss';
@@ -138,7 +140,9 @@ body {
   .first-column__block,
   .second-column__block,
   .tertiary-column__block {
-    margin-bottom: 20px;
+    &:first-child{
+      margin-bottom: 256px;
+    };
   }
   .first-column__name,
   .second-column__name,
