@@ -63,7 +63,6 @@ document.addEventListener('DOMSubtreeModified', function(){
     // Находим input
     const input = dropdowns[i].childNodes[0].childNodes[0]; 
     // Массив значений из 3 счётчиков
-    const dropOut = dropdowns[i].querySelector('.drop-out');
     const dropOutItems = dropdowns[i].querySelectorAll('.drop-out__amount');
     // Кнопки "Очистить" и "Принять"
     let buttonAccept = dropdowns[i].querySelector('.btn-accept');
