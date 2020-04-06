@@ -40,5 +40,7 @@ mixin dropdown(template)
             p.drop-out__btn-increase.drop-out__btn-increase--active +
         - if(showBottomButtons)
           .drop-out__buttons
-            +btn--min("Очистить")
-            +btn--min("Применить")
+            .btn-accept
+              +btn--min("Применить")
+            .btn-clear
+              +btn--min("Очистить")

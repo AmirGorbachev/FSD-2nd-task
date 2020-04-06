@@ -96,5 +96,12 @@ $dropdown-width: 266px;
 }
 .drop-out__buttons {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
+  .btn--min:nth-child(2){
+    display: none;
+  }
+}
+.btn-clear {
+  display: none;
 }

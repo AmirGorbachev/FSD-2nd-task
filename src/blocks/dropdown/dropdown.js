@@ -63,7 +63,11 @@ document.addEventListener('DOMSubtreeModified', function(){
     // Находим input
     const input = dropdowns[i].childNodes[0].childNodes[0]; 
     // Массив значений из 3 счётчиков
-    const dropOutItems = dropdowns[i].querySelectorAll('.drop-out__amount'); 
+    const dropOut = dropdowns[i].querySelector('.drop-out');
+    const dropOutItems = dropdowns[i].querySelectorAll('.drop-out__amount');
+    // Кнопки "Очистить" и "Принять"
+    let buttonAccept = dropdowns[i].querySelector('.btn-accept');
+    let buttonClear = dropdowns[i].querySelector('.btn-clear');
     
     // Записываем значения в input
     if((dropOutItems[0].textContent != 0)||(dropOutItems[1].textContent != 0)||(dropOutItems[2].textContent != 0)) {
@@ -153,13 +157,25 @@ document.addEventListener('DOMSubtreeModified', function(){
             argument_3 = "младенцев";
             break;
         }
+        //Баттоны
+        buttonClear.style.display = "block";
+        buttonClear.addEventListener('click', function(){
+          buttonClear.style.display = "none";
+          dropOutItems[0].innerHTML = 0;
+          dropOutItems[1].innerHTML = 0;
+          dropOutItems[2].innerHTML = 0;
+        })
+        buttonAccept.addEventListener('click', function(){
+          input.blur();
+        })
+        //Баттоны
       }
 
       // Запись в input
       input.value = dropOutItems[0].textContent+' '+argument_1+', '+dropOutItems[1].textContent+' '+argument_2+', '+dropOutItems[2].textContent+' '+argument_3;
     } else {
       // Если все счётчики "0", обнуляем значение input
-      input.value = null; 
+      input.value = null;
     }
   }
 });
