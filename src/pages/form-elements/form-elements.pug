@@ -15,6 +15,7 @@ include ../../blocks/pagination/pagination.pug
 include ../../blocks/dropdown/dropdown.pug
 include ../../blocks/date-dropdown/date-dropdown.pug
 include ../../blocks/checkbox-list/checkbox-list.pug
+include ../../blocks/card-conditions/card-conditions.pug
 
 block head
   title Form-Elements
@@ -120,6 +121,9 @@ block body
           +dropdown("facilities")
       .first-column__block
         +checkbox-list("Expandable checkbox list", "hi")
+        +checkbox-list("Expandable checkbox list", "hi")
+        +card-conditions("mood", "Комфорт", "Шумопоглащающие стены")
+        +card-conditions("location_city", "Комфорт", "Шумопоглащающие стены")
     .bottom-block-group__second-column.second-column
       .second-column__block
         h3.second-column__name Dropdown

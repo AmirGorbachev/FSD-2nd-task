@@ -1,0 +1,21 @@
+.card-conditions {
+  display: flex;
+}
+.card-conditions__icon {
+  margin-right: 10px;
+}
+.card-conditions__span {
+  font-size: 48px;
+  line-height: 41px;
+  background: $linear-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card-conditions__content {
+  color: $palette-primary-75;
+}
+.card-conditions__header {
+  text-transform: none;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
