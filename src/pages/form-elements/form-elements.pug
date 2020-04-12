@@ -17,6 +17,7 @@ include ../../blocks/date-dropdown/date-dropdown.pug
 include ../../blocks/checkbox-list/checkbox-list.pug
 include ../../blocks/card-conditions/card-conditions.pug
 include ../../blocks/bullet/bullet.pug
+include ../../blocks/review/review.pug
 
 block head
   title Form-Elements
@@ -141,5 +142,7 @@ block body
           +bullet("Нельзя с питомцами")
           +bullet("Без вечеринок и мероприятий")
           +bullet("Время прибытия - после 13:00, а выезд до 12:00")
+  .bottom-block-group.bottom-block-group--review
+    +review
 
   script(src="form-elements.js")

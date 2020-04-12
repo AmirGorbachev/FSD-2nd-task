@@ -1,0 +1,11 @@
+mixin review
+  .review
+    .review__left
+      .review__photo
+        img(src=require("./../../blocks/review/img/photo-example.jpg"))
+      .review__like-button
+        +like-button--active(12)
+    .review__right
+      h3.review__name Мурад Сарафанов
+      p.review__time 5 дней назад
+      p.review__content Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподовляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
