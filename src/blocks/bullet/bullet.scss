@@ -1,0 +1,12 @@
+.bullet {
+  display: flex;
+}
+.bullet__point {
+  min-width: 10px;
+  height: 10px;
+  background: $palette-primary-25;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}

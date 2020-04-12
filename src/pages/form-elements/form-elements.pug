@@ -16,6 +16,7 @@ include ../../blocks/dropdown/dropdown.pug
 include ../../blocks/date-dropdown/date-dropdown.pug
 include ../../blocks/checkbox-list/checkbox-list.pug
 include ../../blocks/card-conditions/card-conditions.pug
+include ../../blocks/bullet/bullet.pug
 
 block head
   title Form-Elements
@@ -134,5 +135,11 @@ block body
         h3.tertiary-column__name Dropdown
         .tertiary-column__content
           +dropdown("guests")      
+      .tertiary-column__block
+        h3.tertiary-column__name Bullet list
+        .tertiary-column__content
+          +bullet("Нельзя с питомцами")
+          +bullet("Без вечеринок и мероприятий")
+          +bullet("Время прибытия - после 13:00, а выезд до 12:00")
 
   script(src="form-elements.js")
