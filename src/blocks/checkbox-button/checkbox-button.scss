@@ -1,9 +1,8 @@
 .checkbox-button {
-  font-size: 14px;
-  line-height: 18px;
 }
 .checkbox-button__label {
   cursor: pointer;
+  display: flex;
 }
 .checkbox-button__checkbox {
   display: none;
@@ -41,7 +40,17 @@
   }
 }
 .checkbox-button__text {
-  display: inline-block;
-  vertical-align: top;
+  position: relative;
+  top: -2px;
+  font-size: 14px;
 }
-
+.checkbox-button__header {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+}
+.checkbox-button__note {
+  margin-top: 2px;
+  font-size: 12px;
+  line-height: 15px;
+}

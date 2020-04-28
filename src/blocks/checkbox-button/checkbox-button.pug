@@ -1,6 +1,12 @@
-mixin checkbox-button(text, checked)
-  p.checkbox-button
+//- "usual" or "rich"
+mixin checkbox-button(type, text,  note, checked)
+  .checkbox-button
     label.checkbox-button__label
       input.checkbox-button__checkbox(type="Checkbox", checked=checked)
       span.checkbox-button__button
-      span.checkbox-button__text #{text}
+      .checkbox-button__text
+        - if(type=="rich")
+          h3.checkbox-button__header #{text}
+          p.checkbox-button__note #{note}
+        - if(type=="usual")
+          p.checkbox-button__header #{text}
