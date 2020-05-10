@@ -1,15 +1,4 @@
-mixin btn--full(value)
-  .btn.btn--full
-    h3.btn--full__value #{value}
-
-mixin btn--border(value)
-  .btn.btn--border
-    h3.btn--border__value #{value}
-
-mixin btn--min(value)
-  .btn.btn--min
-    h3.btn--min__value #{value}
-
-mixin btn--arrow(value)
-  .btn.btn--full.btn--arrow
-    h3.btn--full__value.btn--arrow__value #{value}
+//-"full", "border", "min", "arrow" 
+mixin btn(type, value)
+  .btn(class="btn--"+type)
+    h3(class="btn--"+type+"__value") #{value}
