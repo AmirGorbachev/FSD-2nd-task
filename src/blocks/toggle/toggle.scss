@@ -1,5 +1,8 @@
 .toggle {
+}
+.toggle__inner{
   display: flex;
+  min-width: 50px;
 }
 .toggle__switch {
   display: inline-block;
@@ -31,6 +34,7 @@
 .toggle__value {
   line-height: 20px;
   margin-left: 10px;
+  cursor: pointer;
 }
 /* Active */
 .toggle__switch--on {

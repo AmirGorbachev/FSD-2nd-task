@@ -1,11 +1,8 @@
-mixin toggle(value)
+mixin toggle(value, active)
   .toggle
     .toggle__inner
-      .toggle__switch
-    p.toggle__value #{value}
-
-mixin toggle--on(value)
-  .toggle
-    .toggle__inner
-      .toggle__switch.toggle__switch--on
-    p.toggle__value #{value}
+      if (active == "active")
+        .toggle__switch.toggle__switch--on
+      else 
+        .toggle__switch
+      p.toggle__value #{value}
