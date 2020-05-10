@@ -1,4 +1,7 @@
-mixin date-dropdown
+mixin date-dropdown(id_start, id_end, placeholder)
   .date-dropdown
     .date-dropdown__inner
-      input.date-dropdown__input.datepicker-here(type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here")
+      label.date-dropdown__more
+        input.date-dropdown__input.datepicker-here.text-field(id=id_start type="text" data-range="true" data-multiple-dates-separator="-"  placeholder=placeholder readonly)
+      label.date-dropdown__more
+        input.date-dropdown__input.text-field(id=id_end type="text" placeholder=placeholder readonly)

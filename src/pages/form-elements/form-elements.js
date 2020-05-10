@@ -10,3 +10,4 @@ import '../../blocks/range-slider/range-slider.js';
 import '../../blocks/like-button/like-button.js';
 import '../../blocks/dropdown/dropdown.js';
 import '../../blocks/checkbox-list/checkbox-list.js';
+import '../../blocks/date-dropdown/date-dropdown.js';

@@ -47,12 +47,11 @@ block body
         .first-column__content
           input.text-field(type="text", placeholder="ДД.ММ.ГГГГ")
       .first-column__block
-        h3.first-column__name Date dropdown
+        .first-column__names
+          h3.first-column__name Date dropdown
+          h3.first-column__name Date dropdown
         .first-column__content
-          input.text-field(type="text", placeholder="This is pretty awesome")
-        h3.first-column__name Date dropdown
-        .first-column__content
-          input.text-field(type="text", placeholder="This is pretty awesome")
+          +date-dropdown("start_one","end_one","ДД.ММ.ГГГГ")
       .first-column__block
         h3.first-column__name Filter date dropdown
         .first-column__content
