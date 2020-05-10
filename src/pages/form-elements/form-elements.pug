@@ -19,6 +19,7 @@ include ../../blocks/card-conditions/card-conditions.pug
 include ../../blocks/bullet/bullet.pug
 include ../../blocks/review/review.pug
 include ../../blocks/filter-date-dropdown/filter-date-dropdown.pug
+include ../../blocks/subscription-text-field/subscription-text-field.pug
 
 block head
   title Form-Elements
@@ -60,7 +61,7 @@ block body
       .first-column__block
         h3.first-column__name Subscription text field
         .first-column__content
-          input.text-field(type="email", placeholder="Email")
+          +subscription-text-field
 
     //- Вторая колонна
     .top-block-group__second-column.second-column

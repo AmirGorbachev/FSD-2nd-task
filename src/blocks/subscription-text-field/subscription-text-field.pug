@@ -1,23 +1,5 @@
-//- Все примеси в этом файле должны начинаться c имени блока (subscription-text-field)
-
-mixin subscription-text-field(text, mods)
-
-  //- Принимает:
-  //-   text    {string} - текст
-  //-   mods    {string} - список модификаторов
-  //- Вызов:
-        +subscription-text-field('Текст', 'some-mod')
-
-  -
-    // список модификаторов
-    var allMods = '';
-    if(typeof(mods) !== 'undefined' && mods) {
-      var modsList = mods.split(',');
-      for (var i = 0; i < modsList.length; i++) {
-        allMods = allMods + ' subscription-text-field--' + modsList[i].trim();
-      }
-    }
-
-  .subscription-text-field(class=allMods)&attributes(attributes)
+mixin subscription-text-field
+  .subscription-text-field
     .subscription-text-field__inner
-      block
+      label.subscription-text-field__more
+        input.subscription-text-field__input.text-field(type="email", placeholder="Email")
