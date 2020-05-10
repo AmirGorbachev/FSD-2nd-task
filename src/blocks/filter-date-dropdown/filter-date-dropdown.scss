@@ -1,8 +1,18 @@
-// В этом файле должны быть стили для БЭМ-блока filter-date-dropdown, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .filter-date-dropdown {
-
-  $block-name:                &; // #{$block-name}__element
+  width: 266px;
+}
+.filter-date-dropdown__input{
+  width: 266px;
+}
+.filter-date-dropdown__more::after {
+  font-family: 'Material Icons';
+  content: 'expand_more';
+  font-size: 24px;
+  color: $palette-primary-75;
+  position: relative;
+  float: right;
+  top: -35px;
+  left: -10px;
+  z-index: 1;
+  cursor: pointer;
 }

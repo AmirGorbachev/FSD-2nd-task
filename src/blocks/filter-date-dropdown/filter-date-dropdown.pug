@@ -1,23 +1,5 @@
-//- Все примеси в этом файле должны начинаться c имени блока (filter-date-dropdown)
-
-mixin filter-date-dropdown(text, mods)
-
-  //- Принимает:
-  //-   text    {string} - текст
-  //-   mods    {string} - список модификаторов
-  //- Вызов:
-        +filter-date-dropdown('Текст', 'some-mod')
-
-  -
-    // список модификаторов
-    var allMods = '';
-    if(typeof(mods) !== 'undefined' && mods) {
-      var modsList = mods.split(',');
-      for (var i = 0; i < modsList.length; i++) {
-        allMods = allMods + ' filter-date-dropdown--' + modsList[i].trim();
-      }
-    }
-
-  .filter-date-dropdown(class=allMods)&attributes(attributes)
+mixin filter-date-dropdown(placeholder)
+  .filter-date-dropdown
     .filter-date-dropdown__inner
-      block
+      label.filter-date-dropdown__more
+        input.filter-date-dropdown__input.datepicker-here.text-field(type="text" data-range="true" data-multiple-dates-separator=" - "  placeholder=placeholder readonly)

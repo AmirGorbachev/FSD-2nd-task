@@ -18,6 +18,7 @@ include ../../blocks/checkbox-list/checkbox-list.pug
 include ../../blocks/card-conditions/card-conditions.pug
 include ../../blocks/bullet/bullet.pug
 include ../../blocks/review/review.pug
+include ../../blocks/filter-date-dropdown/filter-date-dropdown.pug
 
 block head
   title Form-Elements
@@ -55,7 +56,7 @@ block body
       .first-column__block
         h3.first-column__name Filter date dropdown
         .first-column__content
-          input.text-field(type="text", placeholder="This is pretty awesome")
+          +filter-date-dropdown("ДД.ММ.ГГГГ - ДД.ММ.ГГГГ")
       .first-column__block
         h3.first-column__name Subscription text field
         .first-column__content
