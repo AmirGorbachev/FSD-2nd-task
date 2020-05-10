@@ -19,7 +19,8 @@ mixin header-nav(authorization, name)
            a.header-nav__link(href='#') Documentation
       .header-nav__authorization
         if (authorization == "authorized")
-          p= name
+          .header-nav__vertical-line
+          p.header-nav__username= name
         if (authorization == "unauthorized")
           +btn("border","Login")
           +btn("full","Register")

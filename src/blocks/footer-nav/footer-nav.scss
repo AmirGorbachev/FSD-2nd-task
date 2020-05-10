@@ -16,7 +16,7 @@
   margin-right: 40px;
 }
 .footer-nav__logo {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   height: 40px;
 }
 .footer-nav__about-company {
@@ -35,25 +35,33 @@
 .footer-nav__about,
 .footer-nav__support {
   flex-basis: 33.33%;
+  padding-top: 4px;
 }
 .footer-nav__chapter {
   margin-bottom: 20px;
-  line-height: 17px;
+  line-height: 18px;
   letter-spacing: -0.005em;
+  font-family: $font-family-secondary-medium;
 }
 .footer-nav__link {
   color: $palette-primary-50;
   &:visited {
     color: $palette-primary-50;
   }
+  &:hover{
+    transition-duration: $transition-duration;
+    color: $palette-primary-75;
+  }
 }
 .footer-nav__subscribe{
   flex-basis: 260px;
+  padding-top: 4px;
   h3 {
-    margin-bottom: 21px;
+    margin-bottom: 18px;
   }
   p {
     font-family: $font-family-secondary-medium;
+    letter-spacing: -0.018em;
     margin-bottom: 20px;
   }
 }
@@ -82,8 +90,7 @@
 .copyright-bar__link {
   font-family: $font-family-brands;
   font-size: 24px;
-  line-height: 23px;
-  margin: 0 10px;
+  margin-left: 23px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
