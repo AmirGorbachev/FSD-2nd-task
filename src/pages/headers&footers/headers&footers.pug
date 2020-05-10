@@ -1,4 +1,10 @@
 extends ../../pug/template.pug
+
+include ../../blocks/header-nav/header-nav.pug
+include ../../blocks/footer-nav/footer-nav.pug
+include ../../blocks/footer/footer.pug
+include ../../blocks/button/button.pug
+
 block head
   title Headers&Footers
   script(src='headers&footers.js')
@@ -6,10 +12,7 @@ block body
   .headers-and-footers
     .logo-for-kit
       include ../../favicon/logo.svg
-    include ../../blocks/header-nav/header-nav.pug
-    +header-nav
-    +header-nav
-    include ../../blocks/footer-nav/footer-nav.pug
+    +header-nav("unauthorized")
+    +header-nav("authorized", "Cosmin Negoita")
     +footer-nav
-    include ../../blocks/footer/footer.pug
     +footer

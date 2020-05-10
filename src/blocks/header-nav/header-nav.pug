@@ -1,4 +1,5 @@
-mixin header-nav
+//-"authorized" or "unauthorized"
+mixin header-nav(authorization, name)
   .header-nav
     .header-nav__inner
       .header-nav__logo
@@ -17,4 +18,8 @@ mixin header-nav
         p.header-nav__chapter
            a.header-nav__link(href='#') Documentation
       .header-nav__authorization
-        p fvfvfvfvf
+        if (authorization == "authorized")
+          p= name
+        if (authorization == "unauthorized")
+          +btn("border","Login")
+          +btn("full","Register")
