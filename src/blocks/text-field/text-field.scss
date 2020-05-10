@@ -5,7 +5,10 @@
   border-radius: 4px;
   padding: 13px 15px;
   font-size: 14px;
-  font-family: $font-family-secondary;
+  font-family: $font-family-secondary-medium;
+  color: $palette-primary-75;
+  font-size: 14px;
+
   &::-webkit-input-placeholder {
     color: $palette-primary-25;
   }
