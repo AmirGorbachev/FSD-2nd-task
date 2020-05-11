@@ -18,8 +18,8 @@ mixin dropdown(template)
     }
   .dropdown(class="dropdown--"+template)
     label.dropdown__more
-      input.text-field.dropdown__input(type="text" placeholder=placeholder readonly)
-      .drop-out
+      input.text-field.dropdown__input(class="dropdown__input--"+template type="text" placeholder=placeholder readonly)
+      .drop-out(class="drop-out--"+template)
         .drop-out__item.drop-out__item--first
           h3.drop-out__name= argument_1
           .drop-out__counter

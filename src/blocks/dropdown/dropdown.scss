@@ -1,5 +1,6 @@
 /* Ширина dropdown */
 $dropdown-width: 266px;
+$dropdown-width--guests: 320px;
 
 .dropdown {
   width: $dropdown-width;
@@ -104,4 +105,14 @@ $dropdown-width: 266px;
 }
 .btn-clear {
   display: none;
+}
+// Для "guests"
+.dropdown--guests {
+  width: $dropdown-width--guests;
+}
+.dropdown__input--guests {
+  width: $dropdown-width--guests;
+}
+.drop-out--guests {
+  width: $dropdown-width--guests;
 }
