@@ -1,7 +1,11 @@
-mixin card-conditions(icon, header, text)
+//-"last" убирает серую линию для последнего элемента 
+mixin card-conditions(icon, header, text, last)
   .card-conditions
-    .card-conditions__icon
-      span.material-icons.card-conditions__span= icon
-    .card-conditions__content
-      h3.card-conditions__header= header
-      p.card-conditions__text= text
+    .card-conditions__inner
+      .card-conditions__icon
+        span.material-icons.card-conditions__span= icon
+      .card-conditions__content
+        h3.card-conditions__header= header
+        p.card-conditions__text= text
+    if (!last) 
+      .card-conditions__line
