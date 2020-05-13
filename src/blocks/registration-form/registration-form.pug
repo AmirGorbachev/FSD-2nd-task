@@ -7,7 +7,7 @@ mixin registration-form
       +radio-button("gender", "male", "Мужчина", "checked")
       +radio-button("gender", "female","Женщина")
     h3.registration-form__h3 Дата рождения
-    input.text-field(type="text", placeholder="ДД.ММ.ГГГГ")
+    +date-picker
     h3.registration-form__h3 Данные для входа в сервис
     input.text-field(type="text", placeholder="Email")
     input.text-field(type="text", placeholder="Пароль")
