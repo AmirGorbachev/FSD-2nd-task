@@ -27,8 +27,12 @@
   &:not(.header-nav__chapter--drop-down) {
     margin-right: 30px;
   }
+  &--active {
+    font-family: $font-family-secondary-bold;
+  }
 }
 .header-nav__link {
+  color: $palette-primary-50;
   &--drop-down:after {
     font-family: 'Material Icons';
     content: 'expand_more';
@@ -40,13 +44,14 @@
     transition-duration: $transition-duration;
     color: $palette-primary-75;
   }
-}
-.header-nav__link {
-  color: $palette-primary-50;
   &:visited {
     color: $palette-primary-50;
   }
+  &--active {
+    color: $palette-primary-75;
+  }
 }
+
 /* Авторизация */
 .header-nav__authorization {
   margin-top: 0;
@@ -65,9 +70,9 @@
   width: 1px;
   height: 30px;
   background: rgba(31, 32, 65, 0.1);
+  margin: auto;
 }
 .header-nav__username {
   margin: auto;
   margin-left: 30px;
-
 }

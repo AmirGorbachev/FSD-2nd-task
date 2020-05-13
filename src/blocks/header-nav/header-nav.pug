@@ -1,26 +1,26 @@
-//-"authorized" or "unauthorized"
-mixin header-nav(authorization, name)
+//-
+  options.authorization = "authorized" or "unauthorized"
+  options.name (if "authorized")
+  options.menu [{name, active, expandable}]
+mixin header-nav(options)
   .header-nav
     .header-nav__inner
       .header-nav__logo
         include img/logo-toxin.svg
       .header-nav__menu-nav
-        p.header-nav__chapter
-           a.header-nav__link(href='#') Home
-        p.header-nav__chapter
-           a.header-nav__link(href='#') About Us
-        p.header-nav__chapter.header-nav__chapter--drop-down
-           a.header-nav__link.header-nav__link--drop-down(href='#') Services
-        p.header-nav__chapter
-           a.header-nav__link(href='#') Careers
-        p.header-nav__chapter
-           a.header-nav__link(href='#') News
-        p.header-nav__chapter
-           a.header-nav__link(href='#') Documentation
+        each chapter in options.menu
+          p.header-nav__chapter(class=[
+            chapter.expandable ? 'header-nav__chapter--drop-down' : '',
+            chapter.active ? 'header-nav__chapter--active': ''
+          ])
+            a.header-nav__link(href='#', class=[
+              chapter.expandable ? 'header-nav__link--drop-down' : '',
+              chapter.active ? 'header-nav__link--active': ''
+            ])= chapter.name
       .header-nav__authorization
-        if (authorization == "authorized")
+        if (options.authorization == "authorized")
           .header-nav__vertical-line
-          p.header-nav__username= name
-        if (authorization == "unauthorized")
+          p.header-nav__username= options.name
+        if (options.authorization == "unauthorized")
           +btn("border","Login")
           +btn("full","Register")
