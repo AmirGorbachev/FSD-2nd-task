@@ -1,11 +1,3 @@
-// mixin like-button(amount)
-//   .like-button
-//     p.like-button__amount #{amount}
-// 
-// mixin like-button--active(amount)
-//   .like-button.like-button--active
-//     p.like-button__amount #{amount}
-
 document.addEventListener('DOMContentLoaded', function(){
   let likes = document.querySelectorAll(".like-button");
   
