@@ -68,9 +68,12 @@ block body
       .second-column__block
         h3.second-column__name Checkbox buttons
         .second-column__content
-          +checkbox-button("usual", "Можно курить")
-          +checkbox-button("usual", "Можно с питомцами", "", "checked")
-          +checkbox-button("usual", "Можно пригласить гостей (до 10 человек)", "", "checked")
+          .second-column__content--checkbox
+            +checkbox-button("usual", "Можно курить")
+          .second-column__content--checkbox
+            +checkbox-button("usual", "Можно с питомцами", "", "checked")
+          .second-column__content--checkbox
+            +checkbox-button("usual", "Можно пригласить гостей (до 10 человек)", "", "checked")
       .second-column__block.block--radio
         h3.second-column__name Radio buttons
         .second-column__content
@@ -135,8 +138,10 @@ block body
       .second-column__block
         h3.second-column__name Rich checkbox buttons
         .second-column__content
-          +checkbox-button("rich", "Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
-          +checkbox-button("rich", "Помощник для инвалидов", "На 1 этаже вас встретит специалист и проводит до номера.")
+          .second-column__content--checkbox
+            +checkbox-button("rich", "Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
+          .second-column__content--checkbox
+            +checkbox-button("rich", "Помощник для инвалидов", "На 1 этаже вас встретит специалист и проводит до номера.")
     .bottom-block-group__tertiary-column.tertiary-column
       .tertiary-column__block
         h3.tertiary-column__name Dropdown

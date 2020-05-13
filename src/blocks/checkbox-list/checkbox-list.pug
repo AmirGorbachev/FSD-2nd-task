@@ -5,4 +5,5 @@ mixin checkbox-list(name, values)
       .checkbox-list__arrow
     .checkbox-list__content.checkbox-list__content--none
       each val in values
-        +checkbox-button("usual", ""+val)
+        .checkbox-list__button
+          +checkbox-button("usual", ""+val)
