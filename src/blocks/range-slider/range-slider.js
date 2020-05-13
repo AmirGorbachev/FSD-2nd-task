@@ -1,3 +1,5 @@
+var $ = require("jquery");
+
 $( function() {
     $( ".slider-range" ).slider({
       range: true,
