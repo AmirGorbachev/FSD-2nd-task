@@ -1,10 +1,9 @@
-mixin footer
+mixin footer(info)
   .footer
     .footer__inner
       .footer__logo
         include img/logo-toxin.svg
-      .footer__info
-        p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+      p.footer__info= info
       .footer__social
           a.footer__social__link.footer__social__link--twitter(href='#')
           a.footer__social__link.footer__social__link--facebook(href='#')

@@ -1,45 +1,34 @@
-mixin footer-nav
+mixin footer-nav(options)
   .footer-nav
     .footer-nav__inner
       .footer-nav__info
         .footer-nav__logo
           include img/logo-toxin.svg
-        p.footer-nav__about-company Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+        p.footer-nav__about-company= options.aboutCompany
       .footer-nav__menu-nav
         .footer-nav__navigation
-          h3 Navigation
-          p.footer-nav__chapter 
-            a.footer-nav__link(href='#') About Us
-          p.footer-nav__chapter 
-            a.footer-nav__link(href='#') News
-          p.footer-nav__chapter 
-            a.footer-nav__link(href='#') Support
-          p.footer-nav__chapter 
-            a.footer-nav__link(href='#') Products
+          h3.footer-nav__chapters= options.header1
+          each chapter in options.menu1
+            p.footer-nav__chapter 
+              a.footer-nav__link(href='#')= chapter.name
         .footer-nav__about
-          h3 About Us
-          p.footer-nav__chapter 
-            a.footer-nav__link(href='#') Who we are
-          p.footer-nav__chapter 
-            a.footer-nav__link(href='#') Our team
-          p.footer-nav__chapter 
-            a.footer-nav__link(href='#') Careers
-          p.footer-nav__chapter 
-            a.footer-nav__link(href='#') Investors
+          h3.footer-nav__chapters= options.header2
+          each chapter in options.menu2
+            p.footer-nav__chapter 
+              a.footer-nav__link(href='#')= chapter.name
         .footer-nav__support
-          h3 Support
-          p.footer-nav__chapter 
-            a.footer-nav__link(href='#') Documentation
-          p.footer-nav__chapter 
-            a.footer-nav__link(href='#') Community
-          p.footer-nav__chapter 
-            a.footer-nav__link(href='#') Get in Touch
+          h3.footer-nav__chapters= options.header3
+          each chapter in options.menu3
+            p.footer-nav__chapter 
+              a.footer-nav__link(href='#')= chapter.name
       .footer-nav__subscribe
-        h3 Subscribe to our newsletter
-        p Receive our latest news and promotions in your inbox!
-  .copyright-bar
+        h3.footer-nav__subsribe-header= options.subsribeHeader
+        p.footer-nav__subsribe-text= options.subsribeText
+        +subscription-text-field(options.placeholder)
+  .footer-nav__line
+  .footer-nav__copyright-bar.copyright-bar
     .copyright-bar__inner
-      p.copyright-bar__copyright Copyright &copy; 2018 Toxin UI Kit. All rights reserved.
+      p.copyright-bar__copyright= options.copyright
       .copyright-bar__social
           a.copyright-bar__link.copyright-bar__link--twitter(href='#')
           a.copyright-bar__link.copyright-bar__link--facebook(href='#')
