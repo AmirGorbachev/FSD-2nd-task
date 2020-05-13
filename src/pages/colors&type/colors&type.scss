@@ -1,7 +1,5 @@
-@import '../../style/_fonts.css';
-@import '../../style/_variables.scss';
-@import '../../style/_global-for-kit.scss';
-@import '../../blocks/color-panel/color-panel.scss';
+// Подключение стилей шаблона
+@import '../../templates/template.scss';
 
 .grid-container {
   display: grid;

@@ -1,2 +1,2 @@
-import '../../../node_modules/normalize.css/normalize.css';
-import './colors&type.scss';
+// Подключение шаблона
+import '../../templates/template.js';

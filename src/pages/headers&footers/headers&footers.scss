@@ -1,14 +1,5 @@
-@import '../../style/_fonts.css';
-@import '../../style/_variables.scss';
-@import '../../style/_global-for-kit.scss';
-/* Material Icons */
-$material-icons-font-path: '~material-icons/iconfont/';
-@import '~material-icons/iconfont/material-icons.scss';
-/* Подключение стилей БЭМ-блоков */
-@import '../../blocks/header-nav/header-nav.scss';
-@import '../../blocks/footer-nav/footer-nav.scss';
-@import '../../blocks/footer/footer.scss';
-@import '../../blocks/button/button.scss';
+// Подключение стилей шаблона
+@import '../../templates/template.scss';
 
 .headers-and-footers {
   height: 100%;

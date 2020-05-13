@@ -1,0 +1,39 @@
+//- подключение БЭМ-блоков
+include ../blocks/authorization/authorization
+include ../blocks/bullet/bullet
+include ../blocks/button/button
+//-include ../blocks/calendar/calendar (no pug file)
+include ../blocks/card-conditions/card-conditions
+include ../blocks/checkbox-button/checkbox-button
+include ../blocks/checkbox-list/checkbox-list
+include ../blocks/color-panel/color-panel
+include ../blocks/date-dropdown/date-dropdown
+include ../blocks/date-picker/date-picker
+include ../blocks/dropdown/dropdown
+include ../blocks/filter-date-dropdown/filter-date-dropdown
+include ../blocks/footer/footer
+include ../blocks/footer-nav/footer-nav
+include ../blocks/header-nav/header-nav
+include ../blocks/like-button/like-button
+include ../blocks/logo/logo
+include ../blocks/pagination/pagination
+include ../blocks/radio-button/radio-button
+include ../blocks/range-slider/range-slider
+include ../blocks/rate-button/rate-button
+include ../blocks/registration-form/registration-form
+include ../blocks/reservation/reservation
+include ../blocks/review/review
+include ../blocks/room-selection/room-selection
+include ../blocks/subscription-text-field/subscription-text-field
+include ../blocks/text-field/text-field
+include ../blocks/toggle/toggle
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="shortcut icon" href="../../favicon/logo.svg")
+    block head
+  body
+    block body
