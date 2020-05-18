@@ -1,2 +1,10 @@
 mixin authorization(text, mods)
   .authorization
+    h1.authorization__header Войти
+    input.text-field(type="text", placeholder="Email")
+    input.text-field(type="text", placeholder="Пароль")
+    .authorization__btn
+      +btn("arrow","Войти")
+    .authorization__create-account
+      p Нет аккаунта на Toxin?
+      +btn("border","Создать")
