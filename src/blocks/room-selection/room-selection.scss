@@ -1,4 +1,7 @@
 .room-selection {
+
+}
+.room-selection__inner {
   max-width: 380px;
   height: 374px;
   background: $background-color;
@@ -6,11 +9,25 @@
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 40px 30px 30px 30px;
+  padding: 40px 30px 30px 29px;
 }
 .room-selection__header {
   margin: 0;
   margin-bottom: 20px;
   letter-spacing: -0.02em;
 }
-
+.room-selection__dates-headers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.room-selection__dates-header {
+  width: 150px;
+}
+.room-selection__guests {
+  margin-top: 20px;
+  margin-bottom: 31px;
+}
+.room-selection__guests-header {
+  margin-bottom: 5px;
+}

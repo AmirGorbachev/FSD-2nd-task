@@ -1,4 +1,13 @@
 mixin room-selection
   .room-selection
-    h1.room-selection__header Найдём номера под ваши пожелания
-    +date-dropdown("start_one","end_one","ДД.ММ.ГГГГ")
+    .room-selection__inner
+      h1.room-selection__header Найдём номера под ваши пожелания
+      .room-selection__dates
+        .room-selection__dates-headers
+          h3.room-selection__dates-header Прибытие
+          h3.room-selection__dates-header Выезд
+        +date-dropdown("start_one","end_one","ДД.ММ.ГГГГ")
+      .room-selection__guests
+        h3.room-selection__guests-header Гости
+        +dropdown("guests")
+      +btn("arrow", "Подобрать номер")
