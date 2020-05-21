@@ -11,7 +11,14 @@ block body
       +room-selection
       +registration-form
     .column
-      +reservation
+      +reservation({
+        number: '888',
+        lux: true,
+        dayCost: '9 990₽',
+        services: ['9 990₽ x 4 суток','Сбор за услуги: скидка 2 179₽','Сбор за дополнительные услуги'],
+        info: [false, true, true],
+        costs: ['39 960₽', '0₽', '300₽']
+      })
       +authorization
     .column
       .calendar.datepicker-here
