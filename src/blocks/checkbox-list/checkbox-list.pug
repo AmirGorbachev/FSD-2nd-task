@@ -1,9 +1,10 @@
 mixin checkbox-list(name, values)
   .checkbox-list
-    .checkbox-list__title
-      h3.checkbox-list__name= name
-      .checkbox-list__arrow
-    .checkbox-list__content.checkbox-list__content--none
-      each val in values
-        .checkbox-list__button
-          +checkbox-button("usual", ""+val)
+    .checkbox-list__inner
+      .checkbox-list__title
+        h3.checkbox-list__name= name
+        .checkbox-list__arrow
+      .checkbox-list__content.checkbox-list__content--none
+        each val in values
+          .checkbox-list__button
+            +checkbox-button("usual", ""+val)

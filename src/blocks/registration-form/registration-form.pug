@@ -1,20 +1,21 @@
 mixin registration-form
   .registration-form
-    h1.registration-form__header Регистрация аккаунта
-    input.text-field(type="text", placeholder="Имя")
-    input.text-field(type="text", placeholder="Фамилия")
-    .registration-form__radio
-      +radio-button("gender", "male", "Мужчина", "checked")
-      +radio-button("gender", "female","Женщина")
-    h3.registration-form__h3 Дата рождения
-    +date-picker
-    h3.registration-form__h3 Данные для входа в сервис
-    input.text-field(type="text", placeholder="Email")
-    input.text-field(type="text", placeholder="Пароль")
-    .registration-form__toggle
-      +toggle("Получать спецпредложения")
-    .registration-form__btn
-      +btn("arrow","Перейти к оплате")
-    .registration-form__come-in
-      p Уже есть аккаунт на Toxin
-      +btn("border","Войти")
+    .registration-form__inner
+      h1.registration-form__header Регистрация аккаунта
+      input.text-field(type="text", placeholder="Имя")
+      input.text-field(type="text", placeholder="Фамилия")
+      .registration-form__radio
+        +radio-button("gender", "male", "Мужчина", "checked")
+        +radio-button("gender", "female","Женщина")
+      h3.registration-form__h3 Дата рождения
+      +date-picker
+      h3.registration-form__h3 Данные для входа в сервис
+      input.text-field(type="text", placeholder="Email")
+      input.text-field(type="text", placeholder="Пароль")
+      .registration-form__toggle
+        +toggle("Получать спецпредложения")
+      .registration-form__btn
+        +btn("arrow","Перейти к оплате")
+      .registration-form__come-in
+        p Уже есть аккаунт на Toxin
+        +btn("border","Войти")

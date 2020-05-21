@@ -3,9 +3,12 @@ $dropdown-width: 266px;
 $dropdown-width--guests: 320px;
 
 .dropdown {
+
+}
+.dropdown__inner {
   width: $dropdown-width;
 }
-.dropdown:hover .dropdown__input,
+.dropdown__inner:hover .dropdown__input,
 .dropdown__input:focus {
   border: 1px solid $palette-primary-50;
   outline: none;
@@ -107,7 +110,7 @@ $dropdown-width--guests: 320px;
   display: none;
 }
 // Для "guests"
-.dropdown--guests {
+.dropdown__inner--guests {
   width: $dropdown-width--guests;
 }
 .dropdown__input--guests {

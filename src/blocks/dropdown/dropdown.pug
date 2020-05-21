@@ -16,31 +16,32 @@ mixin dropdown(template)
       placeholder = "Сколько гостей";
       showBottomButtons = true;
     }
-  .dropdown(class="dropdown--"+template)
-    label.dropdown__more
-      input.text-field.dropdown__input(class="dropdown__input--"+template type="text" placeholder=placeholder readonly)
-      .drop-out(class="drop-out--"+template)
-        .drop-out__item.drop-out__item--first
-          h3.drop-out__name= argument_1
-          .drop-out__counter
-            p.drop-out__btn-decrease -
-            h3.drop-out__amount 0
-            p.drop-out__btn-increase.drop-out__btn-increase--active +
-        .drop-out__item.drop-out__item--second
-          h3.drop-out__name= argument_2
-          .drop-out__counter
-            p.drop-out__btn-decrease -
-            h3.drop-out__amount 0
-            p.drop-out__btn-increase.drop-out__btn-increase--active +
-        .drop-out__item.drop-out__item--third
-          h3.drop-out__name= argument_3
-          .drop-out__counter
-            p.drop-out__btn-decrease -
-            h3.drop-out__amount 0
-            p.drop-out__btn-increase.drop-out__btn-increase--active +
-        - if(showBottomButtons)
-          .drop-out__buttons
-            .btn-accept
-              +btn("min","Применить")
-            .btn-clear
-              +btn("min","Очистить")
+  .dropdown
+    .dropdown__inner(class="dropdown__inner--"+template)
+      label.dropdown__more
+        input.text-field.dropdown__input(class="dropdown__input--"+template type="text" placeholder=placeholder readonly)
+        .drop-out(class="drop-out--"+template)
+          .drop-out__item.drop-out__item--first
+            h3.drop-out__name= argument_1
+            .drop-out__counter
+              p.drop-out__btn-decrease -
+              h3.drop-out__amount 0
+              p.drop-out__btn-increase.drop-out__btn-increase--active +
+          .drop-out__item.drop-out__item--second
+            h3.drop-out__name= argument_2
+            .drop-out__counter
+              p.drop-out__btn-decrease -
+              h3.drop-out__amount 0
+              p.drop-out__btn-increase.drop-out__btn-increase--active +
+          .drop-out__item.drop-out__item--third
+            h3.drop-out__name= argument_3
+            .drop-out__counter
+              p.drop-out__btn-decrease -
+              h3.drop-out__amount 0
+              p.drop-out__btn-increase.drop-out__btn-increase--active +
+          - if(showBottomButtons)
+            .drop-out__buttons
+              .btn-accept
+                +btn("min","Применить")
+              .btn-clear
+                +btn("min","Очистить")

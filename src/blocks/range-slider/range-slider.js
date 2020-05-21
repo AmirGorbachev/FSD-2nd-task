@@ -1,7 +1,7 @@
 var $ = require("jquery");
 
 $( function() {
-    $( ".slider-range" ).slider({
+    $( ".range-slider__range" ).slider({
       range: true,
       min: 0,
       max: 15700,
@@ -11,6 +11,6 @@ $( function() {
         $( ".range-slider__label" ).val( ui.values[ 0 ] + "Р - " + ui.values[ 1 ] + "Р");
       }
     });
-    $( ".range-slider__label" ).val( $( ".slider-range" ).slider( "values", 0 ) +
-      "Р - " + $( ".slider-range" ).slider( "values", 1 ) + "Р" );
+    $( ".range-slider__label" ).val( $( ".range-slider__range" ).slider( "values", 0 ) +
+      "Р - " + $( ".range-slider__range" ).slider( "values", 1 ) + "Р" );
   } );

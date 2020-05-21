@@ -1,7 +1,8 @@
-mixin like-button(amount)
+mixin like-button(amount, active)
   .like-button
-    p.like-button__amount #{amount}
-
-mixin like-button--active(amount)
-  .like-button.like-button--active
-    p.like-button__amount #{amount}
+    if (active == 'active')
+      .like-button__inner.like-button__inner--active
+        p.like-button__amount #{amount}
+    else 
+      .like-button__inner
+        p.like-button__amount #{amount}

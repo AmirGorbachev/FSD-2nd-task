@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function(){
 document.addEventListener('DOMSubtreeModified', function(){
  
   // Собираем все dropdown на странице
-  const dropdowns = document.querySelectorAll('.dropdown');
+  const dropdowns = document.querySelectorAll('.dropdown__inner');
   // написание параметров дропдауна в зависимости от количества
   let argument_1, argument_2, argument_3; 
  
@@ -72,7 +72,7 @@ document.addEventListener('DOMSubtreeModified', function(){
     if((dropOutItems[0].textContent != 0)||(dropOutItems[1].textContent != 0)||(dropOutItems[2].textContent != 0)) {
       
       //формы слова для dropdown--facilities
-      if(dropdowns[i].classList.contains('dropdown--facilities')){
+      if(dropdowns[i].classList.contains('dropdown__inner--facilities')){
         // Формы слова "спальня"
         switch(dropOutItems[0].textContent){
           case "1": 
@@ -118,7 +118,7 @@ document.addEventListener('DOMSubtreeModified', function(){
       }
 
       //формы слова для dropdown--guests
-      if(dropdowns[i].classList.contains('dropdown--guests')){
+      if(dropdowns[i].classList.contains('dropdown__inner--guests')){
         // Формы слова "взрослый"
         switch(dropOutItems[0].textContent){
           case "1": 

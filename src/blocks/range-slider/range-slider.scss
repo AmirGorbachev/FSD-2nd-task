@@ -1,8 +1,11 @@
 .range-slider {
+  
+}
+.range-slider__inner {
   position: relative;
   padding: 3px 0;
 }
-.slider-range {
+.range-slider__range {
   width: 266px;
   height: 6px;  
   background: $background-color;
@@ -10,7 +13,7 @@
   box-sizing: border-box;
   border-radius: 3px;
 }
-.range__inner {
+.range-slider__cost {
   width: 266px;
   display: flex;
   justify-content: flex-end;

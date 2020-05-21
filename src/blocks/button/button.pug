@@ -1,4 +1,5 @@
 //-"full", "border", "min", "arrow" 
 mixin btn(type, value)
-  .btn(class="btn--"+type)
-    h3(class="btn--"+type+"__value") #{value}
+  .btn__inner
+    .btn(class="btn--"+type)
+      h3(class="btn--"+type+"__value") #{value}

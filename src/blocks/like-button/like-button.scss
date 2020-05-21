@@ -1,4 +1,7 @@
 .like-button {
+  
+}
+.like-button__inner {
   cursor: pointer;
   display: inline-block;
   width: 40px;
@@ -25,7 +28,7 @@
   padding-left: 9px; 
 }
 /* Активное состояние */
-.like-button--active {
+.like-button__inner--active {
   border: 1px solid $palette-secondary;
   &::before {
     content: 'favorite';

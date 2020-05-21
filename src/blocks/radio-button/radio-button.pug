@@ -1,6 +1,7 @@
 mixin radio-button(name, value, text, checked)
-  p.radio-button
-    label.radio-button__label
-      input.radio-button__checkbox(type="radio", name=name, value=value, checked=checked)
-      span.radio-button__button
-      span.radio-button__text #{text}
+  .radio-button
+    p.radio-button__inner
+      label.radio-button__label
+        input.radio-button__checkbox(type="radio", name=name, value=value, checked=checked)
+        span.radio-button__button
+        span.radio-button__text #{text}
