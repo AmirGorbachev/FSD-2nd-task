@@ -1,10 +1,5 @@
 /* Сброс стилей */
 import '../../node_modules/normalize.css/normalize.css';
-/* Стили страниц */
-import '../pages/form-elements/form-elements.scss';
-import '../pages/cards/cards.scss';
-import '../pages/colors&type/colors&type.scss';
-import '../pages/headers&footers/headers&footers.scss';
 /* Плагин - jQuery UI */
 import '../plugins/jquery-ui/jquery-ui.min.js';
 var $ = require("jquery");
