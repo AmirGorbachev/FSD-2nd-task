@@ -1,11 +1,13 @@
-mixin review(name, time, content, likes, photo)
+//- options: name, time, content, likes, btnLikeActive, photo
+mixin review(options)
   .review
-    .review__left
-      .review__photo
-        img(src=require("./../../blocks/review/img/"+photo))
-      .review__like-button
-        +like-button--active(likes)
-    .review__right
-      h3.review__name= name
-      p.review__time= time
-      p.review__content= content
+    .review__inner
+      .review__left
+        .review__photo
+          img(src=require("./../../blocks/review/img/"+options.photo))
+        .review__like-button
+          +like-button(options.likes, options.btnLikeActive)
+      .review__right
+        h3.review__name= options.name
+        p.review__time= options.time
+        p.review__content= options.content

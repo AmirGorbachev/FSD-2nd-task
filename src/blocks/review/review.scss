@@ -1,4 +1,7 @@
 .review {
+
+}
+.review__inner {
   display: flex;
 }
 .review__left {
@@ -25,9 +28,11 @@
   text-transform: none;
   font-size: 14px;
   margin-bottom: 5px;
+  color: $palette-primary-75;
 }
 .review__time {
   margin-bottom: 10px;
 }
 .review__content {
+  color: $palette-primary-75;
 }
