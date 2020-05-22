@@ -2,6 +2,7 @@
 mixin reservation(options)
   .reservation
     .reservation__inner 
+    
       .reservation__header
         .reservation__room
           h1.reservation__number-sign №
@@ -11,27 +12,31 @@ mixin reservation(options)
         .reservation__cost
           h3= options.dayCost
           p в сутки
+
       .reservation__dates
         .reservation__dates-headers
           h3.reservation__dates-header Прибытие
           h3.reservation__dates-header Выезд
         +date-dropdown("start_one","end_one","ДД.ММ.ГГГГ")
+
       .reservation__guests
         h3.reservation__guests-header Гости
         +dropdown("guests")
-      .reservation__cost-list
-        .reservation__services-name
-          each service in options.services
-            .reservation__service-name
-              p= service
-        .reservation__services-info
-          each info in options.info
-            .reservation__service-info
-              if (info == true)
-                p.reservation__info i
-              else 
-                p.reservation__info--false i
-        .reservation__services-cost
-          each cost in options.costs
-            .reservation__service-cost
-              p= cost
+
+      .reservation__cost-list--inner
+        .reservation__cost-list
+          .reservation__services-name
+            each service in options.services
+              .reservation__service-name
+                p= service
+          .reservation__services-info
+            each info in options.info
+              .reservation__service-info
+                if (info == true)
+                  p.reservation__info i
+                else 
+                  p.reservation__info.reservation__info--false i
+          .reservation__services-cost
+            each cost in options.costs
+              .reservation__service-cost
+                p= cost
