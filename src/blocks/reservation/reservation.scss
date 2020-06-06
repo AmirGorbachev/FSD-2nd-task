@@ -8,7 +8,7 @@
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 39px 29px 30px 29px;
+  padding: 39px 30px 29px 30px;
 }
 .reservation__header {
   display: flex;
@@ -58,36 +58,27 @@
 .reservation__guests-header {
   margin-bottom: 5px;
 }
-.reservation__cost-list--inner {
+.reservation__cost-list {
   width: 100%;
 }
-.reservation__cost-list {
-  //width: 100%;
+.reservation__cost-list--inner {
   display: flex;
   position: relative;
   top: -9px;
   width: 320px;
 }
 .reservation__services-name {
+  margin-top: 3px;
   max-width: 220px;
 }
 .reservation__service-name {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
+  line-height: 18px;
 }
 .reservation__services-info {
   margin-top: -2px;
 }
 .reservation__service-info {
-
-}
-.reservation__services-cost {
-  text-align: right;
-  flex-grow: 1;
-}
-.reservation__service-cost {
-  margin-bottom: 10px;
-}
-.reservation__info {
   border-radius: 50%;
   border: 1px solid $palette-primary-25;
   box-sizing: border-box;
@@ -100,8 +91,33 @@
   line-height: 20px;
   cursor: help;
   margin-bottom: 16px;
+
+  &--false {
+    opacity: 0%;
+    cursor: default;
+  }
 }
-.reservation__info--false {
-  opacity: 0%;
-  cursor: default;
+.reservation__services-cost {
+  text-align: right;
+  flex-grow: 1;
+}
+.reservation__service-cost {
+  margin-bottom: 10px;
+}
+.reservation__cost-result {
+  margin-top: 4px;
+  display: flex;
+}
+.reservation__dashed {
+  height: 0px;
+  flex-grow:1;
+  border: 1px dashed rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  align-self: flex-end;
+}
+.reservation__button {
+  margin-top: 20px;
 }
