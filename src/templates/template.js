@@ -13,3 +13,4 @@ import '../blocks/dropdown/dropdown.js';
 import '../blocks/like-button/like-button.js';
 import '../blocks/range-slider/range-slider.js';
 import '../blocks/toggle/toggle.js';
+import '../blocks/room-card/room-card.js';

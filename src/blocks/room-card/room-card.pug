@@ -1,0 +1,29 @@
+//- options: number, lux, dayCost, rate, review, image
+mixin room-card(options)
+  .room-card
+    .room-card__inner
+      .room-card__slider
+        image.room-card__image(src=require('../../blocks/room-card/img/'+options.image+'.jpg') alt='Фото комнаты')
+        .room-card__slider-left
+        .room-card__slider-right
+      .room-card__info
+        .room-card__points
+          .room-card__point.room-card__point--active
+          .room-card__point
+          .room-card__point
+          .room-card__point
+        .room-card__room
+          .room-card__room__inner
+            h1.room-card__number-sign №
+            h1.room-card__number= options.number
+            if (options.lux == true)
+              h3.room-card__lux Люкс
+          .room-card__cost
+            h3= options.dayCost
+            p в сутки
+        .room-card__line
+        .room-card__bottom
+          +rate-button(options.rate)
+          .room-card__review
+            h3= options.review
+            p  Отзывов

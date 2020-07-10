@@ -22,4 +22,20 @@ block body
       })
       +authorization
     .column
-      .calendar.datepicker-here
+      #calendar.calendar.datepicker-here
+      +room-card({
+        number: '888',
+        lux: true,
+        dayCost: '9 990₽',
+        rate: 5,
+        review: '145',
+        image: 1
+      })
+      +room-card({
+        number: '840',
+        lux: false,
+        dayCost: '9 900₽',
+        rate: 4,
+        review: '65',
+        image: 2
+      })
