@@ -33,7 +33,7 @@ mixin reservation(options)
               if (info == true)
                 p.reservation__service-info i
               else 
-                p.reservation__service-info.reservation__info--false i
+                p.reservation__service-info.reservation__service-info--false i
           .reservation__services-cost
             each cost in options.costs
               p.reservation__service-cost= cost
