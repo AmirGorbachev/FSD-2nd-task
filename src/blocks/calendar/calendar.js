@@ -11,6 +11,7 @@ $.fn.datepicker.language['ru'] =  {
     firstDay: 1
 };
 
+// Range date picker
 $( function() {
 
   let $start = $('#start'),
@@ -34,13 +35,32 @@ $( function() {
 
 } );
 
-/**/
+// Styles of date picker
+let now = new Date();
+let endDate = new Date(now.getTime() + 365*24*60*60*1000)
+/*
+let $start = $('#start'),
+    $end = $('#end');
+let $datepickers = $('.datepickers');
+*/
+$( function() {
+    $('.calendar').datepicker({
+      range: true,
+      clearButton: true,
+      autoClose: true,
+      prevHtml: '<span class="material-icons">arrow_back</span>',
+      nextHtml: '<span class="material-icons">arrow_forward</span>',
+      todayButton: true,
+      navTitles: {
+        days: 'MM yyyy'
+      },
+      minDate: now,
+      maxDate: endDate
+    })
+} );
 
 $( function() {
-    $('#calendar').datepicker({
-    	range: true,
-    	clearButton: true/*,
-    	prevHtml: <svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>,
-    	nextHtml: <svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>*/
-	})
+    $('.datepicker-here').datepicker({
+      classes: 'calendar'
+    })
 } );
