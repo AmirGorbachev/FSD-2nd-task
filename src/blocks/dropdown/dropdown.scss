@@ -109,6 +109,9 @@ $dropdown-width--guests: 320px;
 .btn-clear {
   display: none;
 }
+.btn-clear .btn--min__value {
+  color: $palette-primary-50;  
+}
 // Для "guests"
 .dropdown__inner--guests {
   width: $dropdown-width--guests;
