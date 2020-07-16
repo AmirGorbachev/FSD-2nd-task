@@ -2,55 +2,55 @@ extends ../../templates/template.pug
 
 block head
   title Headers&Footers
-  script(src='headers&footers.js')
+  script(src="headers&footers.js")
 block body
   .headers-and-footers
     .logo-for-kit
       include ../../favicon/logo.svg
     +header-nav({ 
-      authorization:'unauthorized',
-      menu: [ {name: 'Home', active: true},
-              {name: 'About Us'},
-              {name: 'Services', expandable: true},
-              {name: 'Careers'},
-              {name: 'News'},
-              {name: 'Documentation'}
+      authorization:"unauthorized",
+      menu: [ {name: "Home", active: true},
+              {name: "About Us"},
+              {name: "Services", expandable: true},
+              {name: "Careers"},
+              {name: "News"},
+              {name: "Documentation"}
       ]})
     +header-nav({	
-      authorization:'authorized',
-      name:'Cosmin Negoita',
-      menu: [	{name: 'Home', active: true},
-              {name: 'About Us'},
-              {name: 'Services', expandable: true},
-              {name: 'Careers'},
-              {name: 'News'},
-              {name: 'Documentation'}
+      authorization:"authorized",
+      name:"Cosmin Negoita",
+      menu: [	{name: "Home", active: true},
+              {name: "About Us"},
+              {name: "Services", expandable: true},
+              {name: "Careers"},
+              {name: "News"},
+              {name: "Documentation"}
       ]})
     +footer-nav({ 
-      aboutCompany:'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.',
-      header1: 'Navigation',
+      aboutCompany:"Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.",
+      header1: "Navigation",
       menu1: [
-        {name: 'About Us'},
-        {name: 'News'},
-        {name: 'Support'},
-        {name: 'Products'}
+        {name: "About Us"},
+        {name: "News"},
+        {name: "Support"},
+        {name: "Products"}
       ],
-      header2: 'About us',
+      header2: "About us",
       menu2: [
-        {name: 'Who we are'},
-        {name: 'Our team'},
-        {name: 'Careers'},
-        {name: 'Investors'}
+        {name: "Who we are"},
+        {name: "Our team"},
+        {name: "Careers"},
+        {name: "Investors"}
       ],
-      header3: 'Support',
+      header3: "Support",
       menu3: [
-        {name: 'Documentation'},
-        {name: 'Community'},
-        {name: 'Get in Touch'}
+        {name: "Documentation"},
+        {name: "Community"},
+        {name: "Get in Touch"}
       ],
-      subsribeHeader: 'Subscribe to our newsletter',
-      subsribeText: 'Receive our latest news and promotions in your inbox!',
-      placeholder: 'Your email addres',
-      copyright: 'Copyright © 2018 Toxin UI Kit. All rights reserved.'
+      subsribeHeader: "Subscribe to our newsletter",
+      subsribeText: "Receive our latest news and promotions in your inbox!",
+      placeholder: "Your email addres",
+      copyright: "Copyright © 2018 Toxin UI Kit. All rights reserved."
       })
-    +footer('Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.')
+    +footer("Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.")

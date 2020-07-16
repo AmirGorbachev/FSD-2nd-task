@@ -1,4 +1,4 @@
 // Подключение шаблона
-import '../../templates/template.js';
+import "../../templates/template.js";
 // Стили
-import './form-elements.scss';
+import "./form-elements.scss";

@@ -1,6 +1,6 @@
 // Изменение состояния кнопок/счетчика
-document.addEventListener('DOMContentLoaded', function(){
-  const items = document.querySelectorAll('.drop-out__counter');
+document.addEventListener("DOMContentLoaded", function(){
+  const items = document.querySelectorAll(".drop-out__counter");
 
   for(let i=0; i<items.length; i++) {
 
@@ -16,45 +16,45 @@ document.addEventListener('DOMContentLoaded', function(){
     const minCount = 0;
     const maxCount = 5;
 
-    // Обработка событий для 'минуса'
-    decrease.addEventListener('click', function(event) {
+    // Обработка событий для "минуса"
+    decrease.addEventListener("click", function(event) {
       if (amount > minCount) {
         amount--;
         counter.innerHTML = amount;
       }
       if (amount == minCount) {
         // Делаем кнопку не активной при 0
-        decrease.classList.remove('drop-out__btn-decrease--active'); 
+        decrease.classList.remove("drop-out__btn-decrease--active"); 
       }
       if (amount < maxCount) {
         // Делаем кнопку активной при != 0
-        increase.classList.add('drop-out__btn-increase--active');
+        increase.classList.add("drop-out__btn-increase--active");
       }
     });
 
-    // Обработка событий для 'плюса'
-    increase.addEventListener('click', function(event) {
+    // Обработка событий для "плюса"
+    increase.addEventListener("click", function(event) {
       if (amount < maxCount) {
         amount++;
         counter.innerHTML = amount;
       }
       if (amount > minCount) {
         // Делаем кнопку активной при != 5
-        decrease.classList.add('drop-out__btn-decrease--active'); 
+        decrease.classList.add("drop-out__btn-decrease--active"); 
       }
       if (amount == maxCount) {
         // Делаем кнопку не активной при 5
-        increase.classList.remove('drop-out__btn-increase--active'); 
+        increase.classList.remove("drop-out__btn-increase--active"); 
       }
     });
   }
 });
 
 // Вывод в input для dropdown
-document.addEventListener('DOMSubtreeModified', function(){
+document.addEventListener("DOMSubtreeModified", function(){
  
   // Собираем все dropdown на странице
-  const dropdowns = document.querySelectorAll('.dropdown__inner');
+  const dropdowns = document.querySelectorAll(".dropdown__inner");
   // написание параметров дропдауна в зависимости от количества
   let argument_1, argument_2, argument_3; 
  
@@ -63,16 +63,16 @@ document.addEventListener('DOMSubtreeModified', function(){
     // Находим input
     const input = dropdowns[i].childNodes[0].childNodes[0]; 
     // Массив значений из 3 счётчиков
-    const dropOutItems = dropdowns[i].querySelectorAll('.drop-out__amount');
+    const dropOutItems = dropdowns[i].querySelectorAll(".drop-out__amount");
     // Кнопки "Очистить" и "Принять"
-    let buttonAccept = dropdowns[i].querySelector('.btn-accept');
-    let buttonClear = dropdowns[i].querySelector('.btn-clear');
+    let buttonAccept = dropdowns[i].querySelector(".btn-accept");
+    let buttonClear = dropdowns[i].querySelector(".btn-clear");
     
     // Записываем значения в input
     if((dropOutItems[0].textContent != 0)||(dropOutItems[1].textContent != 0)||(dropOutItems[2].textContent != 0)) {
       
       //формы слова для dropdown--facilities
-      if(dropdowns[i].classList.contains('dropdown__inner--facilities')){
+      if(dropdowns[i].classList.contains("dropdown__inner--facilities")){
         // Формы слова "спальня"
         switch(dropOutItems[0].textContent){
           case "1": 
@@ -118,7 +118,7 @@ document.addEventListener('DOMSubtreeModified', function(){
       }
 
       //формы слова для dropdown--guests
-      if(dropdowns[i].classList.contains('dropdown__inner--guests')){
+      if(dropdowns[i].classList.contains("dropdown__inner--guests")){
         // Формы слова "взрослый"
         switch(dropOutItems[0].textContent){
           case "1": 
@@ -158,20 +158,20 @@ document.addEventListener('DOMSubtreeModified', function(){
         }
         //Баттоны
         buttonClear.style.display = "block";
-        buttonClear.addEventListener('click', function(){
+        buttonClear.addEventListener("click", function(){
           buttonClear.style.display = "none";
           dropOutItems[0].innerHTML = 0;
           dropOutItems[1].innerHTML = 0;
           dropOutItems[2].innerHTML = 0;
         })
-        buttonAccept.addEventListener('click', function(){
+        buttonAccept.addEventListener("click", function(){
           input.blur();
         })
         //Баттоны
       }
 
       // Запись в input
-      input.value = dropOutItems[0].textContent+' '+argument_1+', '+dropOutItems[1].textContent+' '+argument_2+', '+dropOutItems[2].textContent+' '+argument_3;
+      input.value = dropOutItems[0].textContent+" "+argument_1+", "+dropOutItems[1].textContent+" "+argument_2+", "+dropOutItems[2].textContent+" "+argument_3;
     } else {
       // Если все счётчики "0", обнуляем значение input
       input.value = null;

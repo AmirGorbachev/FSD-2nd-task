@@ -14,15 +14,15 @@ block body
       .first-column__block
         h3.first-column__name Text field
         .first-column__content
-          input.text-field(type='text', placeholder='Email')
+          input.text-field(type="text", placeholder="Email")
       .first-column__block
         h3.first-column__name Text field
         .first-column__content
-          input.text-field(type='text', placeholder='This is pretty awesome')
+          input.text-field(type="text", placeholder="This is pretty awesome")
       .first-column__block
         h3.first-column__name Dropdown
         .first-column__content
-          +dropdown('guests')
+          +dropdown("guests")
       .first-column__block
         h3.first-column__name Masked text field
         .first-column__content
@@ -32,15 +32,15 @@ block body
           h3.first-column__name Date dropdown
           h3.first-column__name Date dropdown
         .first-column__content
-          +date-dropdown('start_one','end_one')
+          +date-dropdown("start_one","end_one")
       .first-column__block
         h3.first-column__name Filter date dropdown
         .first-column__content
-          +filter-date-dropdown('ДД.ММ.ГГГГ - ДД.ММ.ГГГГ')
+          +filter-date-dropdown("ДД.ММ.ГГГГ - ДД.ММ.ГГГГ")
       .first-column__block
         h3.first-column__name Subscription text field
         .first-column__content
-          +subscription-text-field('Email')
+          +subscription-text-field("Email")
 
     //- Вторая колонна
     .top-block-group__second-column.second-column
@@ -48,28 +48,28 @@ block body
         h3.second-column__name Checkbox buttons
         .second-column__content
           .second-column__content--checkbox
-            +checkbox-button('usual', 'Можно курить')
+            +checkbox-button("usual", "Можно курить")
           .second-column__content--checkbox
-            +checkbox-button('usual', 'Можно с питомцами', '', 'checked')
+            +checkbox-button("usual", "Можно с питомцами", ", "checked")
           .second-column__content--checkbox
-            +checkbox-button('usual', 'Можно пригласить гостей (до 10 человек)', '', 'checked')
+            +checkbox-button("usual", "Можно пригласить гостей (до 10 человек)", ", "checked")
       .second-column__block.block--radio
         h3.second-column__name Radio buttons
         .second-column__content
-          +radio-button('gender', 'male', 'Мужчина', 'checked')
-          +radio-button('gender', 'female','Женщина')
+          +radio-button("gender", "male", "Мужчина", "checked")
+          +radio-button("gender", "female","Женщина")
       .second-column__block
         h3.second-column__name Toggle
         .second-column__content
-          +toggle('Получать спецпредложения', 'active')
+          +toggle("Получать спецпредложения", "active")
         .second-column__content
-          +toggle('Получать спецпредложения')
+          +toggle("Получать спецпредложения")
       .second-column__block.block--like
         h3.second-column__name Like button
         .second-column__content
           +like-button(2)
         .second-column__content
-          +like-button(12, 'active')
+          +like-button(12, "active")
       .second-column__block.block--rate
         h3.second-column__name Rate button
         .second-column__content
@@ -85,13 +85,13 @@ block body
       .tertiary-column__block.block--button
         h3.tertiary-column__name Buttons
         .tertiary-column__content
-          +btn('full','Click me')
+          +btn("full","Click me")
         .tertiary-column__content
-          +btn('border','Click me')
+          +btn("border","Click me")
         .tertiary-column__content
-          +btn('min','Click me')
+          +btn("min","Click me")
         .tertiary-column__content
-          +btn('arrow','Перейти к оплате')
+          +btn("arrow","Перейти к оплате")
       .tertiary-column__block
         h3.tertiary-column__name Pagination
         .tertiary-column__content
@@ -103,42 +103,42 @@ block body
       .first-column__block
         h3.first-column__name Dropdown
         .first-column__content
-          +dropdown('facilities')
+          +dropdown("facilities")
       .first-column__block
-        +checkbox-list('Expandable checkbox list', ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])
+        +checkbox-list("Expandable checkbox list", ["Завтрак", "Письменный стол", "Стул для кормления", "Кроватка", "Телевизор", "Шампунь"])
       .first-column__block
-        +card-conditions('mood', 'Комфорт', 'Шумопоглащающие стены')
-        +card-conditions('location_city', 'Удобство', 'Окно в каждой из спален')
+        +card-conditions("mood", "Комфорт", "Шумопоглащающие стены")
+        +card-conditions("location_city", "Удобство", "Окно в каждой из спален")
     .bottom-block-group__second-column.second-column
       .second-column__block
         h3.second-column__name Dropdown
         .second-column__content
-          +dropdown('guests')
+          +dropdown("guests")
       .second-column__block
         h3.second-column__name Rich checkbox buttons
         .second-column__content
           .second-column__content--checkbox
-            +checkbox-button('rich', 'Широкий коридор', 'Ширина коридоров в номере не менее 91 см.')
+            +checkbox-button("rich", "Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
           .second-column__content--checkbox
-            +checkbox-button('rich', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист и проводит до номера.')
+            +checkbox-button("rich", "Помощник для инвалидов", "На 1 этаже вас встретит специалист и проводит до номера.")
     .bottom-block-group__tertiary-column.tertiary-column
       .tertiary-column__block
         h3.tertiary-column__name Dropdown
         .tertiary-column__content
-          +dropdown('guests')
+          +dropdown("guests")
       .tertiary-column__block
         h3.tertiary-column__name Bullet list
         .tertiary-column__content
-          +bullet('Нельзя с питомцами')
-          +bullet('Без вечеринок и мероприятий')
-          +bullet('Время прибытия - после 13:00, а выезд до 12:00')
+          +bullet("Нельзя с питомцами")
+          +bullet("Без вечеринок и мероприятий")
+          +bullet("Время прибытия - после 13:00, а выезд до 12:00")
   .bottom-block-group.bottom-block-group--review
     +review({
-      name: 'Мурад Сарафанов',
-      time: '5 дней назад',
-      content: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподовляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
-      likes: '12',
-      btnLikeActive: 'active',
-      photo: 'photo-example.jpg'})
+      name: "Мурад Сарафанов",
+      time: "5 дней назад",
+      content: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподовляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.",
+      likes: "12",
+      btnLikeActive: "active",
+      photo: "photo-example.jpg"})
 
-  script(src='form-elements.js')
+  script(src="form-elements.js")

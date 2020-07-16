@@ -2,21 +2,21 @@ let now = new Date();
 // Максимальный диапазон выбора даты - один год
 let endDate = new Date(now.getTime() + 365*24*60*60*1000)
 
-document.addEventListener('DOMContentLoaded', function(){
-  const dateDropdowns = document.querySelectorAll('.date-dropdown__inner');
+document.addEventListener("DOMContentLoaded", function(){
+  const dateDropdowns = document.querySelectorAll(".date-dropdown__inner");
 
   for(let i=0; i<dateDropdowns.length; i++) {
-    let firstInput = "#"+dateDropdowns[i].querySelector(".date-dropdown__first").getAttribute("id");
-    let secondInput = "#"+dateDropdowns[i].querySelector(".date-dropdown__second").getAttribute("id");
+    const firstInput = "#"+dateDropdowns[i].querySelector(".date-dropdown__first").getAttribute("id");
+    const secondInput = "#"+dateDropdowns[i].querySelector(".date-dropdown__second").getAttribute("id");
     // Объявление datepicker
     $(firstInput).datepicker({ 
       range: true,
       clearButton: true,
-      prevHtml: '<span class="material-icons">arrow_back</span>',
-      nextHtml: '<span class="material-icons">arrow_forward</span>',
+      prevHtml: "<span class='material-icons'>arrow_back</span>",
+      nextHtml: "<span class='material-icons'>arrow_forward</span>",
       todayButton: true,
       navTitles: {
-        days: 'MM yyyy'
+        days: "MM yyyy"
       },
       minDate: now,
       maxDate: endDate,
@@ -27,12 +27,12 @@ document.addEventListener('DOMContentLoaded', function(){
     });
     // Событие при клике на второй input
     $(secondInput).on("click", function() {
-      $(firstInput).data('datepicker').show();
+      $(firstInput).data("datepicker").show();
     });
-    // Кнопка 'Принять' (скрытие календаря)
-    const acceptButton = document.querySelectorAll('[data-action="today"]');
-    $(acceptButton).on('click', function() {
-      $(firstInput).data('datepicker').hide();
+    // Кнопка "Принять" (скрытие календаря)
+    const acceptButton = document.querySelectorAll("[data-action='today']");
+    $(acceptButton).on("click", function() {
+      $(firstInput).data("datepicker").hide();
     });
   }
 });

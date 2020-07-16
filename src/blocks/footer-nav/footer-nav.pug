@@ -10,17 +10,17 @@ mixin footer-nav(options)
           h3.footer-nav__chapters= options.header1
           each chapter in options.menu1
             p.footer-nav__chapter 
-              a.footer-nav__link(href='#')= chapter.name
+              a.footer-nav__link(href="#")= chapter.name
         .footer-nav__about
           h3.footer-nav__chapters= options.header2
           each chapter in options.menu2
             p.footer-nav__chapter 
-              a.footer-nav__link(href='#')= chapter.name
+              a.footer-nav__link(href="#")= chapter.name
         .footer-nav__support
           h3.footer-nav__chapters= options.header3
           each chapter in options.menu3
             p.footer-nav__chapter 
-              a.footer-nav__link(href='#')= chapter.name
+              a.footer-nav__link(href="#")= chapter.name
       .footer-nav__subscribe
         h3.footer-nav__subsribe-header= options.subsribeHeader
         p.footer-nav__subsribe-text= options.subsribeText
@@ -30,6 +30,6 @@ mixin footer-nav(options)
     .copyright-bar__inner
       p.copyright-bar__copyright= options.copyright
       .copyright-bar__social
-          a.copyright-bar__link.copyright-bar__link--twitter(href='#')
-          a.copyright-bar__link.copyright-bar__link--facebook(href='#')
-          a.copyright-bar__link.copyright-bar__link--instagram(href='#')
+          a.copyright-bar__link.copyright-bar__link--twitter(href="#")
+          a.copyright-bar__link.copyright-bar__link--facebook(href="#")
+          a.copyright-bar__link.copyright-bar__link--instagram(href="#")
