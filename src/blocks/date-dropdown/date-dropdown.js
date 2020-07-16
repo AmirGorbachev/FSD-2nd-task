@@ -29,5 +29,10 @@ document.addEventListener('DOMContentLoaded', function(){
     $(secondInput).on("click", function() {
       $(firstInput).data('datepicker').show();
     });
+    // Кнопка 'Принять' (скрытие календаря)
+    const acceptButton = document.querySelectorAll('[data-action="today"]');
+    $(acceptButton).on('click', function() {
+      $(firstInput).data('datepicker').hide();
+    });
   }
 });
