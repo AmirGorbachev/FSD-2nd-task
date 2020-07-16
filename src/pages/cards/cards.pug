@@ -8,13 +8,15 @@ block body
     include ../../favicon/logo.svg
   .columns
     .column
-      +room-selection
+      +room-selection('dateDropdownOne', 'dateDropdownTwo')
       +registration-form
     .column
       +reservation({
         number: '888',
         lux: true,
         dayCost: '9 990₽',
+        dateDropdownIdFirst: 'dateDropdownRes1',
+        dateDropdownIdSecond: 'dateDropdownRes2',
         services: ['9 990₽ x 4 суток','Сбор за услуги: скидка 2 179₽','Сбор за дополнительные услуги'],
         info: [false, true, true],
         costs: ['39 960₽', '0₽', '300₽'],

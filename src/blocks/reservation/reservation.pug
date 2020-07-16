@@ -1,4 +1,4 @@
-//- options: number, lux, dayCost, {services}, {info}, {costs}, result
+//- options: number, lux, dayCost, dateDropdownIdFirst, dateDropdownIdSecond, {services}, {info}, {costs}, result
 mixin reservation(options)
   .reservation
     .reservation__inner 
@@ -17,7 +17,7 @@ mixin reservation(options)
         .reservation__dates-headers
           h3.reservation__dates-header Прибытие
           h3.reservation__dates-header Выезд
-        +date-dropdown("start_one","end_one","ДД.ММ.ГГГГ")
+        +date-dropdown(options.dateDropdownIdFirst,options.dateDropdownIdSecond)
 
       .reservation__guests
         h3.reservation__guests-header Гости

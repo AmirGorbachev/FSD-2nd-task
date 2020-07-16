@@ -1,4 +1,4 @@
-mixin room-selection
+mixin room-selection(dateDropdownIdFirst, dateDropdownIdSecond)
   .room-selection
     .room-selection__inner
       h1.room-selection__header Найдём номера под ваши пожелания
@@ -6,7 +6,7 @@ mixin room-selection
         .room-selection__dates-headers
           h3.room-selection__dates-header Прибытие
           h3.room-selection__dates-header Выезд
-        +date-dropdown("start_one","end_one","ДД.ММ.ГГГГ")
+        +date-dropdown(dateDropdownIdFirst, dateDropdownIdSecond)
       .room-selection__guests
         h3.room-selection__guests-header Гости
         +dropdown("guests")

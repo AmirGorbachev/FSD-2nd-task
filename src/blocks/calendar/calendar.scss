@@ -133,4 +133,25 @@
 // Стили кнопок
 .datepicker--buttons {
   flex-direction: row-reverse;
+  border: none;
+  justify-content: space-between;
+  padding: 8px 12px 11px;
+}
+.datepicker--button {
+  max-width: 80px;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  font-family: $font-family-secondary-bold;
+  color: $palette-secondary;
+  transition-duration: $transition-duration;
+  padding-right: 9px;
+  padding-left: 3px;
+  &:hover {
+    color: $palette-primary-50;
+    background-color: $background-color;
+  }
+}
+.datepicker--button:nth-child(2) {
+  color: $palette-primary-50;
 }

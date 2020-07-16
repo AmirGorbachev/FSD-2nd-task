@@ -4,45 +4,17 @@ $.fn.datepicker.language['ru'] =  {
     daysMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
     months: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
     monthsShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
-    today: 'Сегодня',
+    today: 'Применить',
     clear: 'Очистить',
     dateFormat: 'dd.mm.yyyy',
     timeFormat: 'hh:ii',
     firstDay: 1
 };
 
-// Range date picker
-$( function() {
-
-  let $start = $('#start'),
-      $end = $('#end');
-  
-  $start.datepicker({
-      onSelect: function (fd, date) {
-          $end.data('datepicker')
-                  .update('minDate', date);
-  
-          $end.focus();
-      }
-  })
-  
-  $end.datepicker({
-      onSelect: function (fd, date) {
-          $start.data('datepicker')
-                  .update('maxDate', date)
-      }
-  })
-
-} );
-
 // Styles of date picker
 let now = new Date();
 let endDate = new Date(now.getTime() + 365*24*60*60*1000)
-/*
-let $start = $('#start'),
-    $end = $('#end');
-let $datepickers = $('.datepickers');
-*/
+
 $( function() {
     $('.calendar').datepicker({
       range: true,
@@ -56,11 +28,5 @@ $( function() {
       },
       minDate: now,
       maxDate: endDate
-    })
-} );
-
-$( function() {
-    $('.datepicker-here').datepicker({
-      classes: 'calendar'
     })
 } );
