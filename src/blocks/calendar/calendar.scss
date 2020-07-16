@@ -130,6 +130,9 @@
     left: 0px;
   }
 }
+.datepicker--cell.-disabled-.-focus- {
+  background: $palette-primary-25;
+}
 // Стили кнопок
 .datepicker--buttons {
   flex-direction: row-reverse;
