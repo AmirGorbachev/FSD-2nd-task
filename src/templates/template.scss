@@ -1,7 +1,7 @@
 /* Переменные, шрифты */
 @import '../../style/_fonts.css';
-@import '../../style/_variables.scss';
-@import '../../style/_global-for-kit.scss';
+@import '../style/_variables.scss';
+@import '../style/_global-for-kit.scss';
 
 /* Плагин - jQuery UI */
 @import '../../plugins/jQuery-ui/jquery-ui.min.css';
@@ -16,33 +16,33 @@ $material-icons-font-path: '~material-icons/iconfont/';
 @import '~material-icons/iconfont/material-icons.scss';
 
 /* Подключение стилей независимых БЭМ-блоков */
-@import '../../blocks/text-field/text-field';
+@import '../blocks/text-field/text-field';
 /* Подключение стилей зависимых БЭМ-блоков */
-@import '../../blocks/authorization/authorization';
-@import '../../blocks/bullet/bullet';
-@import '../../blocks/button/button';
-@import '../../blocks/calendar/calendar';
-@import '../../blocks/card-conditions/card-conditions';
-@import '../../blocks/checkbox-button/checkbox-button';
-@import '../../blocks/checkbox-list/checkbox-list';
-@import '../../blocks/color-panel/color-panel';
-@import '../../blocks/date-dropdown/date-dropdown';
-@import '../../blocks/date-picker/date-picker';
-@import '../../blocks/dropdown/dropdown';
-@import '../../blocks/filter-date-dropdown/filter-date-dropdown';
-@import '../../blocks/footer/footer';
-@import '../../blocks/footer-nav/footer-nav';
-@import '../../blocks/header-nav/header-nav';
-@import '../../blocks/like-button/like-button';
-//@import '../../blocks/logo/logo';(no scss file)
-@import '../../blocks/pagination/pagination';
-@import '../../blocks/radio-button/radio-button';
-@import '../../blocks/range-slider/range-slider';
-@import '../../blocks/rate-button/rate-button';
-@import '../../blocks/registration-form/registration-form';
-@import '../../blocks/reservation/reservation';
-@import '../../blocks/review/review';
-@import '../../blocks/room-selection/room-selection';
-@import '../../blocks/room-card/room-card';
-@import '../../blocks/subscription-text-field/subscription-text-field';
-@import '../../blocks/toggle/toggle';
+@import '../blocks/authorization/authorization';
+@import '../blocks/bullet/bullet';
+@import '../blocks/button/button';
+@import '../blocks/calendar/calendar';
+@import '../blocks/card-conditions/card-conditions';
+@import '../blocks/checkbox-button/checkbox-button';
+@import '../blocks/checkbox-list/checkbox-list';
+@import '../blocks/color-panel/color-panel';
+@import '../blocks/date-dropdown/date-dropdown';
+@import '../blocks/date-picker/date-picker';
+@import '../blocks/dropdown/dropdown';
+@import '../blocks/filter-date-dropdown/filter-date-dropdown';
+@import '../blocks/footer/footer';
+@import '../blocks/footer-nav/footer-nav';
+@import '../blocks/header-nav/header-nav';
+@import '../blocks/like-button/like-button';
+//@import '../blocks/logo/logo';(no scss file)
+@import '../blocks/pagination/pagination';
+@import '../blocks/radio-button/radio-button';
+@import '../blocks/range-slider/range-slider';
+@import '../blocks/rate-button/rate-button';
+@import '../blocks/registration-form/registration-form';
+@import '../blocks/reservation/reservation';
+@import '../blocks/review/review';
+@import '../blocks/room-selection/room-selection';
+@import '../blocks/room-card/room-card';
+@import '../blocks/subscription-text-field/subscription-text-field';
+@import '../blocks/toggle/toggle';
