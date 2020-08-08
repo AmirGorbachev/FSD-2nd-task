@@ -62,7 +62,12 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|gif|jpg|png|svg)$/,
-        use: ['file-loader']
+        use: [{
+          loader: 'file-loader',
+          options: {
+            esModule: false
+          }
+        }]
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
