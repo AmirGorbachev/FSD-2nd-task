@@ -1,9 +1,10 @@
 // Подключение стилей шаблона
 @import '../../templates/template.scss';
 
-.cards {
+body {
   background: #E5E5E5;
 }
+
 .columns {
   margin: 150px 140px;
   display: flex;
