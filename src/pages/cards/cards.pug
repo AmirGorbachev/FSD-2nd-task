@@ -4,40 +4,41 @@ block head
   title Cards
   
 block body
-  .logo-for-kit
-    include ../../favicon/logo.svg
-  .columns
-    .column
-      +room-selection("dateDropdownOne", "dateDropdownTwo")
-      +registration-form
-    .column
-      +reservation({
-        number: "888",
-        lux: true,
-        dayCost: "9 990₽",
-        dateDropdownIdFirst: "dateDropdownRes1",
-        dateDropdownIdSecond: "dateDropdownRes2",
-        services: ["9 990₽ x 4 суток","Сбор за услуги: скидка 2 179₽","Сбор за дополнительные услуги"],
-        info: [false, true, true],
-        costs: ["39 960₽", "0₽", "300₽"],
-        result: "38 081₽"
-      })
-      +authorization
-    .column
-      #calendar.calendar.datepicker-here
-      +room-card({
-        number: "888",
-        lux: true,
-        dayCost: "9 990₽",
-        rate: 5,
-        review: "145",
-        image: 1
-      })
-      +room-card({
-        number: "840",
-        lux: false,
-        dayCost: "9 900₽",
-        rate: 4,
-        review: "65",
-        image: 2
-      })
+  .cards
+    .logo-for-kit
+      include ../../favicon/logo.svg
+    .columns
+      .column
+        +room-selection("dateDropdownOne", "dateDropdownTwo")
+        +registration-form
+      .column
+        +reservation({
+          number: "888",
+          lux: true,
+          dayCost: "9 990₽",
+          dateDropdownIdFirst: "dateDropdownRes1",
+          dateDropdownIdSecond: "dateDropdownRes2",
+          services: ["9 990₽ x 4 суток","Сбор за услуги: скидка 2 179₽","Сбор за дополнительные услуги"],
+          info: [false, true, true],
+          costs: ["39 960₽", "0₽", "300₽"],
+          result: "38 081₽"
+        })
+        +authorization
+      .column
+        #calendar.calendar.datepicker-here
+        +room-card({
+          number: "888",
+          lux: true,
+          dayCost: "9 990₽",
+          rate: 5,
+          review: "145",
+          image: 1
+        })
+        +room-card({
+          number: "840",
+          lux: false,
+          dayCost: "9 900₽",
+          rate: 4,
+          review: "65",
+          image: 2
+        })

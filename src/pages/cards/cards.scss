@@ -1,17 +1,17 @@
 // Подключение стилей шаблона
 @import '../../templates/template.scss';
 
-body {
-	background: #E5E5E5;
+.cards {
+  background: #E5E5E5;
 }
 .columns {
-	margin: 150px 140px;
-	display: flex;
-	justify-content: space-between;
+  margin: 150px 140px;
+  display: flex;
+  justify-content: space-between;
 }
 .column .room-selection,
 .column .reservation,
 .column .calendar,
 .column .room-card {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
