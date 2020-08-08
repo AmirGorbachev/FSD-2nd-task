@@ -21,19 +21,23 @@ module.exports = {
   plugins: [
     new HTMLWebpackPlugin({
       template: __dirname + '/src/pages/colors&type/colors&type.pug',
-      filename: 'colors&type.html'
+      filename: 'colors&type.html',
+      chunks: ['colors&type']
     }),
     new HTMLWebpackPlugin({
       template: __dirname + '/src/pages/headers&footers/headers&footers.pug',
-      filename: 'headers&footers.html'
+      filename: 'headers&footers.html',
+      chunks: ['headers&footers']
     }),
     new HTMLWebpackPlugin({
       template: __dirname + '/src/pages/form-elements/form-elements.pug',
-      filename: 'form-elements.html'
+      filename: 'form-elements.html',
+      chunks: ['form-elements']
     }),
     new HTMLWebpackPlugin({
       template: __dirname + '/src/pages/cards/cards.pug',
-      filename: 'cards.html'
+      filename: 'cards.html',
+      chunks: ['cards']
     }),
     new webpack.ProvidePlugin({
       $: "jquery/dist/jquery.min.js",
