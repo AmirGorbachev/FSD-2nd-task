@@ -2,25 +2,28 @@
   options.authorization = "authorized" or "unauthorized"
   options.name (if "authorized")
   options.menu [{name, active, expandable}]
+  options.login
+  options.register
 mixin header-nav(options)
   .header-nav
     .header-nav__inner
-      .header-nav__logo
-        include img/logo-toxin.svg
-      .header-nav__menu-nav
-        each chapter in options.menu
-          p.header-nav__chapter(class=[
-            chapter.expandable ? "header-nav__chapter--drop-down" : "",
-            chapter.active ? "header-nav__chapter--active": ""
-          ])
-            a.header-nav__link(href="#", class=[
-              chapter.expandable ? "header-nav__link--drop-down" : "",
-              chapter.active ? "header-nav__link--active": ""
-            ])= chapter.name
-      .header-nav__authorization
-        if (options.authorization == "authorized")
-          .header-nav__vertical-line
-          p.header-nav__username= options.name
-        if (options.authorization == "unauthorized")
-          +btn("border","Login")
-          +btn("full","Register")
+      .header-nav__wrapper
+        .header-nav__logo
+          include img/logo-toxin.svg
+        .header-nav__menu-nav
+          each chapter in options.menu
+            p.header-nav__chapter(class=[
+              chapter.expandable ? "header-nav__chapter--drop-down" : "",
+              chapter.active ? "header-nav__chapter--active": ""
+            ])
+              a.header-nav__link(href="#", class=[
+                chapter.expandable ? "header-nav__link--drop-down" : "",
+                chapter.active ? "header-nav__link--active": ""
+              ])= chapter.name
+        .header-nav__authorization
+          if (options.authorization == "authorized")
+            .header-nav__vertical-line
+            p.header-nav__username= options.name
+          if (options.authorization == "unauthorized")
+            +btn("border",""+options.login)
+            +btn("full",""+options.register)

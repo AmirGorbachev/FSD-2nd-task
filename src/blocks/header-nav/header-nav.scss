@@ -5,7 +5,10 @@
   box-shadow: 0px 10px 20px $palette-primary-5;
 }
 .header-nav__inner {
-  padding: 15px 140px;
+
+}
+.header-nav__wrapper {
+  padding: 14px 140px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -13,10 +16,11 @@
 .header-nav__logo {
   height: 40px;
   flex-grow: 1;
+  margin-top: 1px;
 }
 /* Меню */
 .header-nav__menu-nav {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 .header-nav__chapter {
   margin-right: 20px;
@@ -56,13 +60,17 @@
 .header-nav__authorization {
   margin-top: 0;
   display: flex;
-  .btn{
-    margin: auto 0;
-    box-sizing: border-box;
-    padding: 10px 20px;
-    &:first-child{
+  margin-top: 3px;
+  margin-left: 2px;
+  .btn {
+    margin-top: 1px;
+    &--full {
+      padding: 9px 20px;
+    }
+    &--border {
       padding: 8px 18px;
-      margin-right: 21px;
+      margin-right: 23px;
+      margin-top: 2px;
     }
   }
 }
