@@ -27,9 +27,8 @@
   display: inline-block;
   line-height: 17px;
   font-family: $font-family-secondary-medium;
-  letter-spacing: -0.018em;
   &:not(.header-nav__chapter--drop-down) {
-    margin-right: 30px;
+    margin-right: 20px;
   }
   &--active {
     font-family: $font-family-secondary-bold;
@@ -61,16 +60,18 @@
   margin-top: 0;
   display: flex;
   margin-top: 3px;
-  margin-left: 2px;
   .btn {
     margin-top: 1px;
     &--full {
-      padding: 9px 20px;
+      padding: 9px 22px;
     }
     &--border {
-      padding: 8px 18px;
+      padding: 7.5px 19.5px;
       margin-right: 23px;
       margin-top: 2px;
+    }
+    &--border__value {
+      letter-spacing: -0.05em;
     }
   }
 }
@@ -82,5 +83,5 @@
 }
 .header-nav__username {
   margin: auto;
-  margin-left: 30px;
+  margin-left: 20px;
 }

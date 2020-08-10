@@ -9,54 +9,52 @@ block body
       include ../../favicon/logo.svg
     +header-nav({ 
       authorization:"unauthorized",
-      menu: [ {name: "Home", active: true},
-              {name: "About Us"},
-              {name: "Services", expandable: true},
-              {name: "Careers"},
-              {name: "News"},
-              {name: "Documentation"}
+      menu: [ {name: "О нас"},
+              {name: "Услуги", expandable: true},
+              {name: "Вакансии"},
+              {name: "Новости"},
+              {name: "Соглашения", expandable: true}
       ],
-      login: "Login",
-      register: "Register"
+      login: "Войти",
+      register: "Зарегистрироваться"
       })
-    +header-nav({	
+    +header-nav({ 
       authorization:"authorized",
-      name:"Cosmin Negoita",
-      menu: [	{name: "Home", active: true},
-              {name: "About Us"},
-              {name: "Services", expandable: true},
-              {name: "Careers"},
-              {name: "News"},
-              {name: "Documentation"}
+      name:"Юлий Цезарь",
+      menu: [ {name: "О нас"},
+              {name: "Услуги", expandable: true},
+              {name: "Вакансии"},
+              {name: "Новости"},
+              {name: "Соглашения", expandable: true}
       ],
-      login: "Login",
-      register: "Register"
+      login: "Войти",
+      register: "Зарегистрироваться"
       })
     +footer-nav({ 
-      aboutCompany:"Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.",
-      header1: "Navigation",
+      aboutCompany:"Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»",
+      header1: "Навигация",
       menu1: [
-        {name: "About Us"},
-        {name: "News"},
-        {name: "Support"},
-        {name: "Products"}
+        {name: "О нас"},
+        {name: "Новости"},
+        {name: "Служба поддержки"},
+        {name: "Услуги"}
       ],
-      header2: "About us",
+      header2: "О нас",
       menu2: [
-        {name: "Who we are"},
-        {name: "Our team"},
-        {name: "Careers"},
-        {name: "Investors"}
+        {name: "О сервисе"},
+        {name: "Наша команда"},
+        {name: "Вакансии"},
+        {name: "Инвесторы"}
       ],
-      header3: "Support",
+      header3: "Служба поддержки",
       menu3: [
-        {name: "Documentation"},
-        {name: "Community"},
-        {name: "Get in Touch"}
+        {name: "Соглашения"},
+        {name: "Сообщества"},
+        {name: "Связь с нами"}
       ],
-      subsribeHeader: "Subscribe to our newsletter",
-      subsribeText: "Receive our latest news and promotions in your inbox!",
-      placeholder: "Your email addres",
-      copyright: "Copyright © 2018 Toxin UI Kit. All rights reserved."
+      subsribeHeader: "Подписка",
+      subsribeText: "Получайте специальные предложения и новости сервиса",
+      placeholder: "Email",
+      copyright: "Copyright © 2018 Toxin отель. Все права защищены."
       })
-    +footer("Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.")
+    +footer("Copyright © 2018 Toxin отель. Все права защищены.")
