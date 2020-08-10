@@ -4,6 +4,7 @@ block head
   title Landing page
   
 block body
+  header
   +header-nav({ 
     authorization:"unauthorized",
     menu: [ {name: "О нас"},
@@ -13,5 +14,8 @@ block body
             {name: "Соглашения", expandable: true}
     ],
     login: "Войти",
-    register: "Регистрация"
+    register: "Зарегистрироваться"
     })
+  main
+
+  footer
