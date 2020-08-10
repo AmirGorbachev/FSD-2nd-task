@@ -2,7 +2,9 @@
 @import '../../templates/template.scss';
 
 body {
-  background: #E5E5E5;
+  background-color: #E5E5E5;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .columns {

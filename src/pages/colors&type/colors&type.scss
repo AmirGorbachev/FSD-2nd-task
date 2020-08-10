@@ -1,6 +1,11 @@
 // Подключение стилей шаблона
 @import '../../templates/template.scss';
 
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;

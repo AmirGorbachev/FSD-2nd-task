@@ -1,5 +1,5 @@
 .btn {
-  
+  display: inline-block;
 }
 .btn__inner {
   display: inline-block;
@@ -9,7 +9,7 @@
 /* Button-full */
 .btn--full {
   letter-spacing: -0.015em;
-  padding: 14px 20px;
+  margin: 0 auto;
   background: $linear-gradient;
   border-radius: 22px;
   transition-duration: $transition-duration;

@@ -7,7 +7,11 @@ module.exports = {
     'colors&type': __dirname + '/src/pages/colors&type/colors&type.js',
     'headers&footers': __dirname + '/src/pages/headers&footers/headers&footers.js',
     'form-elements': __dirname + '/src/pages/form-elements/form-elements.js',
-    'cards': __dirname + '/src/pages/cards/cards.js'
+    'cards': __dirname + '/src/pages/cards/cards.js',
+    'landing-page': __dirname + '/src/pages/landing-page/landing-page.js',
+    'registration': __dirname + '/src/pages/registration/registration.js',
+    'room-details': __dirname + '/src/pages/room-details/room-details.js',
+    'search-room': __dirname + '/src/pages/search-room/search-room.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -38,6 +42,26 @@ module.exports = {
       template: __dirname + '/src/pages/cards/cards.pug',
       filename: 'cards.html',
       chunks: ['cards']
+    }),
+    new HTMLWebpackPlugin({
+      template: __dirname + '/src/pages/landing-page/landing-page.pug',
+      filename: 'landing-page.html',
+      chunks: ['landing-page']
+    }),
+    new HTMLWebpackPlugin({
+      template: __dirname + '/src/pages/registration/registration.pug',
+      filename: 'registration.html',
+      chunks: ['registration']
+    }),
+    new HTMLWebpackPlugin({
+      template: __dirname + '/src/pages/room-details/room-details.pug',
+      filename: 'room-details.html',
+      chunks: ['room-details']
+    }),
+    new HTMLWebpackPlugin({
+      template: __dirname + '/src/pages/search-room/search-room.pug',
+      filename: 'search-room.html',
+      chunks: ['search-room']
     }),
     new webpack.ProvidePlugin({
       $: "jquery/dist/jquery.min.js",
