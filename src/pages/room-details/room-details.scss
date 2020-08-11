@@ -1,2 +1,103 @@
 // Подключение стилей шаблона
 @import '../../templates/template.scss';
+
+body {
+
+}
+header {
+
+}
+main {
+
+}
+.main__photos {
+  height: 485px;
+  display: flex;
+}
+.main__photos-first {
+  width: 67%;
+
+  background-image: url(bg-img/image.png);
+  background-size: 100%;
+  background-repeat: no-repeat; 
+}
+.main__photos-second {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+.main__photos-small-first {
+  background-image: url(bg-img/image2.png);
+  background-size: 100%;
+  background-repeat: no-repeat; 
+  height: 50%;
+  width: 100%;
+}
+.main__photos-small-second {
+  background-image: url(bg-img/image3.png);
+  background-size: 100%;
+  background-repeat: no-repeat; 
+  height: 50%;
+  width: 100%;
+}
+.main__wrapper {
+  padding: 70px 140px;
+}
+.main__inner {
+  display: flex;
+  justify-content: flex-end;
+}
+.main__content {
+  padding-right: 70px;
+  width: 100%;
+}
+.main__about {
+  display: flex;
+  margin-bottom: 27px;
+}
+.main__data {
+  &-caption {
+    margin-bottom: 25px;
+  }
+}
+.main__impressions {
+  &-caption {
+    margin-left: 81px;
+  }
+}
+.main__review {
+  margin-left: -1px;
+  &-caption {
+    margin-bottom: 20px;
+  }
+}
+.review {
+  margin-bottom: 23px;
+}
+.main__rules-and-cancel {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.main__rules {
+  &-caption {
+    margin-left: 20px;
+    margin-bottom: 19px;
+  }
+}
+.main__cancel {
+  &-caption {
+    
+  }
+}
+.main__form {
+
+}
+footer {
+
+}
+.footer__line {
+  width: 100%;
+  height: 1px;
+  background: #E5E5E5;
+}
