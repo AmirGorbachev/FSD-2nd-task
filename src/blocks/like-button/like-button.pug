@@ -1,6 +1,6 @@
 mixin like-button(amount, active)
   .like-button
-    if (active == "active")
+    if (active)
       .like-button__inner.like-button__inner--active
         p.like-button__amount #{amount}
     else 
