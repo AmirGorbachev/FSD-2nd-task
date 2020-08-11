@@ -4,3 +4,40 @@
 body {
   background-color: white;
 }
+header {
+
+}
+main {
+  height: 830px;
+  background-image: url(bg-img/bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+}
+.room-selection__wrapper {
+  padding-top: 70px;
+  padding-left: 140px;
+  flex: 1 0 auto;
+}
+.room-selection {
+
+}
+.main-about {
+  flex: 0 0 auto;
+}
+.main-about__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 20px;
+  padding-right: 135px;
+}
+.main-about__text {
+  text-align: right;
+  width: 300px;
+  color: $palette-primary-75;
+}
+footer {
+
+}
