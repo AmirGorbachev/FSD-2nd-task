@@ -4,3 +4,165 @@ block head
   title Search room
   
 block body
+  header
+  +header-nav({ 
+    authorization:"unauthorized",
+    menu: [ {name: "О нас"},
+            {name: "Услуги", expandable: true},
+            {name: "Вакансии"},
+            {name: "Новости"},
+            {name: "Соглашения", expandable: true}
+    ],
+    login: "Войти",
+    register: "Зарегистрироваться"
+    })
+  main
+    .main__wrapper
+      aside.main__filter
+        h3.main__caption.main__caption--date Даты пребывания в отеле
+        +filter-date-dropdown("ДД.ММ.ГГГГ - ДД.ММ.ГГГГ")
+        h3.main__caption.main__caption--guests Гости
+        +dropdown("guests")
+        h3.main__caption.main__caption--cost Диапазон цены
+        +range-slider
+        p.main__caption.main__caption--cost-text Стоимость за сутки пребывания в номере
+        h3.main__caption.main__caption--checkbox Checkbox buttons
+        +checkbox-button("usual", "Можно курить")
+        +checkbox-button("usual", "Можно с питомцами", "", "checked")
+        +checkbox-button("usual", "Можно пригласить гостей (до 10 человек)", "", "checked")
+        h3.main__caption.main__caption--availability Доступность
+        +checkbox-button("rich", "Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
+        +checkbox-button("rich", "Помощник для инвалидов", "На 1 этаже вас встретит специалист и проводит до номера.")
+        h3.main__caption.main__caption--facilities Удобства номера
+        +dropdown("facilities")
+        +checkbox-list("Дополнительные удобства", ["Завтрак", "Письменный стол", "Стул для кормления", "Кроватка", "Телевизор", "Шампунь"])
+      section.main__rooms
+        h1.main__rooms-caption Номера, которые мы для вас подобрали
+        .main__list-rooms
+          +room-card({
+            number: "888",
+            lux: true,
+            dayCost: "9 990₽",
+            rate: 5,
+            review: "145",
+            image: 1
+          })
+          +room-card({
+            number: "840",
+            lux: false,
+            dayCost: "9 900₽",
+            rate: 4,
+            review: "65",
+            image: 3
+          })
+          +room-card({
+            number: "980",
+            lux: true,
+            dayCost: "8 500₽",
+            rate: 3,
+            review: "35",
+            image: 2
+          })
+          +room-card({
+            number: "856",
+            lux: false,
+            dayCost: "7 300₽",
+            rate: 5,
+            review: "19",
+            image: 4
+          })
+          +room-card({
+            number: "740",
+            lux: false,
+            dayCost: "6 000₽",
+            rate: 4,
+            review: "44",
+            image: 1
+          })
+          +room-card({
+            number: "982",
+            lux: false,
+            dayCost: "5 800₽",
+            rate: 3,
+            review: "56",
+            image: 3
+          })
+          +room-card({
+            number: "678",
+            lux: false,
+            dayCost: "5 500₽",
+            rate: 5,
+            review: "45",
+            image: 2
+          })
+          +room-card({
+            number: "450",
+            lux: false,
+            dayCost: "5 300₽",
+            rate: 4,
+            review: "39",
+            image: 4
+          })
+          +room-card({
+            number: "350",
+            lux: false,
+            dayCost: "5 000₽",
+            rate: 3,
+            review: "77",
+            image: 1
+          })
+          +room-card({
+            number: "666",
+            lux: false,
+            dayCost: "5 000₽",
+            rate: 5,
+            review: "25",
+            image: 3
+          })
+          +room-card({
+            number: "444",
+            lux: false,
+            dayCost: "5 000₽",
+            rate: 3,
+            review: "15",
+            image: 2
+          })
+          +room-card({
+            number: "352",
+            lux: false,
+            dayCost: "5 000₽",
+            rate: 3,
+            review: "55",
+            image: 4
+          })
+        .main__pagination
+          +pagination
+  footer
+    .footer__line
+    +footer-nav({ 
+      aboutCompany:"Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»",
+      header1: "Навигация",
+      menu1: [
+        {name: "О нас"},
+        {name: "Новости"},
+        {name: "Служба поддержки"},
+        {name: "Услуги"}
+      ],
+      header2: "О нас",
+      menu2: [
+        {name: "О сервисе"},
+        {name: "Наша команда"},
+        {name: "Вакансии"},
+        {name: "Инвесторы"}
+      ],
+      header3: "Служба поддержки",
+      menu3: [
+        {name: "Соглашения"},
+        {name: "Сообщества"},
+        {name: "Связь с нами"}
+      ],
+      subsribeHeader: "Подписка",
+      subsribeText: "Получайте специальные предложения и новости сервиса",
+      placeholder: "Email",
+      copyright: "Copyright © 2018 Toxin отель. Все права защищены."
+      })
