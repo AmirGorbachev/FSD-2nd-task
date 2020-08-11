@@ -1,0 +1,25 @@
+// Подключение стилей шаблона
+@import '../../templates/template.scss';
+
+body {
+  background-color: white;
+}
+header {
+
+}
+main {
+  background-image: url(bg-img/bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.authorization__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.authorization {
+  padding: 172px 0;
+}
+footer {
+
+}

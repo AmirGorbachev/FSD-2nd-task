@@ -11,7 +11,8 @@ module.exports = {
     'landing-page': __dirname + '/src/pages/landing-page/landing-page.js',
     'registration': __dirname + '/src/pages/registration/registration.js',
     'room-details': __dirname + '/src/pages/room-details/room-details.js',
-    'search-room': __dirname + '/src/pages/search-room/search-room.js'
+    'search-room': __dirname + '/src/pages/search-room/search-room.js',
+    'sign-in': __dirname + '/src/pages/sign-in/sign-in.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -62,6 +63,11 @@ module.exports = {
       template: __dirname + '/src/pages/search-room/search-room.pug',
       filename: 'search-room.html',
       chunks: ['search-room']
+    }),
+    new HTMLWebpackPlugin({
+      template: __dirname + '/src/pages/sign-in/sign-in.pug',
+      filename: 'sign-in.html',
+      chunks: ['sign-in']
     }),
     new webpack.ProvidePlugin({
       $: "jquery/dist/jquery.min.js",

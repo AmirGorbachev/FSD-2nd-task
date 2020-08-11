@@ -1,0 +1,49 @@
+extends ../../templates/template.pug
+
+block head
+  title Sign in
+  
+block body
+  header
+  +header-nav({ 
+    authorization:"unauthorized",
+    menu: [ {name: "О нас"},
+            {name: "Услуги", expandable: true},
+            {name: "Вакансии"},
+            {name: "Новости"},
+            {name: "Соглашения", expandable: true}
+    ],
+    login: "Войти",
+    register: "Зарегистрироваться"
+    })
+  main
+    .authorization__wrapper
+      +authorization
+  footer
+    +footer-nav({ 
+      aboutCompany:"Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»",
+      header1: "Навигация",
+      menu1: [
+        {name: "О нас"},
+        {name: "Новости"},
+        {name: "Служба поддержки"},
+        {name: "Услуги"}
+      ],
+      header2: "О нас",
+      menu2: [
+        {name: "О сервисе"},
+        {name: "Наша команда"},
+        {name: "Вакансии"},
+        {name: "Инвесторы"}
+      ],
+      header3: "Служба поддержки",
+      menu3: [
+        {name: "Соглашения"},
+        {name: "Сообщества"},
+        {name: "Связь с нами"}
+      ],
+      subsribeHeader: "Подписка",
+      subsribeText: "Получайте специальные предложения и новости сервиса",
+      placeholder: "Email",
+      copyright: "Copyright © 2018 Toxin отель. Все права защищены."
+      })
