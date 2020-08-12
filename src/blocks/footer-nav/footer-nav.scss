@@ -2,17 +2,23 @@
   width: 100%;
   background-color: $background-color;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
-  height: 372px;
+
   h3 {letter-spacing: -0.025em;}
 }
 .footer-nav__inner {
-  padding: 100px 140px;
+  padding: 100px 140px 80px;
   display: flex;
   flex-wrap: wrap;
+  @media screen and (max-width: 1400px) {
+    padding: 60px 30px;
+  }
 }
 .footer-nav__info {
   flex-basis: 260px;
   margin-right: 40px;
+  @media screen and (max-width: 1060px) {
+    flex-basis: 150px;
+  }
 }
 .footer-nav__logo {
   margin-bottom: 17px;
@@ -33,8 +39,12 @@
 .footer-nav__navigation,
 .footer-nav__about,
 .footer-nav__support {
-  flex-basis: 33.33%;
+  flex-basis: 30%;
   padding-top: 4px;
+}
+.footer-nav__navigation,
+.footer-nav__about {
+  padding-right: 3.25%;
 }
 .footer-nav__chapter {
   margin-bottom: 20px;
