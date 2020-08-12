@@ -47,3 +47,7 @@ $material-icons-font-path: '~material-icons/iconfont/';
 @import '../blocks/room-card/room-card';
 @import '../blocks/subscription-text-field/subscription-text-field';
 @import '../blocks/toggle/toggle';
+
+body {
+  min-width: 320px;
+}

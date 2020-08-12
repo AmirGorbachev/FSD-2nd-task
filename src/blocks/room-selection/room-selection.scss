@@ -9,11 +9,34 @@
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px 30px 29px 29px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (max-width: 380px) {
+    max-width: 320px;
+  }
+
+  .btn__inner {
+    @media screen and (max-width: 380px) {
+      width: 260px;
+    }
+  }
 }
 .room-selection__header {
   margin: 0;
   margin-bottom: 20px;
   letter-spacing: -0.02em;
+}
+.room-selection__dates {
+  .date-dropdown {
+    .date-dropdown__input {
+      @media screen and (max-width: 380px) {
+        width: 120px;
+      }      
+    }
+  }
 }
 .room-selection__dates-headers {
   display: flex;
@@ -26,6 +49,17 @@
 .room-selection__guests {
   margin-top: 20px;
   margin-bottom: 31px;
+  @media screen and (max-width: 380px) {
+    .dropdown__inner--guests {
+      width: 260px;
+    }
+    .dropdown__input--guests {
+      width: 260px;
+    }
+    .drop-out--guests {
+      width: 260px;
+    }
+  }
 }
 .room-selection__guests-header {
   margin-bottom: 5px;
