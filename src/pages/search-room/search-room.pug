@@ -18,6 +18,8 @@ block body
     })
   main
     .main__wrapper
+      .main__filter-btn-wrapper
+        +btn("border", "Фильтры")
       aside.main__filter
         h3.main__caption.main__caption--date Даты пребывания в отеле
         +filter-date-dropdown("ДД.ММ.ГГГГ - ДД.ММ.ГГГГ")
@@ -138,31 +140,33 @@ block body
         .main__pagination
           +pagination
   footer
-    .footer__line
-    +footer-nav({ 
-      aboutCompany:"Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»",
-      header1: "Навигация",
-      menu1: [
-        {name: "О нас"},
-        {name: "Новости"},
-        {name: "Служба поддержки"},
-        {name: "Услуги"}
-      ],
-      header2: "О нас",
-      menu2: [
-        {name: "О сервисе"},
-        {name: "Наша команда"},
-        {name: "Вакансии"},
-        {name: "Инвесторы"}
-      ],
-      header3: "Служба поддержки",
-      menu3: [
-        {name: "Соглашения"},
-        {name: "Сообщества"},
-        {name: "Связь с нами"}
-      ],
-      subsribeHeader: "Подписка",
-      subsribeText: "Получайте специальные предложения и новости сервиса",
-      placeholder: "Email",
-      copyright: "Copyright © 2018 Toxin отель. Все права защищены."
-      })
+    .footer-main
+      +footer-nav({ 
+        aboutCompany:"Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»",
+        header1: "Навигация",
+        menu1: [
+          {name: "О нас"},
+          {name: "Новости"},
+          {name: "Служба поддержки"},
+          {name: "Услуги"}
+        ],
+        header2: "О нас",
+        menu2: [
+          {name: "О сервисе"},
+          {name: "Наша команда"},
+          {name: "Вакансии"},
+          {name: "Инвесторы"}
+        ],
+        header3: "Служба поддержки",
+        menu3: [
+          {name: "Соглашения"},
+          {name: "Сообщества"},
+          {name: "Связь с нами"}
+        ],
+        subsribeHeader: "Подписка",
+        subsribeText: "Получайте специальные предложения и новости сервиса",
+        placeholder: "Email",
+        copyright: "Copyright © 2018 Toxin отель. Все права защищены."
+        })
+    .footer-mobile
+      +footer("Copyright © 2018 Toxin отель. Все права защищены.")
