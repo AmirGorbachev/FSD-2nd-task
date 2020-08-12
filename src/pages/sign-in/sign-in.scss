@@ -9,7 +9,6 @@ header {
 }
 main {
   background-image: url(bg-img/bg.png);
-  background-size: 100%;
   background-repeat: no-repeat;
 }
 .authorization__wrapper {
@@ -19,7 +18,24 @@ main {
 }
 .authorization {
   padding: 172px 0;
+  @media screen and (max-width: 700px) {
+  	padding: 40px 0;
+  }
+  @media screen and (max-width: 500px) {
+  	padding: 10px 0;
+  }
 }
 footer {
 
+}
+.footer-main {
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
+.footer-mobile {
+  display: none;
+  @media screen and (max-width: 700px) {
+    display: block;
+  }
 }
