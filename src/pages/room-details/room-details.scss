@@ -40,7 +40,7 @@ main {
   width: 100%;
 }
 .main__wrapper {
-  padding: 70px 140px;
+  padding: 70px 140px 60px;
 }
 .main__inner {
   display: flex;
@@ -60,9 +60,13 @@ main {
   }
 }
 .main__impressions {
+  margin-left: 81px;
   &-caption {
-    margin-left: 81px;
+ 
   }
+}
+.main__chart {
+  margin-top: 21px;
 }
 .main__review {
   margin-left: -1px;
@@ -73,6 +77,9 @@ main {
 .main__review-wrapper {
   display: flex;
   justify-content: space-between;
+  p {
+    margin-top: 2px;
+  }
 }
 .review {
   margin-bottom: 23px;
@@ -83,16 +90,19 @@ main {
   padding-top: 10px;
 }
 .main__rules {
-  min-width: 320px;
+  min-width: 260px;
   &-caption {
     margin-left: 20px;
     margin-bottom: 19px;
   }
 }
+.bullet {
+  margin-bottom: 12px;
+}
 .main__cancel {
   margin-left: 100px;
   &-caption {
-    
+    margin-bottom: 17px;
   }
 }
 .main__form {
