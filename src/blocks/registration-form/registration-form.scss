@@ -10,6 +10,16 @@
   border-radius: 4px;
   padding: 40px 29px 32px;
 
+  @media screen and (max-width: 380px) {
+    width: 320px;
+    input {
+      width: 260px;
+    }
+    .btn__inner.btn--arrow {
+      width: 260px;
+    }
+  }
+
   .text-field {
     margin-bottom: 10px;
   }
