@@ -42,6 +42,13 @@
 	font-style: normal;
 }
 @font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/opensansbold.ttf');
+	src: local('☺'), url('../fonts/opensansbold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
