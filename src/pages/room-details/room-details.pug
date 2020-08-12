@@ -34,7 +34,9 @@ block body
             .main__impressions
               h2.main__impressions-caption Впечатления от номера
           .main__review
-            h2.main__review-caption Отзывы посетителей номера
+            .main__review-wrapper
+              h2.main__review-caption Отзывы посетителей номера
+              p 2 отзыва
             +review({
               name: "Мурад Сарафанов",
               time: "5 дней назад",
@@ -57,6 +59,7 @@ block body
               +bullet("Время прибытия - после 13:00, а выезд до 12:00")
             .main__cancel
               h2.main__cancel-caption Отмена
+              p Бесплатная смена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги. 
         .main__form
           +reservation({
             number: "888",

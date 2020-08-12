@@ -16,9 +16,10 @@ main {
 }
 .main__photos-first {
   width: 67%;
+  height: 100%;
 
   background-image: url(bg-img/image.png);
-  background-size: 100%;
+  
   background-repeat: no-repeat; 
 }
 .main__photos-second {
@@ -28,14 +29,12 @@ main {
 }
 .main__photos-small-first {
   background-image: url(bg-img/image2.png);
-  background-size: 100%;
   background-repeat: no-repeat; 
   height: 50%;
   width: 100%;
 }
 .main__photos-small-second {
   background-image: url(bg-img/image3.png);
-  background-size: 100%;
   background-repeat: no-repeat; 
   height: 50%;
   width: 100%;
@@ -71,6 +70,10 @@ main {
     margin-bottom: 20px;
   }
 }
+.main__review-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 .review {
   margin-bottom: 23px;
 }
@@ -80,12 +83,14 @@ main {
   padding-top: 10px;
 }
 .main__rules {
+  min-width: 320px;
   &-caption {
     margin-left: 20px;
     margin-bottom: 19px;
   }
 }
 .main__cancel {
+  margin-left: 100px;
   &-caption {
     
   }
