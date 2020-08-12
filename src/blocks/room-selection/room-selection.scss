@@ -10,10 +10,6 @@
   border-radius: 4px;
   padding: 40px 30px 29px 29px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
   @media screen and (max-width: 380px) {
     max-width: 320px;
     .btn__inner {
