@@ -10,22 +10,20 @@ mixin header-nav(options)
       .header-nav__wrapper
         .header-nav__logo
           include img/logo-toxin.svg
-        .header-nav__nav-and-login
-          .header-nav__menu-nav
-            .header-nav__menu-nav-wrapper
-              each chapter in options.menu
-                p.header-nav__chapter(class=[
-                  chapter.expandable ? "header-nav__chapter--drop-down" : "",
-                  chapter.active ? "header-nav__chapter--active": ""
-                ])
-                  a.header-nav__link(href="#", class=[
-                    chapter.expandable ? "header-nav__link--drop-down" : "",
-                    chapter.active ? "header-nav__link--active": ""
-                  ])= chapter.name
-          .header-nav__authorization
-            if (options.authorization == "authorized")
-              .header-nav__vertical-line
-              p.header-nav__username= options.name
-            if (options.authorization == "unauthorized")
-              +btn("border",""+options.login)
-              +btn("full",""+options.register)
+        .header-nav__menu-nav
+          each chapter in options.menu
+            p.header-nav__chapter(class=[
+              chapter.expandable ? "header-nav__chapter--drop-down" : "",
+              chapter.active ? "header-nav__chapter--active": ""
+            ])
+              a.header-nav__link(href="#", class=[
+                chapter.expandable ? "header-nav__link--drop-down" : "",
+                chapter.active ? "header-nav__link--active": ""
+              ])= chapter.name
+        .header-nav__authorization
+          if (options.authorization == "authorized")
+            .header-nav__vertical-line
+            p.header-nav__username= options.name
+          if (options.authorization == "unauthorized")
+            +btn("border",""+options.login)
+            +btn("full",""+options.register)
