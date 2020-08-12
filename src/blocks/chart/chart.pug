@@ -1,0 +1,61 @@
+mixin chart(fine, good, okay, bad)
+  .chart
+    .chart__inner
+      .chart__main
+        .chart__all-review
+          h1 260
+          h3 голосов
+        .chart__diagram
+          - 
+            var all = fine + good + okay + bad;
+            //- Сколько процентов от всех отзывов
+            var percentFine = fine / all * 100;
+            var percentGood = good / all * 100;
+            var percentOkay = okay / all * 100;
+            //- Начальная точка на диаграмме (начальная - 75)
+            var pointGood = - percentFine;
+            var pointOkay = - percentFine - percentGood;
+  
+          <svg width="120px" height="120px" viewBox="4.5 4.5 33 33" class="donut">
+            //-fine
+            <linearGradient id="fine" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#FFE39C"/>
+            <stop offset="100%" stop-color="#FFBA9C"/>
+            </linearGradient>
+            //-good
+            <linearGradient id="good" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#6FCF97"/>
+            <stop offset="100%" stop-color="#66D2EA"/>
+            </linearGradient>
+            //-okay
+            <linearGradient id="okay" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#BC9CFF"/>
+            <stop offset="100%" stop-color="#8BA4F9"/>
+            </linearGradient>
+            //-bad
+            <linearGradient id="bad" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#919191"/>
+            <stop offset="100%" stop-color="#3D4975"/>
+            </linearGradient>
+            //- Белый фон в центре
+            <circle class="donut-hole" cx="21" cy="21" r="15.9" fill="#fff"></circle>
+            //- Остаток (bad review)
+            <circle class="donut-ring" cx="21" cy="21" r="15.9" fill="transparent" stroke="url(#bad)" stroke-width="1"></circle>
+            //- Диаграмма
+            <circle class="donut-segment" cx="21" cy="21" r="15.9" fill="transparent" stroke="url(#fine)" stroke-width="1" stroke-dasharray="#{percentFine} 100" stroke-dashoffset="0"></circle>
+            <circle class="donut-segment" cx="21" cy="21" r="15.9" fill="transparent" stroke="url(#good)" stroke-width="1" stroke-dasharray="#{percentGood} 100" stroke-dashoffset="#{pointGood}"></circle>
+            <circle class="donut-segment" cx="21" cy="21" r="15.9" fill="transparent" stroke="url(#okay)" stroke-width="1" stroke-dasharray="#{percentOkay} 100" stroke-dashoffset="#{pointOkay}"></circle>
+          </svg>
+      .chart__description-list
+        .chart__description
+          .chart__dot
+          p.chart__caption Великолепно
+        .chart__description
+          .chart__dot
+          p.chart__caption Хорошо
+        .chart__description
+          .chart__dot
+          p.chart__caption Удовлетворительно
+        .chart__description
+          .chart__dot
+          p.chart__caption Разочарован

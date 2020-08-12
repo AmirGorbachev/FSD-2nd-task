@@ -1,0 +1,69 @@
+.chart {
+
+}
+.chart__inner {
+  display: flex;
+}
+.chart__main {
+
+}
+.chart__all-review {
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -3px;
+  h1 {
+    margin: 0;
+    color: $palette-secondary;
+  }
+  h3 {
+    color: $palette-secondary;
+  }
+}
+.chart__diagram {
+  width: 120px;
+  height: 120px;
+  transform: rotate(90deg);
+}
+.chart__description-list {
+  padding-top: 26px;
+  padding-left: 30px;
+}
+.chart__description {
+  display: flex;
+  &:nth-child(1) {
+    .chart__dot {
+      background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+    }
+  }
+  &:nth-child(2) {
+    .chart__dot {
+      background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    }
+  }
+  &:nth-child(3) {
+    .chart__dot {
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    }
+  }
+  &:nth-child(4) {
+    .chart__dot {
+      background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+    }
+  }
+}
+.chart__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: auto 0;
+  margin-right: 5px;
+}
+.chart__caption {
+
+}
