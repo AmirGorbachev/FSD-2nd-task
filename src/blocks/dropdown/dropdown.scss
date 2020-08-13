@@ -7,6 +7,7 @@ $dropdown-width--guests: 320px;
 }
 .dropdown__inner {
   width: $dropdown-width;
+  position: relative;
 }
 .dropdown__inner:hover .dropdown__input,
 .dropdown__input:focus {
@@ -31,10 +32,10 @@ $dropdown-width--guests: 320px;
   content: 'expand_more';
   font-size: 24px;
   color: $palette-primary-75;
-  position: relative;
+  position: absolute;
   float: right;
-  top: -35px;
-  left: -10px;
+  top: 9px;
+  right: 10px;
   z-index: 1;
   cursor: pointer;
 }
