@@ -9,6 +9,12 @@
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 39px 30px 29px 29px;
+  @media screen and (max-width: 380px) {
+    max-width: 320px;
+    .btn__inner {
+      width: 260px;
+    }
+  }
 }
 .reservation__header {
   display: flex;
@@ -44,6 +50,15 @@
     font-size: 12px;
   }
 }
+.reservation__dates {
+  .date-dropdown {
+    .date-dropdown__input {
+      @media screen and (max-width: 380px) {
+        width: 120px;
+      }      
+    }
+  }
+}
 .reservation__dates-headers {
   display: flex;
   justify-content: space-between;
@@ -52,11 +67,22 @@
 .reservation__dates-header {
   width: 150px;
 }
-.reservation__guests {
-  margin-top: 20px;
-}
 .reservation__guests-header {
   margin-bottom: 5px;
+}
+.reservation__guests {
+  margin-top: 20px;
+  @media screen and (max-width: 380px) {
+    .dropdown__inner--guests {
+      width: 260px;
+    }
+    .dropdown__input--guests {
+      width: 260px;
+    }
+    .drop-out--guests {
+      width: 260px;
+    }
+  }
 }
 .reservation__cost-list {
   width: 100%;
@@ -66,6 +92,9 @@
   position: relative;
   top: -9px;
   width: 320px;
+  @media screen and (max-width: 380px) {
+    width: 260px;
+  }
 }
 .reservation__services-name {
   margin-top: 3px;

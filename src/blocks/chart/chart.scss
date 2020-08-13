@@ -3,6 +3,9 @@
 }
 .chart__inner {
   display: flex;
+  @media screen and (max-width: 380px) {
+    flex-direction: column;
+  }
 }
 .chart__main {
 
@@ -33,6 +36,9 @@
 .chart__description-list {
   padding-top: 26px;
   padding-left: 30px;
+  @media screen and (max-width: 400px) {
+    padding-left: 5px;
+  }
 }
 .chart__description {
   display: flex;
