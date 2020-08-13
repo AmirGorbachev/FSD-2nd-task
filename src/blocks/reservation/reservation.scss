@@ -87,27 +87,26 @@
 .reservation__cost-list {
   width: 100%;
 }
-.reservation__cost-list--inner {
-  display: flex;
-  position: relative;
-  top: -9px;
+
+.reservation__services {
+  margin-top: 20px;
+  margin-left: 1px;
   width: 320px;
   @media screen and (max-width: 380px) {
     width: 260px;
   }
 }
-.reservation__services-name {
-  margin-top: 3px;
-  max-width: 220px;
+.reservation__service {
+  display: flex;
+  margin-bottom: 14px;
 }
 .reservation__service-name {
-  margin-bottom: 16px;
+  flex-basis: 219px;
   line-height: 18px;
 }
-.reservation__services-info {
-  margin-top: -2px;
-}
 .reservation__service-info {
+  font-size: 12px;
+  line-height: 20px;
   border-radius: 50%;
   border: 1px solid $palette-primary-25;
   box-sizing: border-box;
@@ -116,25 +115,19 @@
   height: 20px;
   text-align: center;
   font-family: $font-family-secondary-bold;
-  font-size: 10px;
-  line-height: 20px;
   cursor: help;
-  margin-bottom: 16px;
-
   &--false {
-    opacity: 0%;
-    cursor: default;
+
   }
 }
-.reservation__services-cost {
-  text-align: right;
-  flex-grow: 1;
-}
 .reservation__service-cost {
-  margin-bottom: 10px;
+  line-height: 18px;
+  text-align: right;
+  flex-grow:1;
 }
+
 .reservation__cost-result {
-  margin-top: 4px;
+  margin-top: 30px;
   display: flex;
 }
 .reservation__dashed {

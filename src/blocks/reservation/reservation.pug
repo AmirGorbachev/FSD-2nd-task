@@ -24,13 +24,23 @@ mixin reservation(options)
         +dropdown("guests")
 
       .reservation__cost-list
-        .reservation__cost-list--inner
+        .reservation__cost-list-wrapper
+          .reservation__services
+            each services in options.services
+              .reservation__service
+                p.reservation__service-name= services.name
+                if (services.info)
+                  p.reservation__service-info i
+                else 
+                  p.reservation__service-info.reservation__service-info--false i
+                p.reservation__service-cost= services.cost
+        //-
           .reservation__services-name
             each service in options.services
               p.reservation__service-name= service
           .reservation__services-info
             each info in options.info
-              if (info == true)
+              (info == true)
                 p.reservation__service-info i
               else 
                 p.reservation__service-info.reservation__service-info--false i
