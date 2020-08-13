@@ -4,6 +4,20 @@
   options.menu [{name, active, expandable}]
   options.login
   options.register
+  Шаблон: 
+  
+  +header-nav({ 
+    authorization:"authorized",
+    name:"Юлий Цезарь",
+    menu: [ {name: "О нас"},
+            {name: "Услуги", expandable: true},
+            {name: "Вакансии"},
+            {name: "Новости"},
+            {name: "Соглашения", expandable: true}
+    ],
+    login: "Войти",
+    register: "Зарегистрироваться"
+  })
 mixin header-nav(options)
   .header-nav
     .header-nav__inner

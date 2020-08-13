@@ -1,4 +1,20 @@
 //- options: number, lux, dayCost, rate, review, image
+  options.number - текст (номер отеля)
+  options.lux - люксовый ли номер: true or false
+  options.dayCost - текст (цена номера)
+  options.rate - число (рейтинг: сколько звезд из 5)
+  options.review - число (количество отзывов)
+  options.image - текст или число (имя файла изображения)
+  Шаблон:
+  
+  +room-card({
+    number: "840",
+    lux: false,
+    dayCost: "9 900₽",
+    rate: 4,
+    review: 65,
+    image: 2
+  })
 mixin room-card(options)
   .room-card
     .room-card__inner

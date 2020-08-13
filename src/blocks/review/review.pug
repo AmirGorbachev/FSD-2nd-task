@@ -1,4 +1,19 @@
 //- options: name, time, content, likes, btnLikeActive, photo
+  options.name - текст (имя человека)
+  options.time - текст (время публикации)
+  options.content - текст (комментарий)
+  options.likes - число (количество лайков)
+  options.btnLikeActive - постален ли лайк: true or false
+  options.photo - текст или число (имя файла изображения)
+  Шаблон: 
+
+  +review({
+    name: "Мурад Сарафанов",
+    time: "5 дней назад",
+    content: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподовляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.",
+    likes: "12",
+    btnLikeActive: true,
+    photo: "photo-example.jpg"})
 mixin review(options)
   .review
     .review__inner

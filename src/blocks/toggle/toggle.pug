@@ -1,7 +1,10 @@
+//-
+  value - текст 
+  active - активен ли: true or false 
 mixin toggle(value, active)
   .toggle
     .toggle__inner
-      if (active == "active")
+      if (active)
         .toggle__switch.toggle__switch--on
       else 
         .toggle__switch

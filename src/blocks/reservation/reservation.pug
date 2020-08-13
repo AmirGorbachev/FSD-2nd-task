@@ -1,4 +1,28 @@
-//- options: number, lux, dayCost, dateDropdownIdFirst, dateDropdownIdSecond, {services}, {info}, {costs}, result
+//- options: number, lux, dayCost, dateDropdownIdFirst, dateDropdownIdSecond, services, result
+  options.number - текст или число (номер комнаты)
+  options.lux - люксовый ли номер: true or false
+  options.dayCost - текст (цена номера)
+  options.dateDropdownIdFirst - ID первого элемента date-dropdown
+  options.dateDropdownIdSecond - ID второго элемента date-dropdown
+  options.services [{name, info, cost}] - массив опций сервиса
+                     name - текст (наименование)
+                     info - символ доп информации: true or false
+                     cost - текст (цена)
+  options.result - текст (итоговая сумма)
+  Шаблон:
+
+  +reservation({
+    number: "888",
+    lux: true,
+    dayCost: "9 990₽",
+    dateDropdownIdFirst: "dateDropdownRes1",
+    dateDropdownIdSecond: "dateDropdownRes2",
+    services: [ {name: "9 990₽ x 4 суток", info: false, cost: "39 960₽"},
+                {name: "Сбор за услуги: скидка 2 179₽", info: true, cost: "0₽"},
+                {name: "Сбор за дополнительные услуги", info: true, cost: "300₽"}
+    ],
+    result: "38 081₽"
+  })
 mixin reservation(options)
   form.reservation
     .reservation__inner 
