@@ -95,13 +95,19 @@ module.exports = {
         use: [{
           loader: 'file-loader',
           options: {
-            esModule: false
+            esModule: false,
+            outputPath: 'images/'
           }
         }]
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
-        use: ['file-loader']
+        use: [{
+          loader: 'file-loader',
+          options: {
+            outputPath: 'fonts/'
+          }
+        }]
       }
     ]
   },
