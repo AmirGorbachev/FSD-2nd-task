@@ -8,16 +8,32 @@ header {
 
 }
 main {
-  height: 830px;
-  background-image: url(bg-img/bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 
+}
+.main__wrapper {
+  height: 830px;
   display: flex;
   flex-direction: column;
   @media screen and (max-width: 660px) {
     height: 500px;
   }
+}
+.slider {
+  height: inherit;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider--1 {
+  background-image: url(bg-img/image.png);
+}
+.slider--2 {
+  background-image: url(bg-img/image2.png);
+}
+.slider--3 {
+  background-image: url(bg-img/image3.png);
 }
 .room-selection__wrapper {
   padding: 70px 140px;

@@ -2,10 +2,10 @@ extends ../../templates/template.pug
 
 block head
   title Landing page
-  
+
 block body
   header
-  +header-nav({ 
+  +header-nav({
     authorization:"unauthorized",
     menu: [ {name: "О нас"},
             {name: "Услуги", expandable: true},
@@ -17,14 +17,18 @@ block body
     register: "Зарегистрироваться"
     })
   main
-    .room-selection__wrapper
-      +room-selection("dateDropdownOne", "dateDropdownTwo")
-    .main-about
-      .main-about__wrapper
-        p.main-about__text Лучшие номера для вашей работы, отдыха и просто вдохновения
+    .main__wrapper
+      .slider.slider--1
+      .slider.slider--2
+      .slider.slider--3
+      .room-selection__wrapper
+        +room-selection("dateDropdownOne", "dateDropdownTwo")
+      .main-about
+        .main-about__wrapper
+          p.main-about__text Лучшие номера для вашей работы, отдыха и просто вдохновения
   footer
     .footer-main
-      +footer-nav({ 
+      +footer-nav({
         aboutCompany:"Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»",
         header1: "Навигация",
         menu1: [
