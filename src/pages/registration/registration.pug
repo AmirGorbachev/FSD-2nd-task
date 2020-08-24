@@ -2,10 +2,10 @@ extends ../../templates/template.pug
 
 block head
   title Registration
-  
+
 block body
   header
-  +header-nav({ 
+  +header-nav({
     authorization:"unauthorized",
     menu: [ {name: "О нас"},
             {name: "Услуги", expandable: true},
@@ -17,11 +17,14 @@ block body
     register: "Зарегистрироваться"
     })
   main
+    .slider__wrapper
+      .slider.slider--1
+      .slider.slider--2
     .registration-form__wrapper
       +registration-form
   footer
     .footer-main
-      +footer-nav({ 
+      +footer-nav({
         aboutCompany:"Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»",
         header1: "Навигация",
         menu1: [
