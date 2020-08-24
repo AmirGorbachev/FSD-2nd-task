@@ -69,8 +69,11 @@ document.addEventListener("DOMSubtreeModified", function(){
     let buttonClear = dropdowns[i].querySelector(".btn-clear");
     
     // Записываем значения в input
-    if((dropOutItems[0].textContent != 0)||(dropOutItems[1].textContent != 0)||(dropOutItems[2].textContent != 0)) {
-      
+    if(
+      (dropOutItems[0].textContent != 0) || 
+      (dropOutItems[1].textContent != 0) || 
+      (dropOutItems[2].textContent != 0)
+    ) {
       //формы слова для dropdown--facilities
       if(dropdowns[i].classList.contains("dropdown__inner--facilities")){
         // Формы слова "спальня"
@@ -171,7 +174,9 @@ document.addEventListener("DOMSubtreeModified", function(){
       }
 
       // Запись в input
-      input.value = dropOutItems[0].textContent+" "+argument_1+", "+dropOutItems[1].textContent+" "+argument_2+", "+dropOutItems[2].textContent+" "+argument_3;
+      input.value = dropOutItems[0].textContent + " " + argument_1 + ", " 
+        + dropOutItems[1].textContent + " " + argument_2 + ", " 
+        + dropOutItems[2].textContent + " " + argument_3;
     } else {
       // Если все счётчики "0", обнуляем значение input
       input.value = null;
