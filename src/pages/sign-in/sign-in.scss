@@ -8,9 +8,29 @@ header {
 
 }
 main {
-  background-image: url(bg-img/bg.png);
+}
+.slider__wrapper {
+  height: 700px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  @media screen and (max-width: 700px) {
+  height: 450px;
+  }
+}
+.slider {
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.slider--1 {
+  background-image: url(bg-img/bg.png);
+}
+.slider--2 {
+  background-image: url(bg-img/bg2.png);
 }
 .authorization__wrapper {
   width: 100%;
