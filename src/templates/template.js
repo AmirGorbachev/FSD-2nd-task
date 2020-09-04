@@ -21,8 +21,8 @@ let imageBlocks = document.querySelectorAll(".slider");
 // Если элементам изначально задать в стилях displey: none;
 // то по неизвестным причинам функция fadeIn() не работает,
 // так что в начале скрываем все элементы с помощью js
-for(let i = 0; i <= imageBlocks.length; i++) {
-  $(imageBlocks[i]).fadeOut(0);
+for(let imageBlock of imageBlocks) {
+  $(imageBlock).fadeOut(0);
 }
 
 slideshow(imageBlocks);
