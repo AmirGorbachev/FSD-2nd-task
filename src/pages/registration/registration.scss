@@ -1,4 +1,4 @@
-// Подключение стилей шаблона
+  // Подключение стилей шаблона
 @import '../../templates/template.scss';
 
 body {
@@ -10,24 +10,15 @@ header {
 main {
 
 }
-.slider__wrapper {
+.bg-slider__wrapper {
   height: 800px;
   width: 100%;
   position: absolute;
-  z-index: -1;
 }
-.slider {
-  min-height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.slider--1 {
+.bg-slider--1 {
   background-image: url(bg-img/bg.png);
 }
-.slider--2 {
+.bg-slider--2 {
   background-image: url(bg-img/bg2.png);
 }
 .registration-form__wrapper {

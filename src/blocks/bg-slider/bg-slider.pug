@@ -1,3 +1,5 @@
-mixin bg-slider
-  .bg-slider
-    .bg-slider__inner
+//- amount - количество слайдов
+mixin bg-slider(amount)
+  - var n = 1
+  while n <= amount 
+    .bg-slider(class="bg-slider--" + n++)

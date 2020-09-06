@@ -1,5 +1,5 @@
 // Слайдер bg-img
-let imageBlocks = document.querySelectorAll(".slider");
+let imageBlocks = document.querySelectorAll(".bg-slider");
 // Если элементам изначально задать в стилях displey: none;
 // то по неизвестным причинам функция fadeIn() не работает,
 // так что в начале скрываем все элементы с помощью js

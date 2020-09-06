@@ -1,3 +1,21 @@
+// Пример обертки
+// .bg-slider__wrapper {
+//   height: 800px;
+//   width: 100%;
+//   position: absolute;
+// }
 .bg-slider {
-
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+// Пример изображений
+// .bg-slider--1 {
+//   background-image: url(bg-img/bg.png);
+// }
+// .bg-slider--2 {
+//   background-image: url(bg-img/bg2.png);
+// }
