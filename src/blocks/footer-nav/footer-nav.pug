@@ -1,4 +1,4 @@
-//- 
+//-
   options.aboutCompany
   options.header1
   options.menu1 [{name}]
@@ -11,8 +11,8 @@
   options.placeholder
   options.copyright
   Шаблон:
-  
-  +footer-nav({ 
+
+  +footer-nav({
     aboutCompany:"Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»",
     header1: "Навигация",
     menu1: [
@@ -50,17 +50,17 @@ mixin footer-nav(options)
         .footer-nav__navigation
           h3.footer-nav__chapters= options.header1
           each chapter in options.menu1
-            p.footer-nav__chapter 
+            p.footer-nav__chapter
               a.footer-nav__link(href="#")= chapter.name
         .footer-nav__about
           h3.footer-nav__chapters= options.header2
           each chapter in options.menu2
-            p.footer-nav__chapter 
+            p.footer-nav__chapter
               a.footer-nav__link(href="#")= chapter.name
         .footer-nav__support
           h3.footer-nav__chapters= options.header3
           each chapter in options.menu3
-            p.footer-nav__chapter 
+            p.footer-nav__chapter
               a.footer-nav__link(href="#")= chapter.name
       .footer-nav__subscribe
         h3.footer-nav__subsribe-header= options.subsribeHeader
