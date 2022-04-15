@@ -43,7 +43,7 @@
     background: $linear-gradient;
   }
   &+.radio-button__button {
-    border: 1px solid $palette-secondary; 
+    border: 1px solid $palette-secondary;
   }
   &+.radio-button__button+.radio-button__text {
     color: $palette-primary-75;
